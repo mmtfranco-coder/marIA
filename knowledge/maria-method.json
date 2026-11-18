@@ -1,1 +1,195 @@
+{
+  "name": "Maria Franco Method",
+  "version": "1.0",
+  "language": "pt-BR",
+  "purpose": "Core artistic philosophy, teaching principles and working methods used by Maria Franco in glass and crystal painting.",
 
+  "artisticPhilosophy": {
+    "harmonyOverRealism": {
+      "principle": "A pintura não precisa reproduzir a natureza de forma totalmente realista.",
+      "guidance": [
+        "Adaptar flores, folhas e outros elementos ao formato e à função da peça.",
+        "Priorizar aquilo que fica harmonioso e bonito na composição.",
+        "Não ficar preso à representação literal do objeto real."
+      ]
+    },
+
+    "controlledAsymmetry": {
+      "principle": "Pequenas diferenças tornam a pintura mais natural, interessante e artesanal.",
+      "guidance": [
+        "Evitar que todas as folhas e pétalas fiquem exatamente iguais.",
+        "Variar direção, tamanho, inclinação e tonalidade dos elementos.",
+        "Não interpretar automaticamente assimetria como erro.",
+        "Avaliar o conjunto da composição antes de corrigir pequenas diferenças."
+      ]
+    },
+
+    "creativeFreedom": {
+      "principle": "A técnica deve servir como base para a criação, não como uma limitação.",
+      "guidance": [
+        "Depois de aprender o movimento, experimentar novas composições.",
+        "Usar as técnicas aprendidas para criar desenhos próprios.",
+        "Permitir variações de cores, tamanhos, posições e quantidades quando isso favorecer a composição."
+      ]
+    }
+  },
+
+  "teachingMethod": {
+    "movementBeforeRepresentation": {
+      "principle": "Aprender primeiro o movimento da pincelada e depois se preocupar com a aparência final.",
+      "guidance": [
+        "Praticar repetidamente o movimento da mão.",
+        "Observar pressão, direção e levantamento do pincel.",
+        "Não exigir que as primeiras pinceladas já pareçam folhas ou flores perfeitas.",
+        "Depois que o movimento estiver dominado, trabalhar forma e composição."
+      ]
+    },
+
+    "leavesAsFoundation": {
+      "principle": "As pinceladas utilizadas nas folhas formam a base de várias flores.",
+      "guidance": [
+        "Dar atenção especial ao domínio das folhas.",
+        "Reutilizar movimentos aprendidos nas folhas ao estudar flores.",
+        "Construir habilidades progressivamente."
+      ]
+    },
+
+    "learnThroughPractice": {
+      "principle": "O domínio da técnica vem da repetição consciente.",
+      "guidance": [
+        "Praticar movimentos antes de executar uma peça importante.",
+        "Observar como pequenas mudanças de pressão alteram a pincelada.",
+        "Treinar o controle do pincel e da quantidade de tinta."
+      ]
+    }
+  },
+
+  "brushControl": {
+    "pressure": {
+      "principle": "A pressão exercida sobre o pincel influencia diretamente a largura e a forma da pincelada.",
+      "guidance": [
+        "Mais pressão abre as cerdas e cria uma pincelada mais larga.",
+        "Menos pressão produz traços mais estreitos.",
+        "A redução gradual da pressão ajuda a formar terminações delicadas."
+      ]
+    },
+
+    "movement": {
+      "principle": "O movimento da mão faz parte da forma final da pincelada.",
+      "guidance": [
+        "Observar o início, desenvolvimento e final do movimento.",
+        "Levantar o pincel progressivamente quando a técnica exigir uma ponta mais fina.",
+        "Evitar movimentos excessivamente rígidos."
+      ]
+    },
+
+    "paintLoading": {
+      "principle": "Grande parte do efeito final é preparada no próprio pincel antes da pincelada.",
+      "guidance": [
+        "Carregar as cores de maneira intencional.",
+        "Preservar diferenças de cor quando o objetivo for produzir gradientes e variações.",
+        "Evitar misturar completamente as cores quando a técnica depende da presença das duas tonalidades.",
+        "Controlar o excesso de tinta antes de levar o pincel à peça."
+      ]
+    }
+  },
+
+  "composition": {
+    "wholePieceFirst": {
+      "principle": "Uma pintura tecnicamente correta precisa também funcionar como composição na peça.",
+      "guidance": [
+        "Observar a peça inteira durante o processo.",
+        "Distribuir flores, folhas e elementos levando em conta espaços vazios.",
+        "Avaliar equilíbrio visual e não apenas a qualidade de cada elemento isoladamente."
+      ]
+    },
+
+    "organicDevelopment": {
+      "principle": "A composição pode evoluir durante a pintura.",
+      "guidance": [
+        "Não é necessário definir antecipadamente cada elemento da composição.",
+        "Observar o desenho enquanto ele cresce.",
+        "Adicionar folhas, flores ou detalhes para equilibrar áreas vazias.",
+        "Permitir alterações de direção e tamanho quando melhorarem o resultado."
+      ]
+    }
+  },
+
+  "mistakeCorrection": {
+    "principle": "Nem todo resultado inesperado precisa ser apagado.",
+    "guidance": [
+      "Antes de corrigir, observar se a imperfeição realmente prejudica a composição.",
+      "Quando apropriado, deixar a tinta secar antes de tentar corrigir.",
+      "Uma pincelada adicional, folha, pétala ou detalhe pode integrar ou esconder uma imperfeição.",
+      "Evitar recomeçar toda a peça quando uma correção localizada for suficiente.",
+      "Transformar pequenos imprevistos em parte natural da composição quando possível."
+    ]
+  },
+
+  "color": {
+    "variation": {
+      "principle": "Variações de tonalidade contribuem para profundidade e riqueza visual.",
+      "guidance": [
+        "Evitar uniformizar excessivamente as cores.",
+        "Permitir que diferentes cores carregadas no pincel permaneçam parcialmente distintas.",
+        "Usar a direção da pincelada para revelar diferenças de tonalidade.",
+        "Avaliar a combinação no conjunto da peça."
+      ]
+    }
+  },
+
+  "studentGuidance": {
+    "beginnerApproach": [
+      "Priorizar o domínio do movimento em vez da perfeição.",
+      "Explicar como segurar, posicionar e movimentar o pincel.",
+      "Dividir técnicas complexas em movimentos simples.",
+      "Tranquilizar o aluno quando pequenas diferenças aparecem.",
+      "Incentivar prática e observação."
+    ],
+
+    "whenStudentMakesMistake": [
+      "Identificar primeiro a causa provável.",
+      "Determinar se realmente é necessário corrigir.",
+      "Sugerir uma correção localizada quando possível.",
+      "Considerar incorporar o resultado à composição.",
+      "Evitar recomendar que o aluno recomece sem necessidade."
+    ],
+
+    "responseStyle": [
+      "Explicar de forma clara, prática e acolhedora.",
+      "Fornecer instruções passo a passo quando forem úteis.",
+      "Não exigir perfeição mecânica.",
+      "Valorizar harmonia, movimento e resultado visual.",
+      "Encorajar a criatividade sem abandonar os fundamentos técnicos."
+    ]
+  },
+
+  "kidsMethod": {
+    "principle": "As técnicas podem ser simplificadas para permitir que crianças criem suas próprias pinturas.",
+    "guidance": [
+      "Usar movimentos e ferramentas mais simples quando apropriado.",
+      "Estimular a criança a criar variações e desenhos próprios.",
+      "Valorizar a experiência criativa e não a perfeição.",
+      "Dividir o processo em etapas pequenas e fáceis de acompanhar."
+    ],
+
+    "safety": [
+      "Uma criança trabalhando com vidro deve ter um adulto ou responsável por perto.",
+      "Etapas envolvendo risco de corte, vidro quebrado, instrumentos inadequados para crianças ou calor devem ser realizadas ou supervisionadas por um adulto."
+    ]
+  },
+
+  "assistantBehavior": {
+    "authorityRule": "When Maria Franco source material provides a technique or recommendation, prioritize the Maria Franco method over generic painting advice.",
+
+    "uncertaintyRule": "Do not invent a Maria Franco technique when the knowledge base does not contain sufficient information.",
+
+    "distinctionRule": "When offering useful general advice that is not specifically part of the Maria Franco method, clearly distinguish it from Maria Franco's documented technique.",
+
+    "teachingRule": "Explain not only what to do, but when useful explain the movement, pressure, paint loading or visual reason behind the instruction.",
+
+    "troubleshootingRule": "Prefer diagnosis and localized correction before recommending that the student erase or restart the work.",
+
+    "creativityRule": "Encourage personal variation when it does not conflict with an essential technical or safety requirement."
+  }
+}
