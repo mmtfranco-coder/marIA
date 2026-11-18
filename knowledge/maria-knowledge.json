@@ -1,1 +1,23 @@
+{
+  "knowledgeBase": {
+    "name": "Maria Franco Knowledge Base",
+    "version": "1.0",
+    "primaryLanguage": "pt-BR",
+    "supportedLanguages": ["pt-BR", "en", "es"],
+    "authority": "Maria Franco official course and instructional materials",
 
+    "principles": {},
+    "materials": {},
+    "surfacePreparation": {},
+    "brushTechniques": {},
+    "colorTechniques": {},
+    "flowers": {},
+    "composition": {},
+    "troubleshooting": {},
+    "finishingAndFiring": {},
+    "pieceCare": {},
+    "internationalMaterials": {},
+    "christmas": {},
+    "natalKids": {}
+  }
+}
