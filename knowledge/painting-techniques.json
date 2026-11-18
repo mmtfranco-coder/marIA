@@ -1,1 +1,452 @@
+{
+  "name": "Maria Franco Painting Techniques",
+  "version": "1.0",
+  "language": "pt-BR",
+  "purpose": "Structured painting techniques derived from Maria Franco's official glass-painting lessons.",
 
+  "fundamentals": {
+    "strokeBeforeShape": {
+      "principle": "Primeiro dominar a pincelada, depois se preocupar com a forma final.",
+      "practice": [
+        "Treinar movimentos repetidamente em vidro, azulejo ou porcelana.",
+        "Evitar papel como superfície principal de treino porque seu comportamento com a tinta é diferente.",
+        "Treinar pressão, levantamento, direção e rotação do pincel.",
+        "Praticar movimentos para os dois lados, mesmo quando um lado parecer mais natural."
+      ]
+    },
+
+    "paintLoading": {
+      "principle": "A aparência da pincelada começa no modo como a tinta é carregada no pincel.",
+      "guidance": [
+        "Manter as cores separadas em uma superfície plana.",
+        "Fazer as combinações diretamente no pincel.",
+        "Não homogeneizar completamente as cores quando se deseja degradê ou variação.",
+        "Adicionar tinta em pequenas quantidades.",
+        "Retirar excesso antes da pincelada quando houver risco de escorrer."
+      ]
+    },
+
+    "pressureControl": {
+      "principle": "A pressão controla a largura da pincelada.",
+      "patterns": {
+        "wideToThin": [
+          "Começar pressionando o pincel.",
+          "Puxar mantendo o movimento.",
+          "Reduzir gradualmente a pressão.",
+          "Finalizar utilizando apenas a ponta."
+        ],
+        "thinWideThin": [
+          "Começar levemente com a ponta.",
+          "Aumentar gradualmente a pressão.",
+          "Diminuir novamente enquanto continua puxando.",
+          "Finalizar suavemente com a ponta."
+        ]
+      }
+    },
+
+    "petalDirection": {
+      "principle": "Quando a técnica exigir pétalas convergindo para o centro, trabalhar de fora para dentro."
+    }
+  },
+
+  "leaves": {
+    "importance": "As folhas são fundamentais porque seus movimentos são reutilizados em diversas flores.",
+
+    "roundBrushLeaf": {
+      "recommendedBrush": "Giotto redondo tamanho 8 para o treino inicial.",
+
+      "paintPreparation": [
+        "Começar carregando as cerdas com branco sem prender bolhas de ar.",
+        "Adicionar verde gradualmente.",
+        "Concentrar mais verde no lado destinado à sombra.",
+        "Não misturar previamente branco e verde no prato."
+      ],
+
+      "basicMovement": [
+        "Começar com a ponta do pincel e pouca pressão.",
+        "Puxar enquanto aumenta a pressão.",
+        "Continuar o movimento enquanto reduz gradualmente a pressão.",
+        "Finalizar novamente com a ponta."
+      ],
+
+      "approximateAngle": "Para determinada variação ensinada por Maria, posicionar o pincel aproximadamente a 75 graus em relação à superfície.",
+
+      "stemFinish": [
+        "Ao levantar o pincel, dar uma pequena torção.",
+        "A torção acumula tinta em um lado.",
+        "Usar a ponta para puxar essa tinta e formar o cabinho."
+      ],
+
+      "practiceRule": "Treinar o movimento sem se preocupar inicialmente se a pincelada parece uma folha perfeita."
+    },
+
+    "daggerLeaf": {
+      "recommendedBrush": "Keramik Dagger, com o número 10 recomendado por Maria para começar por ser mais maleável.",
+
+      "preparation": [
+        "Carregar o pincel lentamente evitando bolhas.",
+        "Deixar o conjunto das cerdas em um verde claro.",
+        "Acumular um pouco mais de verde na ponta.",
+        "Retirar o excesso nos dois lados."
+      ],
+
+      "movement": [
+        "Posicionar inicialmente o Dagger próximo de 90 graus em relação à peça.",
+        "Encostar delicadamente.",
+        "Puxar ligeiramente.",
+        "Pressionar na direção desejada.",
+        "Retornar gradualmente.",
+        "Finalizar puxando a ponta."
+      ],
+
+      "variations": [
+        "Mais pressão produz folha mais larga.",
+        "Uma puxada inicial maior produz folha mais longa.",
+        "Variações estreitas, largas, curtas e longas podem coexistir na mesma composição."
+      ],
+
+      "advantage": "O Dagger é muito sensível ao movimento e exige menos inclinação da mão do que o pincel chanfrado para produzir determinadas folhas."
+    },
+
+    "angledBrushLeaf": {
+      "brush": "Pincel chanfrado Condor.",
+
+      "movement": [
+        "Começar com o pincel aproximadamente a 90 graus.",
+        "Puxar uma pequena ponta.",
+        "Inclinar a mão para o lado em que a folha deve virar.",
+        "Continuar arrastando.",
+        "Retornar gradualmente à posição inicial.",
+        "Finalizar puxando a ponta."
+      ],
+
+      "comparison": "Maria consegue o mesmo tipo geral de movimento com o Dagger e normalmente considera o Dagger mais fácil."
+    },
+
+    "branches": {
+      "construction": [
+        "Usar uma folha ou pincelada central mais longa como estrutura.",
+        "Adicionar folhas menores dos dois lados.",
+        "Fazer cabinhos menores encontrarem a estrutura central.",
+        "Variar direção, tamanho e espaçamento."
+      ]
+    }
+  },
+
+  "sunflower": {
+    "brush": "Giotto redondo tamanho 6.",
+
+    "colors": [
+      "Branco fosco",
+      "Amarelo Ouro Vitro 150",
+      "Ocre",
+      "Marrom âmbar"
+    ],
+
+    "petalMovement": [
+      "Começar puxando levemente com a ponta.",
+      "Pressionar o pincel enquanto continua puxando.",
+      "Levantar gradualmente para finalizar.",
+      "Não fazer a torção usada para produzir o cabinho de uma folha."
+    ],
+
+    "angle": "Maria demonstra aproximadamente 50 a 70 graus, sem necessidade de manter o pincel totalmente perpendicular.",
+
+    "colorHandling": [
+      "Nas primeiras pétalas podem ser usados branco e amarelo.",
+      "Adicionar ocre em pequenas quantidades para variar as pétalas.",
+      "Não misturar completamente as cores.",
+      "Variar deliberadamente entre pétalas mais claras e mais escuras.",
+      "Preparar a maior parte do efeito cromático no pincel antes de tocar o vidro."
+    ],
+
+    "construction": [
+      "Trabalhar as pétalas de fora para dentro.",
+      "Para iniciantes, quatro pétalas iniciais podem formar aproximadamente um sinal de mais.",
+      "Adicionar pétalas nos espaços intermediários para formar o círculo.",
+      "Com prática, abandonar a estrutura auxiliar e distribuir as pétalas intuitivamente.",
+      "Intercalar pétalas para desenvolver volume e também esconder pequenas imperfeições."
+    ],
+
+    "style": [
+      "Não exigir pétalas perfeitamente idênticas.",
+      "Permitir pequenas variações de posição e tonalidade.",
+      "Manter harmonia geral sem buscar simetria mecânica."
+    ]
+  },
+
+  "orchid": {
+    "brushes": [
+      "Giotto redondo tamanho 6",
+      "Giotto redondo tamanho 8",
+      "Liner para cabinhos"
+    ],
+
+    "colors": [
+      "Laca Magenta Decorfix",
+      "Branco fosco"
+    ],
+
+    "drawing": {
+      "mariaPreference": "Maria normalmente não utiliza desenho ou risco sob a peça.",
+      "beginnerException": "Um risco pode ser usado temporariamente por quem ainda precisa de segurança, mas Maria incentiva progressivamente a pintura livre."
+    },
+
+    "lowerPetals": [
+      "Usar uma pincelada derivada da folha básica.",
+      "Criar pares que formam pequenas gotas.",
+      "Organizar três conjuntos aproximadamente como um triângulo.",
+      "Executar as pétalas de fora para dentro.",
+      "Não exigir que as três partes tenham exatamente o mesmo tamanho."
+    ],
+
+    "upperPetals": [
+      "Esperar a parte inferior secar o suficiente antes de sobrepor.",
+      "Começar e terminar aproximadamente na mesma região sem necessariamente tocar a pincelada anterior.",
+      "Utilizar uma curva suave.",
+      "Na finalização, fazer uma pequena puxada em sentido oposto.",
+      "Maria descreve a finalização como semelhante a um ponto de interrogação.",
+      "Reduzir gradualmente a pressão para terminar a pétala suavemente."
+    ],
+
+    "colorHandling": [
+      "Carregar inicialmente as cerdas com branco.",
+      "Deixar o pincel levemente rosa.",
+      "Adicionar magenta principalmente a um dos lados para criar o degradê.",
+      "Evitar divisão rígida entre metade branca e metade rosa."
+    ],
+
+    "naturalVariation": [
+      "Permitir diferenças de tamanho.",
+      "Permitir espaços diferentes entre as pétalas.",
+      "Variar discretamente as curvas.",
+      "Não corrigir automaticamente pequenas falhas que desaparecerão visualmente no conjunto."
+    ],
+
+    "stems": {
+      "brush": "Liner",
+      "colors": [
+        "Verde Musgo Vitro 150",
+        "Branco"
+      ],
+      "technique": [
+        "Carregar tinta suficiente para um traço longo.",
+        "Retirar apenas o excesso.",
+        "Usar a mão solta.",
+        "Evitar apoio rígido da mão durante o movimento.",
+        "Puxar o cabo de maneira contínua."
+      ]
+    }
+  },
+
+  "lavender": {
+    "brushes": {
+      "stem": "Liner",
+      "petals": "Giotto redondo tamanho 4"
+    },
+
+    "colors": [
+      "Branco fosco Decorfix",
+      "Verde Musgo Vitro 150",
+      "Azul Petróleo",
+      "Violeta Decorfix"
+    ],
+
+    "stem": [
+      "Carregar o liner suficientemente para manter tinta durante o traço longo.",
+      "Fazer o cabo de preferência em uma pincelada contínua.",
+      "Evitar linha excessivamente rígida e perfeitamente reta.",
+      "Podem ser usados movimentos suaves semelhantes a um S."
+    ],
+
+    "petals": [
+      "Trabalhar de fora para dentro.",
+      "Iniciar já com alguma pressão para formar topo arredondado.",
+      "Puxar enquanto reduz a pressão.",
+      "Manter a pincelada relativamente curta.",
+      "Variar os lados ao longo do caule."
+    ],
+
+    "colorVariation": [
+      "Alternar branco, violeta e azul.",
+      "Usar combinações diferentes entre as pétalas.",
+      "Não exigir uma regra fixa de cores.",
+      "Adicionar pétalas intermediárias de tonalidades diferentes após a primeira camada secar.",
+      "Pétalas posteriores podem ser menores para aumentar a sensação de volume."
+    ],
+
+    "leaves": [
+      "Usar o liner.",
+      "Começar pressionando para produzir uma base arredondada.",
+      "Puxar e afinar a folha.",
+      "Criar folhas pequenas, delicadas e irregulares.",
+      "Evitar excesso de folhas."
+    ],
+
+    "style": "Maria prefere lavandas visualmente irregulares, com variação de tonalidade, direção e tamanho."
+  },
+
+  "lily": {
+    "identity": "O lírio estilizado de Maria nasceu originalmente como uma flor abstrata e evoluiu visualmente para o formato de lírio.",
+
+    "brush": "Keramik Dagger, incluindo tamanho 8 na demonstração.",
+
+    "baseColor": "Branco",
+
+    "relationshipToLeaves": "Cada metade da pétala utiliza essencialmente movimentos derivados da folha feita com Dagger.",
+
+    "petalConstruction": [
+      "Criar uma primeira pincelada semelhante a uma folha.",
+      "Criar uma segunda pincelada no lado oposto.",
+      "As duas pinceladas não precisam começar exatamente no mesmo ponto.",
+      "Variar deliberadamente altura, largura, direção e comprimento.",
+      "A pétala pode ter ponta puxada ou formato mais arredondado dependendo do movimento do Dagger."
+    ],
+
+    "flowerConstruction": [
+      "Maria evita representar esse lírio totalmente aberto e frontal com pétalas em toda a circunferência.",
+      "Usar normalmente poucas pétalas visíveis.",
+      "Maria demonstra flores com duas ou três pétalas e menciona no máximo quatro.",
+      "Uma pétala menor e caída pode quebrar excesso de circularidade.",
+      "Alternar flores maiores, menores, mais alongadas e mais inclinadas."
+    ],
+
+    "leavesAndBranches": [
+      "Usar Verde Musgo Vitro 150 e branco.",
+      "Aplicar a folha já aprendida com Dagger.",
+      "Folhas podem emendar visualmente no cabinho da flor.",
+      "Raminhos finos podem preencher espaços sem necessidade de adicionar outra flor.",
+      "Nesse estilo, Maria favorece folhas compridas e delicadas."
+    ],
+
+    "balance": "Buscar harmonia e não simetria absoluta. Em alguns casos, uma simetria relativa pode ser usada para equilibrar visualmente direções já presentes.",
+
+    "finishOption": {
+      "tool": "Boleador médio",
+      "exampleColor": "Cobre metálico Decorfix",
+      "method": [
+        "Carregar o boleador com tinta.",
+        "Tocar aproximadamente duas vezes no prato para reduzir excesso.",
+        "Criar pontos no centro da flor.",
+        "Permitir que os pontos diminuam conforme a tinta no boleador acaba.",
+        "Misturar tamanhos para produzir um efeito de degradê."
+      ]
+    }
+  },
+
+  "abstractFlowers": {
+    "brush": "Giotto redondo tamanho 8.",
+
+    "demonstratedColors": [
+      "Branco fosco",
+      "Azul Petróleo",
+      "Turquesa Claro",
+      "Azul Royal"
+    ],
+
+    "principle": "Não existe uma única fórmula de flor abstrata. A flor surge da combinação dos movimentos já dominados pelo aluno.",
+
+    "strokeVocabulary": [
+      "Pincelada fina-larga-fina derivada da folha.",
+      "Pincelada iniciada com maior pressão para criar início arredondado.",
+      "Curvas maiores.",
+      "Rotação suave da mão.",
+      "Movimentos semelhantes a S.",
+      "Pinceladas direcionadas para diferentes lados."
+    ],
+
+    "color": [
+      "Carregar mais de uma tonalidade no pincel.",
+      "Não misturar totalmente as cores.",
+      "Alterar a cor dominante entre pinceladas.",
+      "Usar a variação tonal como parte da composição."
+    ],
+
+    "creativeProcess": [
+      "Não é necessário decidir a flor completa antes de iniciar.",
+      "Começar com uma pincelada.",
+      "Observar o resultado.",
+      "Adicionar a próxima pincelada em resposta ao que foi criado.",
+      "Variar direção e altura em vez de espelhar automaticamente.",
+      "Permitir que a flor mude de ideia durante a execução."
+    ],
+
+    "correction": [
+      "Uma pétala que ficou isolada pode ser parcialmente incorporada com outra pincelada.",
+      "Uma nova pétala maior pode atravessar ou integrar visualmente uma pincelada indesejada.",
+      "A correção pode modificar a forma final da flor, e isso faz parte do processo abstrato."
+    ]
+  },
+
+  "compositionTechniques": {
+    "variation": [
+      "Variar tamanhos das flores.",
+      "Variar direção das folhas.",
+      "Variar quantidade de pétalas.",
+      "Alternar elementos mais abertos e mais fechados.",
+      "Evitar repetição excessivamente regular."
+    ],
+
+    "negativeSpace": [
+      "Observar os espaços que permanecem entre flores.",
+      "Nem todo espaço precisa receber outra flor.",
+      "Folhas ou raminhos podem equilibrar áreas vazias.",
+      "Alguns espaços podem permanecer vazios quando a composição já estiver equilibrada."
+    ],
+
+    "evaluation": [
+      "Parar periodicamente e observar a peça inteira.",
+      "Avaliar harmonia antes de acrescentar elementos.",
+      "Adicionar detalhes somente quando contribuírem para o conjunto."
+    ]
+  },
+
+  "commonCorrections": {
+    "tooMuchPaint": {
+      "symptom": "Acúmulo de tinta com risco de escorrer.",
+      "responses": [
+        "Quando ainda está muito recente, retirar cuidadosamente o excesso quando isso puder ser feito sem afetar as áreas vizinhas.",
+        "Em alguns contextos, passar imediatamente a pincelada novamente uma ou duas vezes pode distribuir o excesso.",
+        "Se a área já começou a secar, evitar mexer continuamente."
+      ]
+    },
+
+    "bubble": {
+      "response": "Quando identificada imediatamente, Maria demonstra estourar a bolha delicadamente com a ponta."
+    },
+
+    "unwantedPetal": {
+      "responses": [
+        "Avaliar se realmente precisa ser removida.",
+        "Integrar com outra pétala quando possível.",
+        "Usar folha, ramo ou outra pincelada para equilibrar visualmente.",
+        "Evitar apagar toda a composição por causa de uma imperfeição pequena."
+      ]
+    },
+
+    "failedStem": {
+      "guidance": "Traços longos de liner normalmente devem funcionar como uma pincelada contínua. Em alguns casos, limpar e refazer é preferível a tentar repassar continuamente o cabo."
+    },
+
+    "partiallyDryPaint": {
+      "warning": "Evitar repassar repetidamente tinta que começou a plastificar ou secar, pois a camada anterior pode ser removida ou danificada.",
+      "response": "Quando apropriado, esperar secar completamente e corrigir depois."
+    }
+  },
+
+  "assistantRules": {
+    "techniquePriority": "Para perguntas sobre técnicas ensinadas por Maria Franco, usar primeiro estas instruções antes de oferecer técnicas genéricas.",
+
+    "movementDetail": "Quando explicar uma pincelada, informar quando disponível: posição aproximada do pincel, pressão, movimento, levantamento e rotação.",
+
+    "colorDetail": "Quando explicar degradês, descrever onde a cor deve ficar no pincel e evitar simplesmente recomendar mistura completa das tintas.",
+
+    "variationRule": "Não apresentar irregularidade intencional como erro quando ela fizer parte da técnica Maria Franco.",
+
+    "correctionRule": "Diagnosticar o problema antes de recomendar apagar ou começar novamente.",
+
+    "creativityRule": "Nas flores abstratas e composições livres, preservar a filosofia de construir a pintura progressivamente em vez de impor desenho rígido.",
+
+    "sourceBoundary": "Não atribuir a Maria Franco uma técnica que não esteja documentada na base de conhecimento."
+  }
+}
