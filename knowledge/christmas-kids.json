@@ -1,1 +1,403 @@
+{
+  "name": "Maria Franco Christmas Kids",
+  "version": "1.0",
+  "language": "pt-BR",
+  "purpose": "Técnicas natalinas simplificadas de pintura em vidro para crianças, baseadas no método Maria Franco.",
 
+  "teachingApproach": {
+    "principle": "Simplificar as técnicas para permitir que a criança consiga pintar, se divertir e desenvolver sua própria criatividade.",
+    "guidance": [
+      "Usar formas e movimentos simples.",
+      "Dividir o projeto em pequenas etapas.",
+      "Não exigir perfeição.",
+      "Permitir que a criança adapte tamanho, posição, quantidade e cores.",
+      "Incentivar a criação de desenhos próprios a partir das técnicas aprendidas.",
+      "Valorizar a experiência de pintar em família."
+    ]
+  },
+
+  "safety": {
+    "glass": [
+      "Uma criança deve pintar vidro somente com um adulto ou responsável por perto.",
+      "Manipular as peças de vidro com cuidado para evitar quedas e quebras."
+    ],
+    "scissors": [
+      "O corte de esponjas ou outros materiais com tesoura deve ser feito ou supervisionado por um adulto."
+    ],
+    "scraping": [
+      "Correções que envolvem raspar tinta seca do vidro devem ter supervisão de um adulto.",
+      "Não aplicar força excessiva sobre o vidro durante a raspagem."
+    ]
+  },
+
+  "generalKidsTechniques": {
+    "useSmallAmountsOfPaint": {
+      "principle": "Colocar pouca tinta no prato e acrescentar mais somente quando necessário.",
+      "reason": "Reduz desperdício e evita que a tinta comece a secar antes de ser utilizada."
+    },
+
+    "brushHandleDots": {
+      "principle": "O cabo do pincel pode funcionar como um carimbo para criar bolinhas.",
+      "guidance": [
+        "Encostar a ponta do cabo na tinta.",
+        "Encostar o cabo perpendicularmente na peça.",
+        "Recarregar a tinta antes de cada bolinha quando o objetivo for manter o mesmo tamanho.",
+        "Usar cabos maiores para bolinhas maiores e cabos menores para bolinhas menores.",
+        "Para criar tamanhos progressivamente menores, não recarregar a tinta entre todas as bolinhas."
+      ]
+    },
+
+    "stippleTechnique": {
+      "tools": [
+        "Pituá",
+        "Pincel velho",
+        "Pincel de cerdas mais duras",
+        "Esponja limpa quando indicada"
+      ],
+      "guidance": [
+        "Aplicar a tinta com batidinhas.",
+        "Distribuir a tinta sem excesso.",
+        "Não continuar batendo repetidamente sobre tinta que já começou a secar."
+      ]
+    },
+
+    "flatBrushBands": {
+      "guidance": [
+        "Molhar os dois lados do pincel.",
+        "Criar faixas simples.",
+        "Quando necessário, iniciar também pelo lado oposto para melhorar o acabamento das extremidades."
+      ]
+    },
+
+    "correction": {
+      "principle": "Um pequeno erro não significa que o trabalho precisa ser lavado e reiniciado.",
+      "guidance": [
+        "Se uma área borrar, evitar mexer imediatamente quando isso puder piorar o resultado.",
+        "Deixar secar quando necessário.",
+        "Voltar depois para corrigir ou disfarçar.",
+        "Ajustar formatos gradualmente quando a técnica permitir."
+      ]
+    }
+  },
+
+  "projects": {
+    "christmasTree": {
+      "materials": [
+        "Peça de vidro",
+        "Fita adesiva",
+        "Pincel fino",
+        "Esponja nova e limpa",
+        "Prato",
+        "Tinta verde cintilante Talento",
+        "Tinta vermelha cintilante Talento",
+        "Tinta dourada Talento"
+      ],
+
+      "masking": [
+        "Usar fita adesiva para criar um triângulo na peça.",
+        "O tamanho do triângulo pode ser escolhido de acordo com a peça.",
+        "Pressionar bem a fita para reduzir o vazamento da tinta.",
+        "Uma fita mais larga pode facilitar o trabalho."
+      ],
+
+      "treeBody": [
+        "Colocar pequena quantidade de tinta verde no prato.",
+        "Carregar uma esponja limpa.",
+        "Retirar parte do excesso no prato.",
+        "Aplicar dentro do triângulo usando batidinhas.",
+        "Trabalhar rapidamente para evitar bater novamente sobre tinta que começou a secar.",
+        "Preencher cuidadosamente os cantos para criar bordas definidas."
+      ],
+
+      "ornaments": [
+        "Usar a ponta do cabo de um pincel fino como carimbo.",
+        "Criar bolinhas vermelhas espalhadas pela árvore.",
+        "Limpar o cabo antes de mudar de cor.",
+        "Adicionar bolinhas douradas nos espaços restantes.",
+        "Evitar organizar todas as bolinhas em linhas excessivamente regulares.",
+        "Observar a árvore durante o processo e preencher visualmente os espaços que parecerem vazios."
+      ],
+
+      "tapeRemoval": [
+        "Retirar as fitas na ordem inversa à colocação.",
+        "Começar pela fita que ficou por cima."
+      ],
+
+      "correction": [
+        "Depois que a tinta excedente estiver seca, pequenos vazamentos nas bordas podem ser raspados delicadamente.",
+        "Não exercer força excessiva sobre o vidro.",
+        "Essa correção deve ter supervisão de um adulto."
+      ]
+    },
+
+    "christmasOrnamentsAndLeaves": {
+      "brush": "Giotto tamanho 4",
+
+      "colors": [
+        "Verde cintilante",
+        "Vermelho cintilante",
+        "Dourado"
+      ],
+
+      "ornaments": [
+        "Usar o cabo do pincel para criar bolinhas.",
+        "Distribuir bolinhas douradas e vermelhas pela composição.",
+        "Recarregar o cabo para manter bolinhas do mesmo tamanho.",
+        "Usar cabos maiores ou menores para variar deliberadamente o tamanho."
+      ],
+
+      "smallLeaves": [
+        "Carregar delicadamente a ponta das cerdas com verde.",
+        "Retirar o excesso.",
+        "Usar pouca pressão.",
+        "Fazer pequenas pinceladas semelhantes a vírgulas.",
+        "Duas folhas podem acompanhar cada bolinha.",
+        "As duas folhas não precisam ter exatamente o mesmo tamanho ou curvatura."
+      ],
+
+      "simplerAlternative": [
+        "Se as folhas pequenas forem difíceis, substituí-las por bolinhas verdes.",
+        "Também é possível combinar folhas e bolinhas verdes."
+      ],
+
+      "creativeFreedom": [
+        "Pintar a peça inteira ou somente uma parte.",
+        "Usar mais ou menos bolinhas.",
+        "Variar tamanhos.",
+        "Variar a direção das folhas.",
+        "Criar uma composição própria."
+      ],
+
+      "drinkingGlassSafety": "Quando pintar um copo destinado ao uso, deixar sem pintura a área onde a boca encosta."
+    },
+
+    "snowman": {
+      "colors": [
+        "Branco",
+        "Vermelho cintilante",
+        "Preto",
+        "Laranja"
+      ],
+
+      "colorAlternatives": {
+        "orange": [
+          "Usar vermelho como alternativa simples.",
+          "Ou misturar amarelo e vermelho quando essas cores estiverem disponíveis."
+        ]
+      },
+
+      "body": {
+        "tool": "Pituá ou pincel velho com cerdas mais duras",
+        "steps": [
+          "Carregar o pincel com branco.",
+          "Distribuir a tinta nas cerdas com batidinhas no prato.",
+          "Criar a cabeça aproximadamente circular usando somente batidinhas.",
+          "Criar o corpo com outro círculo maior.",
+          "Ajustar o formato gradualmente com mais batidinhas."
+        ]
+      },
+
+      "drying": [
+        "Evitar trabalhar repetidamente sobre uma área que já começou a secar.",
+        "Maria demonstra esperar aproximadamente 5 minutos antes de fazer o cachecol sobre o corpo branco."
+      ],
+
+      "scarf": {
+        "tool": "Pincel chato relativamente pequeno",
+        "steps": [
+          "Fazer a faixa principal levemente curva.",
+          "Trabalhar a faixa pelos dois lados para melhorar o acabamento.",
+          "Criar duas pontas do cachecol.",
+          "As pontas podem ter comprimentos diferentes.",
+          "Curvas suaves e variação da largura ajudam a criar aparência mais natural."
+        ]
+      },
+
+      "buttonsAndEyes": [
+        "Usar a ponta do cabo do pincel como carimbo.",
+        "Carregar novamente a tinta preta entre pontos quando se deseja tamanho semelhante."
+      ],
+
+      "carrotNose": [
+        "Usar pincel fino e tinta laranja.",
+        "Fazer inicialmente uma forma de V lateral.",
+        "Para uma versão mais fácil, a forma pode permanecer simples.",
+        "Quando possível, fechar a forma e preencher para lembrar uma pequena cenoura."
+      ],
+
+      "hat": [
+        "Usar pincel chato e tinta preta.",
+        "Inclinar o chapéu em direção diferente do cachecol e do nariz para equilibrar visualmente o desenho.",
+        "Usar poucos traços simples."
+      ]
+    },
+
+    "santaClaus": {
+      "colors": [
+        "Vermelho cintilante",
+        "Preto",
+        "Branco",
+        "Dourado",
+        "Caramelo opcional"
+      ],
+
+      "tools": [
+        "Pincel chato",
+        "Pincel fino ou liner",
+        "Pincel velho ou de cerdas duras",
+        "Cabo de pincel para bolinhas"
+      ],
+
+      "body": [
+        "Usar vermelho com pincel chato.",
+        "Criar faixas simples.",
+        "Trabalhar a partir dos dois lados quando necessário para obter melhor acabamento."
+      ],
+
+      "beard": [
+        "Usar branco.",
+        "Usar um cabo de pincel relativamente largo como carimbo.",
+        "Montar a barba com várias bolinhas.",
+        "O tamanho das bolinhas pode ser ajustado com pequeno movimento circular."
+      ],
+
+      "belt": [
+        "Esperar a área vermelha secar o suficiente.",
+        "Usar pincel chato e tinta preta.",
+        "Criar uma faixa no centro do corpo."
+      ],
+
+      "nose": {
+        "preferred": "Caramelo",
+        "alternatives": [
+          "Dourado",
+          "Mistura de dourado com branco"
+        ],
+        "method": "Usar um cabo menor de pincel para fazer uma bolinha."
+      },
+
+      "eyes": [
+        "Usar tinta preta.",
+        "Fazer pontos pequenos e simples."
+      ],
+
+      "hat": [
+        "Usar pincel velho ou de cerdas mais duras.",
+        "Criar primeiro a região branca.",
+        "Criar a parte vermelha aproximadamente triangular, mas ligeiramente inclinada para produzir efeito de gorro caído.",
+        "Adicionar o pompom branco."
+      ],
+
+      "buckle": [
+        "Esperar o preto secar o suficiente antes da tinta dourada.",
+        "Usar pincel fino.",
+        "Desenhar pequeno retângulo dourado.",
+        "Adicionar um traço interno."
+      ],
+
+      "mistakeCorrection": [
+        "Se uma área borrar, não mexer imediatamente.",
+        "Deixar secar quando necessário.",
+        "Voltar depois e integrar ou cobrir o erro.",
+        "Não lavar e reiniciar automaticamente a peça por causa de pequenos erros."
+      ]
+    },
+
+    "toySoldier": {
+      "colors": [
+        "Vermelho cintilante Talento",
+        "Dourado",
+        "Preto próprio para vidro"
+      ],
+
+      "brushes": [
+        "Pincel chato maior",
+        "Pincel chato menor",
+        "Pincel pequeno Condor 42200"
+      ],
+
+      "body": [
+        "Usar o pincel chato maior com vermelho.",
+        "Criar um traço reto simples para o corpo."
+      ],
+
+      "legs": [
+        "Usar pincel menor.",
+        "Criar dois traços relativamente retos.",
+        "As pernas podem ser ligeiramente mais compridas que o corpo vermelho."
+      ],
+
+      "arms": [
+        "Usar pincel pequeno.",
+        "Criar dois traços vermelhos nas laterais.",
+        "Não exigir perfeição geométrica."
+      ],
+
+      "buttons": [
+        "Usar tinta dourada.",
+        "Criar pequenas bolinhas no centro do casaco."
+      ],
+
+      "head": [
+        "Criar uma bolinha dourada acima do corpo.",
+        "O cabo de um pincel maior também pode funcionar como carimbo.",
+        "Aumentar gradualmente a cabeça caso pareça pequena em relação ao corpo."
+      ],
+
+      "hat": [
+        "Usar pincel menor e tinta preta.",
+        "Criar um pequeno traço simples."
+      ],
+
+      "boots": [
+        "Usar tinta dourada e pincel chato.",
+        "Criar pequenos traços na base das pernas.",
+        "Adicionar batidinhas quando necessário para aumentar a cobertura."
+      ],
+
+      "style": "O desenho é deliberadamente simples e lúdico, sem necessidade de perfeição."
+    }
+  },
+
+  "kidsTroubleshooting": {
+    "paintStartingToDry": [
+      "Evitar continuar esfregando ou batendo sobre a tinta.",
+      "Quando necessário, esperar secar antes de adicionar outra camada ou detalhe."
+    ],
+
+    "smudge": [
+      "Não tentar corrigir imediatamente se isso puder espalhar ainda mais a tinta.",
+      "Esperar secar e voltar posteriormente."
+    ],
+
+    "unevenDot": [
+      "Para aumentar uma bolinha, adicionar tinta com pequeno movimento circular.",
+      "Para manter bolinhas uniformes, recarregar o cabo do pincel antes de cada impressão."
+    ],
+
+    "difficultSmallLeaves": [
+      "Simplificar substituindo as folhas por bolinhas verdes."
+    ],
+
+    "shapeLooksWrong": [
+      "Avaliar antes de recomeçar.",
+      "Ajustar gradualmente com novas pinceladas ou batidinhas quando a técnica permitir."
+    ]
+  },
+
+  "assistantRules": {
+    "audienceRule": "Quando a pergunta vier de uma criança ou estiver relacionada ao Christmas Kids, priorizar técnicas simples e instruções curtas, claras e passo a passo.",
+
+    "adultSupervisionRule": "Sempre lembrar da supervisão de um adulto quando a atividade envolver vidro, tesoura, raspagem ou outra etapa com risco físico.",
+
+    "simplicityRule": "Quando existir uma alternativa mais simples ensinada por Maria, oferecer essa alternativa ao aluno que estiver com dificuldade.",
+
+    "creativityRule": "Permitir e incentivar variações de tamanho, posição, quantidade e composição quando a técnica não exigir um resultado específico.",
+
+    "mistakeRule": "Não tratar pequenos erros como motivo para recomeçar automaticamente. Preferir esperar, avaliar e corrigir localmente quando possível.",
+
+    "wasteRule": "Recomendar pequenas quantidades de tinta no prato e adicionar mais conforme necessário.",
+
+    "sourceBoundary": "Não atribuir a Maria Franco uma técnica infantil que não esteja documentada nesta base ou em outra fonte oficial da Maria Franco."
+  }
+}
