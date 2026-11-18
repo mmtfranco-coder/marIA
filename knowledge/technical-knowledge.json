@@ -1,1 +1,380 @@
+{
+  "name": "Maria Franco Technical Knowledge",
+  "version": "1.0",
+  "language": "pt-BR",
+  "purpose": "Technical reference for materials, brushes, paints, preparation, firing, care and safety used in the Maria Franco method.",
 
+  "surfacePreparation": {
+    "importance": "A superfície deve estar completamente limpa antes da pintura. Gordura e sujeira prejudicam o acabamento e a fixação da tinta.",
+
+    "procedure": [
+      "Lavar a peça com detergente.",
+      "Usar o lado macio da esponja.",
+      "Enxaguar completamente.",
+      "Secar com papel toalha ou pano de microfibra que não solte fibras.",
+      "Depois da secagem, limpar a superfície com álcool etílico usando papel toalha.",
+      "Evitar tocar com as mãos nas áreas que serão pintadas."
+    ],
+
+    "avoid": [
+      "Não usar pano de prato que possa soltar fibras.",
+      "Não tocar desnecessariamente na superfície já limpa.",
+      "Não começar a pintar sobre uma peça com gordura, poeira ou resíduos."
+    ],
+
+    "reason": "Uma superfície contaminada pode impedir a boa fixação da tinta."
+  },
+
+  "brushes": {
+    "ovalFilbert": {
+      "name": "Pincel ovalado ou língua de gato",
+      "mariaExample": "Condor",
+      "characteristics": [
+        "Macio",
+        "Boa quantidade de cerdas"
+      ],
+      "uses": [
+        "Pétalas",
+        "Pinceladas arredondadas",
+        "Técnicas que exigem transição suave de pressão"
+      ]
+    },
+
+    "roundBrush": {
+      "mariaExample": "Giotto série 500 Taclon",
+      "characteristics": [
+        "Muito macio",
+        "Forma uma ponta quando fechado"
+      ],
+      "uses": [
+        "Folhas",
+        "Flores",
+        "Pétalas que começam finas",
+        "Pétalas arredondadas"
+      ]
+    },
+
+    "angledBrush": {
+      "name": "Pincel chanfrado",
+      "mariaExample": "Condor",
+      "notes": [
+        "Pode produzir folhas bonitas.",
+        "Maria considera a técnica mais difícil para muitos alunos.",
+        "Maria ensina a técnica, mas normalmente prefere outros pincéis para folhas."
+      ]
+    },
+
+    "daggerBrush": {
+      "name": "Pincel Dagger",
+      "mariaExample": "Keramik",
+      "characteristics": [
+        "Formato semelhante ao chanfrado, porém mais arredondado.",
+        "Poucas cerdas.",
+        "Muito macio.",
+        "Formato alongado que proporciona maleabilidade."
+      ],
+      "uses": [
+        "Folhas",
+        "Pinceladas com variação de largura",
+        "Movimentos que começam largos e terminam finos"
+      ],
+      "preference": "É um dos pincéis preferidos de Maria para folhas porque proporciona resultado semelhante ao chanfrado com execução mais fácil."
+    },
+
+    "liner": {
+      "name": "Liner",
+      "characteristics": [
+        "Cerdas longas"
+      ],
+      "uses": [
+        "Cabos e hastes de flores",
+        "Linhas longas e fluidas"
+      ],
+      "limitations": [
+        "Maria não recomenda o liner longo para detalhes muito pequenos porque o comprimento das cerdas dificulta o controle."
+      ]
+    },
+
+    "precisionBrushes": {
+      "mariaExample": "Artify",
+      "characteristics": [
+        "Pincéis pequenos e macios",
+        "Diversos formatos e tamanhos"
+      ],
+      "uses": [
+        "Pequenos detalhes",
+        "Folhas pequenas",
+        "Trabalhos que exigem maior controle"
+      ]
+    },
+
+    "stiffStipplingBrush": {
+      "name": "Pincel de cerdas ásperas / pituá",
+      "mariaExamples": [
+        "Keramik pituá nº 0",
+        "Acrilex nº 0 linha 084"
+      ],
+      "uses": [
+        "Miolos de flores",
+        "Batidinhas",
+        "Texturas"
+      ]
+    },
+
+    "dottingTool": {
+      "name": "Boleador",
+      "description": "Ferramenta com ponta metálica arredondada que cria pontos quando encostada na peça com tinta.",
+      "uses": [
+        "Criar bolinhas",
+        "Finalizar centros de flores",
+        "Criar pontos de tamanhos variados",
+        "Disfarçar pequenas imperfeições no encontro de pinceladas"
+      ]
+    }
+  },
+
+  "paints": {
+    "generalPreference": {
+      "preferredLines": [
+        "Decorfix 150",
+        "Acrilex Vitro 150"
+      ],
+      "reason": "Maria prefere tintas relativamente fluidas porque facilitam movimento, luz, sombra e degradês."
+    },
+
+    "decorfix150": {
+      "characteristics": [
+        "Boa fluidez",
+        "Adequada ao estilo de pincelada usado por Maria"
+      ],
+
+      "matteWhite": {
+        "importance": "Fundamental no método Maria Franco.",
+        "uses": [
+          "Reduzir transparência de outras cores",
+          "Criar cobertura",
+          "Participar das misturas de cores",
+          "Criar efeitos de luz e sombra"
+        ],
+        "note": "Maria utiliza branco fosco com muita frequência em diferentes combinações de cores."
+      }
+    },
+
+    "vitro150": {
+      "brand": "Acrilex",
+      "characteristics": [
+        "Efeito semelhante à Decorfix 150",
+        "Um pouco mais líquida segundo Maria"
+      ],
+
+      "preferredColors": {
+        "goldenYellow": {
+          "name": "Amarelo Ouro",
+          "notes": [
+            "Cor especialmente valorizada por Maria.",
+            "Usada em pinturas amarelas e em limão siciliano.",
+            "Pode ser combinada com ocre."
+          ]
+        },
+
+        "mossGreen": {
+          "name": "Verde Musgo",
+          "notes": [
+            "Maria prefere o Verde Musgo da linha Vitro.",
+            "É especialmente útil quando folhas verdes ficam próximas ou parcialmente sobre elementos brancos."
+          ]
+        }
+      }
+    },
+
+    "talento": {
+      "characteristics": [
+        "Mais densa que as tintas mais fluidas preferidas por Maria.",
+        "Boa cobertura.",
+        "Adequada para determinados efeitos e projetos."
+      ],
+
+      "christmasUse": [
+        "Cores cintilantes e metálicas podem ser usadas em projetos natalinos.",
+        "Uma única pincelada pode proporcionar boa cobertura dependendo da cor."
+      ]
+    },
+
+    "pebeo": {
+      "porcelaine150": {
+        "characteristics": [
+          "Mais consistente.",
+          "Boa cobertura."
+        ]
+      },
+
+      "vitrea160": {
+        "characteristics": [
+          "Desenvolvida para vidro.",
+          "Pode produzir resultado bastante transparente."
+        ],
+        "mariaPreference": "Maria tende a não preferir alta transparência para flores e folhas quando busca o estilo visual característico de suas pinturas.",
+        "possibleUses": [
+          "Listras",
+          "Faixas",
+          "Efeitos decorativos transparentes"
+        ]
+      }
+    }
+  },
+
+  "paintHandling": {
+    "generalPrinciples": [
+      "Controlar a quantidade de tinta antes de tocar a peça.",
+      "A carga do pincel influencia diretamente o resultado da pincelada.",
+      "Diferentes cores podem permanecer parcialmente separadas no pincel para produzir variação de tonalidade.",
+      "Evitar homogenizar completamente as cores quando o efeito desejado depende de contraste, luz, sombra ou degradê."
+    ],
+
+    "opacity": {
+      "principle": "Quando uma cor está excessivamente transparente para o efeito desejado, verificar se a mistura precisa de branco fosco.",
+      "note": "No método Maria Franco, o branco fosco é frequentemente utilizado para aumentar a cobertura."
+    }
+  },
+
+  "finishingAndFiring": {
+    "generalRules": [
+      "Seguir as instruções de cura da tinta específica utilizada.",
+      "Não assumir que todas as marcas, linhas ou substitutos internacionais possuem o mesmo processo de cura.",
+      "Quando houver instrução específica do fabricante, ela deve ser respeitada."
+    ],
+
+    "mariaMethod": {
+      "note": "Maria ensina um processo específico de queima em forno doméstico em seus cursos.",
+      "guidance": [
+        "Aguardar a secagem adequada da pintura antes da queima.",
+        "Maria recomenda aguardar pelo menos 24 horas antes da queima em seu processo.",
+        "Controlar a temperatura real do forno.",
+        "Um termômetro de forno pode ajudar a verificar a temperatura real.",
+        "Maria utiliza um ciclo de aproximadamente 40 minutos em seu processo.",
+        "Maria pratica uma segunda queima em seu método."
+      ]
+    },
+
+    "important": "Parâmetros de tempo e temperatura devem ser compatíveis com a tinta utilizada. Ao usar produtos substitutos ou internacionais, consultar também as instruções atuais do fabricante."
+  },
+
+  "careOfFinishedPieces": {
+    "cleaning": {
+      "guidance": [
+        "Lavar com água fria ou morna.",
+        "Usar sabão ou detergente neutro suave.",
+        "Usar pano macio ou o lado mais macio de uma esponja."
+      ],
+      "avoid": [
+        "Esponjas abrasivas",
+        "Palha de aço",
+        "Produtos químicos fortes",
+        "Excesso de álcool",
+        "Limpadores multiuso agressivos"
+      ]
+    },
+
+    "drying": {
+      "guidance": [
+        "Secar com pano macio.",
+        "Preferencialmente usar microfibra para reduzir manchas de água e preservar o brilho."
+      ]
+    },
+
+    "dishwasher": {
+      "defaultMariaFrancoCareGuidance": "Evitar máquina de lavar louça para peças produzidas pela técnica ensinada nos materiais Maria Franco.",
+      "exceptionRule": "Não generalizar esta orientação para todas as tintas existentes. Alguns fabricantes podem declarar compatibilidade com lava-louças para produtos específicos após cura correta."
+    },
+
+    "heat": {
+      "avoid": [
+        "Forno durante o uso normal da peça",
+        "Micro-ondas",
+        "Contato ou proximidade excessiva com fogão",
+        "Exposição prolongada ao sol forte"
+      ],
+      "reason": "Calor extremo ou mudanças bruscas de temperatura podem prejudicar a pintura ou o vidro."
+    },
+
+    "handling": {
+      "guidance": [
+        "Evitar quedas.",
+        "Evitar impactos.",
+        "Lembrar que o vidro continua sendo delicado mesmo após a cura da pintura."
+      ]
+    },
+
+    "storage": {
+      "guidance": [
+        "Guardar as peças em local seguro.",
+        "Evitar contato com objetos capazes de riscar ou bater no vidro.",
+        "Quando necessário, usar feltro ou pano macio como separador."
+      ]
+    }
+  },
+
+  "internationalSubstitutions": {
+    "principle": "Materiais internacionais equivalentes devem ser escolhidos principalmente pelas propriedades técnicas necessárias para executar a técnica, e não apenas pelo nome comercial.",
+
+    "brushEvaluation": [
+      "Formato",
+      "Comprimento das cerdas",
+      "Maciez",
+      "Flexibilidade",
+      "Capacidade de formar ponta",
+      "Quantidade de cerdas",
+      "Comportamento sob pressão"
+    ],
+
+    "paintEvaluation": [
+      "Compatibilidade com vidro",
+      "Opacidade ou transparência",
+      "Viscosidade",
+      "Fluidez",
+      "Comportamento em mistura",
+      "Método de cura",
+      "Temperatura de cura",
+      "Durabilidade após cura"
+    ],
+
+    "substitutionRule": "Um produto semelhante não garante resultado idêntico ao material originalmente utilizado por Maria.",
+
+    "testingRule": "Ao substituir materiais, realizar testes em uma pequena peça ou amostra antes de utilizar o produto em uma peça importante.",
+
+    "manufacturerRule": "Sempre conferir as instruções atuais do fabricante do produto adquirido, principalmente para cura, temperatura, lavagem e segurança."
+  },
+
+  "safety": {
+    "glass": [
+      "Manipular peças de vidro com cuidado.",
+      "Evitar impactos e quedas.",
+      "Crianças devem trabalhar com vidro somente com supervisão de um adulto ou responsável."
+    ],
+
+    "heat": [
+      "Processos de cura em forno devem ser realizados por um adulto responsável.",
+      "Evitar choque térmico.",
+      "Usar equipamentos adequados ao manipular peças ou superfícies quentes."
+    ],
+
+    "children": [
+      "Um adulto ou responsável deve permanecer próximo durante atividades com vidro.",
+      "Atividades envolvendo forno, corte ou risco de quebra devem ser executadas ou diretamente supervisionadas por um adulto."
+    ]
+  },
+
+  "assistantRules": {
+    "sourcePriority": "Priorizar instruções documentadas nos materiais oficiais Maria Franco.",
+
+    "brandRule": "Quando Maria recomenda uma marca específica, explicar a propriedade técnica relevante para permitir substituições apropriadas.",
+
+    "substitutionRule": "Não afirmar que dois produtos são idênticos apenas porque têm finalidade semelhante.",
+
+    "firingRule": "Antes de recomendar parâmetros de cura para um produto alternativo, considerar as instruções específicas do fabricante.",
+
+    "careRule": "Não generalizar resistência a lava-louças, calor ou produtos químicos entre marcas e linhas de tinta diferentes.",
+
+    "uncertaintyRule": "Quando não houver informação suficiente na base de conhecimento, dizer isso claramente em vez de inventar uma recomendação atribuída a Maria Franco."
+  }
+}
