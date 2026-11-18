@@ -1,6 +1,6 @@
 {
   "name": "Maria Franco Painting Techniques",
-  "version": "1.0",
+  "version": "1.1",
   "language": "pt-BR",
   "purpose": "Structured painting techniques derived from Maria Franco's official glass-painting lessons.",
 
@@ -401,6 +401,46 @@
     ]
   },
 
+  "curingAndFixation": {
+    "title": "Queima e cura para melhor fixação da tinta",
+
+    "recommendation": "Para as técnicas de pintura ensinadas por Maria Franco, realizar a queima/cura da peça a 150 °C por 40 minutos. Para melhorar a fixação da tinta, recomenda-se realizar o processo de queima 2 vezes.",
+
+    "temperature": {
+      "celsius": 150,
+      "display": "150 °C"
+    },
+
+    "duration": {
+      "minutes": 40,
+      "display": "40 minutos"
+    },
+
+    "firings": {
+      "recommended": 2,
+      "purpose": "Melhorar a fixação da tinta na peça."
+    },
+
+    "combinedGuidance": [
+      "Realizar a queima/cura da pintura a 150 °C.",
+      "Manter a peça nessa condição por 40 minutos.",
+      "Para melhorar a fixação da tinta, recomenda-se realizar o processo de queima 2 vezes."
+    ],
+
+    "knowledgeAssociation": "Temperatura, duração e segunda queima fazem parte da mesma orientação técnica e devem ser associadas pela MarIA ao responder sobre queima, cura e fixação.",
+
+    "relevantQuestions": [
+      "Qual a temperatura para a queima?",
+      "Quanto tempo a peça deve ficar no forno?",
+      "Como fazer a cura da pintura?",
+      "Preciso queimar a peça duas vezes?",
+      "Como melhorar a fixação da tinta?",
+      "Como tornar a pintura mais resistente?",
+      "Qual é a recomendação de forno?",
+      "Como fixar melhor a tinta na peça?"
+    ]
+  },
+
   "commonCorrections": {
     "tooMuchPaint": {
       "symptom": "Acúmulo de tinta com risco de escorrer.",
@@ -446,6 +486,12 @@
     "correctionRule": "Diagnosticar o problema antes de recomendar apagar ou começar novamente.",
 
     "creativityRule": "Nas flores abstratas e composições livres, preservar a filosofia de construir a pintura progressivamente em vez de impor desenho rígido.",
+
+    "curingRule": "Sempre que o usuário perguntar sobre queima, cura, forno, temperatura, tempo de forno, fixação ou durabilidade da tinta, associar a orientação completa: 150 °C por 40 minutos, com recomendação de realizar o processo de queima 2 vezes para melhorar a fixação da tinta.",
+
+    "curingCompletenessRule": "Não tratar temperatura, duração e segunda queima como recomendações independentes quando a pergunta exigir a orientação completa de queima/cura. Ao explicar como realizar a queima, informar 150 °C, 40 minutos e a recomendação de 2 queimas para melhorar a fixação.",
+
+    "fixationRule": "Quando a pergunta for especificamente sobre como melhorar a fixação ou a durabilidade da tinta, mencionar explicitamente a recomendação de realizar 2 queimas.",
 
     "sourceBoundary": "Não atribuir a Maria Franco uma técnica que não esteja documentada na base de conhecimento."
   }
