@@ -1,1 +1,790 @@
+{
+  "name": "Maria Franco Christmas Techniques",
+  "version": "1.0",
+  "language": "pt-BR",
+  "purpose": "Structured knowledge from Maria Franco's Christmas glass and crystal painting course.",
 
+  "christmasMaterials": {
+    "brushes": {
+      "roundGiotto": {
+        "sizes": ["0", "2", "4", "6", "8", "10", "12"],
+        "uses": [
+          "Flores",
+          "Detalhes",
+          "Bonecos de neve",
+          "Uso do cabo como boleador"
+        ]
+      },
+
+      "keramikDagger": {
+        "preferredSizes": ["8", "10"],
+        "characteristics": [
+          "Muito macio",
+          "Poucas cerdas",
+          "Grande mobilidade de movimento"
+        ],
+        "mainUses": [
+          "Folhas natalinas",
+          "Raminhos",
+          "Árvores",
+          "Guirlandas"
+        ],
+        "mariaPreference": "Maria prefere o Dagger ao chanfrado para suas folhas porque considera a execução mais fácil e o resultado mais adequado ao seu estilo."
+      },
+
+      "precisionDagger": {
+        "exampleBrand": "Artify",
+        "uses": [
+          "Folhas muito pequenas",
+          "Preenchimento de espaços",
+          "Detalhes delicados",
+          "Árvores e guirlandas"
+        ]
+      },
+
+      "liner": {
+        "uses": [
+          "Delimitar formas",
+          "Traçar círculos-guia",
+          "Criar linhas-guia discretas"
+        ]
+      },
+
+      "stiffBrush": {
+        "uses": [
+          "Efeito de neve",
+          "Texturas por batidinhas"
+        ],
+        "alternative": "Pode ser utilizado um pincel velho de cerdas duras, inclusive com a ponta cortada reta."
+      },
+
+      "fanBrush": {
+        "name": "Pincel leque",
+        "role": "Ferramenta opcional.",
+        "possibleUse": "Criar marcas espetadas, inclusive em árvores.",
+        "mariaPreference": "Não é uma ferramenta central no estilo Maria Franco."
+      }
+    },
+
+    "paints": {
+      "talento": {
+        "christmasColors": [
+          "Verde cintilante",
+          "Vermelho cintilante",
+          "Branco perolizado",
+          "Dourado metálico"
+        ],
+
+        "gold": {
+          "mariaExample": "M07 Ouro Rico Metálico",
+          "uses": [
+            "Bolinhas decorativas",
+            "Miolos de flores",
+            "Detalhes",
+            "Ponteira de árvore"
+          ]
+        },
+
+        "redShimmer": {
+          "reference": "C01",
+          "uses": [
+            "Flores natalinas",
+            "Bolinhas de Natal",
+            "Detalhes"
+          ]
+        },
+
+        "pearlWhite": {
+          "uses": [
+            "Efeito de neve"
+          ],
+          "characteristic": "Mais transparente do que as cores verde e vermelha cintilantes."
+        },
+
+        "behavior": [
+          "As tintas verde e vermelha cintilantes apresentam boa cobertura.",
+          "A tinta dourada é relativamente espessa e funciona bem para aplicações com boleador."
+        ]
+      },
+
+      "greens": {
+        "mossGreen": {
+          "preferredProduct": "Vitro 150 Verde Musgo",
+          "rule": "Maria prefere especificamente o Verde Musgo da Vitro 150.",
+          "reason": "Segundo Maria, o Verde Musgo Decorfix misturado ao branco tende a produzir um resultado mais amarelado do que ela deseja."
+        },
+
+        "leafGreen": {
+          "preferredProduct": "Vitro 150 Verde Folha"
+        }
+      },
+
+      "white": {
+        "options": [
+          "Decorfix 150 Branco Fosco",
+          "Vitro 150 branco"
+        ]
+      },
+
+      "blackGrape": {
+        "product": "Decorfix 150 Black Grape",
+        "uses": [
+          "Sombreamento de flores vermelhas natalinas",
+          "Nariz estilizado da rena",
+          "Olhos da rena"
+        ],
+        "effect": "Maria usa pequenas quantidades junto ao vermelho para produzir sombras mais profundas e um resultado visual mais sóbrio."
+      }
+    },
+
+    "paintStorage": {
+      "mariaTip": [
+        "Maria recomenda guardar determinadas tintas de cabeça para baixo alguns dias antes do uso.",
+        "Antes de usar, agitar o recipiente.",
+        "O objetivo é reduzir diferenças de concentração entre o início e o final do pote."
+      ]
+    }
+  },
+
+  "christmasLeaf": {
+    "brush": "Dagger Keramik",
+
+    "movement": [
+      "Começar com o pincel praticamente perpendicular à peça.",
+      "Encostar a ponta.",
+      "Puxar levemente.",
+      "Pressionar tendendo para um dos lados.",
+      "Retornar gradualmente.",
+      "Finalizar puxando o cabinho ou a ponta."
+    ],
+
+    "handControl": [
+      "Não girar a mão exageradamente.",
+      "Trabalhar principalmente a pressão e a tendência lateral do pincel.",
+      "Para inverter a folha, pressionar tendendo para o lado oposto."
+    ],
+
+    "colorLoading": [
+      "Umedecer as cerdas gradualmente para evitar bolhas.",
+      "Criar um tom-base mais claro.",
+      "Adicionar verdes mais escuros ou cintilantes em partes específicas do pincel.",
+      "Variar Verde Folha, Verde Musgo e Verde Cintilante.",
+      "Evitar misturar tudo até virar uma única cor homogênea."
+    ],
+
+    "paintControl": [
+      "Retirar excesso dos dois lados do Dagger antes de pintar.",
+      "Observar também a parte superior do pincel, onde pode se acumular tinta.",
+      "Usar menos tinta quando houver risco de escorrer."
+    ],
+
+    "variation": [
+      "Alterar tamanho.",
+      "Alterar direção.",
+      "Alterar proporção entre tons.",
+      "Criar folhas mais longas ou mais arredondadas.",
+      "Evitar repetição mecânica."
+    ]
+  },
+
+  "christmasBranches": {
+    "concept": "Construir pequenos conjuntos de folhas em vez de espalhar folhas isoladas pela peça.",
+
+    "materials": {
+      "brush": "Keramik Dagger 765 tamanho 10",
+      "colors": [
+        "Talento Verde Cintilante",
+        "Vitro 150 Verde Musgo",
+        "Vitro 150 Verde Folha",
+        "Branco fosco"
+      ]
+    },
+
+    "construction": [
+      "Começar com uma folha maior quando a peça permitir.",
+      "Puxar o cabinho como parte do movimento.",
+      "Adicionar outras folhas fazendo seus cabinhos se aproximarem ou encontrarem.",
+      "Construir raminhos com duas, três, quatro ou mais folhas.",
+      "Maria utiliza especialmente raminhos de três folhas nessa composição.",
+      "Distribuir os raminhos pela peça observando os espaços disponíveis."
+    ],
+
+    "composition": [
+      "Evitar excesso de simetria.",
+      "Variar as direções das folhas.",
+      "Variar tamanho e formato.",
+      "Permitir sobreposição de cabinhos.",
+      "Passar desenhos por baixo ou visualmente através da região da alça quando isso favorecer a continuidade da composição.",
+      "Revisar a peça enquanto gira para decidir onde novos raminhos são necessários."
+    ],
+
+    "singleLeafRule": "Maria raramente deixa uma folha completamente isolada. Quando possível, a folha deve parecer pertencente a um raminho ou conjunto.",
+
+    "colorStrategy": [
+      "Manter uma lógica de distribuição das cores dentro do pincel ao longo da peça.",
+      "Variar a quantidade de Verde Folha e Verde Musgo.",
+      "Misturar pequenas quantidades de outros verdes ao Verde Cintilante para suavizar seu caráter muito marcante.",
+      "Nem toda pincelada precisa receber exatamente as mesmas cores."
+    ],
+
+    "paintManagement": [
+      "Colocar pequenas quantidades de tinta no prato e repor durante o trabalho.",
+      "Evitar deixar grande quantidade exposta porque a tinta começa a secar e pode formar resíduos.",
+      "É preferível recarregar o pincel com pouca tinta frequentemente do que carregar demais e provocar escorrimento."
+    ],
+
+    "ornaments": {
+      "paint": "Talento Vermelho Cintilante C01",
+      "tool": "Cabo do pincel Giotto redondo tamanho 4 usado como boleador",
+      "method": [
+        "Identificar o encontro dos cabinhos de cada raminho.",
+        "Criar aproximadamente três bolinhas vermelhas nesse ponto.",
+        "Recarregar conforme necessário para manter a presença visual das bolinhas."
+      ]
+    }
+  },
+
+  "wreath1": {
+    "style": "Guirlanda criada em camadas com base esfumada, pequenas folhas e bolinhas decorativas.",
+
+    "materials": {
+      "paints": [
+        "Talento Verde Cintilante",
+        "Talento Vermelho Cintilante",
+        "Talento Branco Perolizado",
+        "Decorfix Branco Fosco",
+        "Vitro 150 Verde Folha",
+        "Talento dourado"
+      ],
+
+      "brushes": [
+        "Condor Língua de Gato número 6",
+        "Acrilex linha 084 número 0 de cerdas grossas",
+        "Giotto redondo número 0"
+      ]
+    },
+
+    "stage1Base": [
+      "Carregar o pincel ovalado com pouco branco e mais verde.",
+      "Criar aproximadamente uma letra C.",
+      "Espelhar o movimento para completar um círculo.",
+      "O círculo serve apenas como guia e não precisa ser perfeito.",
+      "Usar o pincel de cerdas grossas para aplicar batidinhas sobre a base.",
+      "Concentrar mais cor na região central da largura da guirlanda.",
+      "Usar menos tinta nas extremidades para produzir um efeito esfumado.",
+      "Ao mesmo tempo, disfarçar progressivamente a linha do círculo."
+    ],
+
+    "drying": "Esperar a primeira etapa secar completamente antes da segunda camada.",
+
+    "stage2Leaves": [
+      "Usar Giotto número 0 com branco fosco e Verde Folha.",
+      "Não misturar totalmente as duas cores no pincel.",
+      "Começar a pincelada pressionando e levantar gradualmente.",
+      "Criar folhas que começam mais largas e terminam finas.",
+      "Organizar as folhas aproximadamente em pares no formato de V.",
+      "Trabalhar de fora para dentro, em direção ao vértice do V.",
+      "Variar direção, tamanho e tonalidade.",
+      "Permitir que algumas folhas pareçam sair da guirlanda."
+    ],
+
+    "ornaments": {
+      "red": [
+        "Usar o cabo do pincel como boleador.",
+        "Aplicar vermelho cintilante no vértice dos pares de folhas.",
+        "Recarregar frequentemente para evitar que todos os pontos diminuam demais."
+      ],
+
+      "gold": [
+        "Usar o dourado para preencher alguns espaços restantes.",
+        "Distribuir os pontos observando o conjunto em vez de seguir simetria rígida."
+      ]
+    },
+
+    "styleRule": "As folhas não precisam e, segundo Maria, não devem ficar idênticas. O objetivo é interesse visual e naturalidade, não perfeição mecânica."
+  },
+
+  "wreath2": {
+    "style": "Guirlanda construída principalmente com folhas de Dagger em diferentes tamanhos e tonalidades.",
+
+    "materials": {
+      "colors": [
+        "Branco fosco",
+        "Verde Folha",
+        "Verde Musgo",
+        "Verde Cintilante",
+        "Vermelho para pontos decorativos"
+      ],
+
+      "brushes": [
+        "Liner",
+        "Dagger Keramik tamanho 8",
+        "Dagger de precisão",
+        "Cabo de pincel Giotto pequeno usado como boleador"
+      ]
+    },
+
+    "guide": [
+      "Usar liner com branco e verde para desenhar um círculo-guia discreto.",
+      "O círculo define aproximadamente o tamanho e o caminho da guirlanda.",
+      "Não é necessário produzir um círculo perfeito ou muito visível."
+    ],
+
+    "firstLeafLayer": [
+      "Usar Dagger tamanho 8.",
+      "Criar folhas relativamente pequenas de dentro para fora.",
+      "Seguir aproximadamente o círculo-guia.",
+      "Na camada externa, alternar a posição das folhas.",
+      "Começar aproximadamente no meio de uma folha anterior e terminar entre duas outras.",
+      "Variar Verde Folha, Verde Musgo e Verde Cintilante para produzir diferentes tonalidades."
+    ],
+
+    "precisionLayer": [
+      "Trocar para Dagger de precisão.",
+      "Adicionar pequenas folhas entre as folhas externas.",
+      "Repetir o processo na parte interna.",
+      "Usar bastante delicadeza devido ao tamanho reduzido do pincel.",
+      "Criar folhas adicionais diretamente sobre o círculo-guia para escondê-lo."
+    ],
+
+    "depth": "Maria varia os tons para criar sensação de profundidade e evitar uma guirlanda visualmente chapada.",
+
+    "finalAdjustment": [
+      "Observar a composição inteira.",
+      "Preencher espaços que parecem vazios.",
+      "Adicionar tons claros ou escuros onde forem necessários.",
+      "Parar antes que o preenchimento se torne excessivo."
+    ],
+
+    "redDetails": [
+      "Usar o cabo de um pincel Giotto pequeno como boleador.",
+      "Criar bolinhas vermelhas de modo relativamente aleatório.",
+      "Maria tende a concentrá-las mais na região central da guirlanda, mas aceita variação."
+    ],
+
+    "scaling": "Para uma peça maior, como uma jarra, Maria sugere Daggers Keramik 10 ou 12."
+  },
+
+  "christmasTree1": {
+    "concept": "Árvore estilizada construída inteiramente a partir de folhas do estilo Maria Franco.",
+
+    "materials": {
+      "colors": [
+        "Vitro 150 branco",
+        "Vitro 150 Verde Folha",
+        "Vitro 150 Verde Musgo",
+        "Talento Verde Cintilante",
+        "Talento Vermelho Cintilante",
+        "Talento dourado"
+      ],
+
+      "brushes": [
+        "Liner",
+        "Dagger Keramik tamanho 8",
+        "Dagger de precisão"
+      ]
+    },
+
+    "guide": [
+      "Usar o liner para delimitar discretamente o formato da árvore.",
+      "A linha deve servir apenas como direção visual.",
+      "É aceitável que a linha fique falhada.",
+      "Manter a linha pouco visível porque as folhas deverão escondê-la depois."
+    ],
+
+    "largeLeaves": [
+      "Começar com o Dagger maior.",
+      "Criar folhas de maneira relativamente aleatória dentro do espaço delimitado.",
+      "Variar Verde Folha, Verde Musgo e Verde Cintilante.",
+      "Direcionar majoritariamente a estrutura para baixo.",
+      "Trabalhar também para o lado menos natural da mão para evitar excesso de tendência direcional.",
+      "Ao aproximar-se da linha-guia, permitir que algumas pinceladas passem ligeiramente sobre ela."
+    ],
+
+    "smallLeaves": [
+      "Trocar para o Dagger de precisão.",
+      "Primeiro usar pequenas folhas para esconder as linhas-guia.",
+      "Depois preencher os espaços vazios.",
+      "Variar folhas maiores e menores.",
+      "Usar pequenas ondulações na pincelada para aumentar a sensação de movimento."
+    ],
+
+    "mistakeIntegration": [
+      "Não se preocupar imediatamente com pequenos defeitos.",
+      "Pontos decorativos podem posteriormente disfarçar áreas que precisam de ajuste.",
+      "Uma folha muito larga pode ser corrigida visualmente com menos tinta ou elementos adicionais."
+    ],
+
+    "ornaments": [
+      "Usar Talento Vermelho Cintilante.",
+      "Criar bolinhas distribuídas pela árvore.",
+      "Começar por lugares onde existe alguma pincelada que se deseja disfarçar.",
+      "Distribuir as demais sem exagerar para que as bolinhas não dominem a composição."
+    ],
+
+    "topper": {
+      "concept": "Maria prefere uma ponteira simples em vez de uma estrela nessa técnica.",
+      "reason": "Uma estrela irregular poderia competir visualmente com a delicadeza da árvore.",
+      "paint": "Talento dourado",
+      "method": "Criar a ponteira simplesmente encostando uma ponta arredondada carregada com tinta."
+    }
+  },
+
+  "christmasTree2": {
+    "concept": "Árvore estilizada criada dentro de um triângulo definido por fita adesiva e preenchida com flores, folhas e detalhes.",
+
+    "materials": {
+      "colors": [
+        "Vermelho Cintilante",
+        "Verde Cintilante",
+        "Verde Musgo",
+        "Verde Folha",
+        "Branco",
+        "Black Grape",
+        "Dourado"
+      ],
+
+      "brushes": [
+        "Dagger Keramik tamanho 8",
+        "Dagger de precisão",
+        "Giotto redondo tamanho 6"
+      ],
+
+      "masking": "Fita adesiva transparente"
+    },
+
+    "maskingProcess": [
+      "Usar fita adesiva para delimitar um triângulo.",
+      "Determinar com a fita a largura, altura e base da árvore.",
+      "Maria recomenda fita adesiva transparente em vez de fita crepe porque considera que a fita crepe tende a borrar mais."
+    ],
+
+    "flowers": [
+      "Usar o pincel redondo tamanho 6.",
+      "Carregar branco e vermelho.",
+      "Adicionar uma pequena quantidade de Black Grape quando desejado.",
+      "Começar algumas pétalas sobre a própria fita.",
+      "Pintar atravessando a borda da fita para que, depois da remoção, a flor fique recortada pelo formato triangular.",
+      "Variar a presença do Black Grape para produzir diferenças de tonalidade."
+    ],
+
+    "leaves": [
+      "Usar Dagger tamanho 8 para as folhas maiores.",
+      "Pintar algumas folhas atravessando a fita e outras completamente dentro do triângulo.",
+      "Variar continuamente os verdes.",
+      "Usar o Dagger de precisão para completar espaços com folhas menores.",
+      "Deixar alguns espaços sem pintura para preservar leveza."
+    ],
+
+    "imperfections": [
+      "Não reiniciar automaticamente a peça quando uma cor indesejada aparece em uma folha.",
+      "Quando possível, passar outra pincelada para integrar o problema.",
+      "Usar folhas pequenas e bolinhas douradas para corrigir visualmente pequenas áreas."
+    ],
+
+    "goldDetails": [
+      "Usar um cabo de pincel de tamanho médio como boleador.",
+      "Distribuir algumas bolinhas douradas pela árvore.",
+      "Também podem ser usadas no miolo das flores.",
+      "Aproveitar os pontos para integrar pequenas imperfeições."
+    ],
+
+    "tapeRemoval": [
+      "Remover as fitas uma de cada vez.",
+      "Evitar que a fita retirada encoste na pintura.",
+      "Esperar pequenas falhas ou borrões próximos às bordas."
+    ],
+
+    "edgeCleanup": [
+      "Usar um palito com cuidado para retirar tinta indesejada ao redor da árvore.",
+      "Para limpeza precisa da borda, Maria demonstra o uso do palito seco.",
+      "Evitar molhar o palito nessa etapa quando a umidade puder borrar a pintura dentro do triângulo."
+    ]
+  },
+
+  "christmasFlowerPitcher": {
+    "concept": "Composição natalina de flores vermelhas estilizadas, folhas verdes e detalhes dourados.",
+
+    "flowerMaterials": {
+      "brush": "Giotto redondo tamanho 6",
+      "colors": [
+        "Talento Vermelho Cintilante",
+        "Decorfix Black Grape",
+        "Branco Vitro ou Decorfix Branco Fosco"
+      ]
+    },
+
+    "brushLoading": [
+      "Umedecer o pincel gradualmente com branco.",
+      "Não mergulhar todo o pincel de uma só vez para evitar bolhas.",
+      "Adicionar vermelho em um dos lados do pincel.",
+      "Adicionar uma pequena quantidade de Black Grape quando desejar uma sombra mais profunda.",
+      "Retirar excesso antes de ir para a peça."
+    ],
+
+    "petalStroke": [
+      "Começar com o pincel praticamente em pé.",
+      "Puxar levemente para criar uma pequena ponta.",
+      "Pressionar o pincel.",
+      "Trazer a pincelada para baixo.",
+      "Reduzir gradualmente a pressão ao final.",
+      "Quando necessário, usar pequena torção durante a retirada para afinar a extremidade."
+    ],
+
+    "petalConstruction": [
+      "Usar mais de uma pincelada para produzir pétalas cheias.",
+      "Alterar o lado do pincel onde o sombreado está concentrado.",
+      "Preencher a pétala sem exigir formato perfeitamente regular.",
+      "Variar posição e quantidade de Black Grape."
+    ],
+
+    "flowerVariation": [
+      "Criar flores grandes e pequenas.",
+      "Usar flores menores de três pétalas para evitar uma peça excessivamente carregada.",
+      "Quando o espaço exigir, usar apenas duas pétalas.",
+      "Permitir pétalas tortas e assimétricas quando o conjunto continuar visualmente equilibrado.",
+      "Não manter o Black Grape sempre exatamente no mesmo lugar."
+    ],
+
+    "mistakeManagement": [
+      "Se uma pétala recente não agradar e não estiver segura para ser repintada imediatamente, deixá-la quieta.",
+      "Esperar secar antes de decidir a correção.",
+      "Uma folha posterior pode passar parcialmente sobre uma imperfeição.",
+      "Uma nova pincelada não precisa esconder completamente o problema; pode apenas desviar visualmente a atenção.",
+      "As primeiras pinceladas da peça podem ficar diferentes enquanto a mão se adapta."
+    ],
+
+    "leaves": {
+      "brush": "Keramik 765 Dagger tamanho 10",
+      "preferredGreen": "Vitro 150 Verde Musgo",
+      "colorGoal": "Produzir variação entre verde claro e verde escuro em vez de uma divisão rígida entre branco e verde.",
+
+      "placement": [
+        "Começar principalmente nos espaços existentes entre as flores.",
+        "Adicionar folhas entre pétalas.",
+        "Quando a camada inferior estiver seca, permitir sobreposição parcial sobre flores.",
+        "Criar raminhos e pequenos conjuntos em vez de espalhar folhas isoladas.",
+        "Usar direção e tamanhos variados.",
+        "Observar a peça de longe e girá-la para encontrar áreas que ainda precisam de informação visual."
+      ]
+    },
+
+    "goldCenters": {
+      "paint": "Talento M07 Ouro Rico Metálico",
+      "tool": "Cabo do Giotto tamanho 4 usado como boleador",
+      "method": [
+        "Molhar o cabo na tinta dourada.",
+        "Criar pontos no centro das flores.",
+        "Recarregar para manter pontos centrais maiores.",
+        "Permitir pontos menores nas áreas externas do miolo.",
+        "Não buscar simetria perfeita."
+      ]
+    },
+
+    "finalCleanup": "Para pequeno acabamento fora da área pretendida, Maria demonstra palito de unha com algodão levemente umedecido e excesso removido."
+  },
+
+  "reindeer": {
+    "concept": "Rena estilizada construída com movimentos da folha Maria Franco.",
+
+    "materials": {
+      "brush": "Dagger Keramik 765 tamanho 8",
+      "colors": [
+        "Vitro 150 Verde Musgo",
+        "Decorfix 150 Marrom Âmbar",
+        "Branco",
+        "Talento Vermelho Cintilante",
+        "Decorfix Black Grape"
+      ]
+    },
+
+    "antlers": [
+      "Construir os chifres como dois raminhos de folhas.",
+      "Combinar branco, verde e marrom sem misturar excessivamente no pincel.",
+      "No primeiro raminho, formar a folha e puxar o cabinho para dentro.",
+      "Espelhar aproximadamente o segundo chifre.",
+      "Nesse projeto, buscar um pouco mais de simetria do que Maria normalmente busca.",
+      "Não exigir que os dois lados fiquem impecavelmente idênticos.",
+      "Adicionar folhas menores aos dois lados dos ramos."
+    ],
+
+    "nose": [
+      "Carregar branco, vermelho cintilante e uma quantidade mínima de Black Grape.",
+      "Concentrar vermelho e Black Grape principalmente na ponta para produzir sombra.",
+      "Usar um movimento semelhante ao de uma folha.",
+      "Em vez de puxar uma ponta longa, pressionar e puxar pouco para formar algo próximo de uma bolinha.",
+      "Criar o outro lado de modo semelhante."
+    ],
+
+    "eyes": [
+      "Usar Black Grape.",
+      "Usar uma extremidade apropriada do pincel como boleador.",
+      "Retirar excesso.",
+      "Encostar na peça para formar os olhos."
+    ],
+
+    "runnyPaintCorrection": [
+      "Se uma folha receber tinta demais, não mexer imediatamente.",
+      "Esperar secar.",
+      "Recarregar o mesmo Dagger com pouca tinta.",
+      "Passar uma pincelada discreta por cima e emendar visualmente a pincelada."
+    ]
+  },
+
+  "miniSnowmen": {
+    "concept": "Pequenos bonecos de neve formados principalmente com pontos e detalhes mínimos.",
+
+    "materials": {
+      "white": "Decorfix ou Vitro branco",
+      "brushes": [
+        "Giotto tamanho 12",
+        "Giotto tamanho 2",
+        "Giotto tamanho 0"
+      ],
+      "detailColors": [
+        "Verde Cintilante",
+        "Vermelho Cintilante"
+      ]
+    },
+
+    "body": [
+      "Usar o cabo do pincel maior como boleador.",
+      "Carregar o cabo com branco e retirar o excesso.",
+      "Encostar na peça para criar a bolinha do corpo.",
+      "Quando precisar aumentar o círculo, repetir ou fazer pequeno movimento circular.",
+      "Aceitar pequenas variações de tamanho."
+    ],
+
+    "head": [
+      "Usar o cabo do pincel menor.",
+      "Retirar o excesso.",
+      "Criar uma bolinha menor sobre o corpo.",
+      "Usar pequeno movimento circular se for necessário aumentar."
+    ],
+
+    "drying": "Esperar o branco secar antes de executar o detalhe do gorro.",
+
+    "hat": [
+      "Usar Verde Cintilante.",
+      "Usar o cabo do pincel menor.",
+      "Retirar o excesso.",
+      "Criar um ponto muito pequeno na lateral da cabeça para simbolizar o gorro."
+    ],
+
+    "scarf": [
+      "Usar Giotto número 0.",
+      "Usar Vermelho Cintilante.",
+      "Retirar excesso.",
+      "Com apenas a ponta do pincel, criar um pequeno traço entre as duas bolas."
+    ],
+
+    "stabilityTip": "Para detalhes muito pequenos, Maria demonstra apoiar o pulso sobre um dedo da mão que segura a peça, sem apoiar a mão diretamente na região pintada.",
+
+    "variation": [
+      "Os bonecos não precisam ser idênticos.",
+      "Quantidade e distribuição podem variar.",
+      "A técnica pode ser aplicada a taças, xícaras de café, copos e conjuntos completos."
+    ]
+  },
+
+  "snowEffect": {
+    "purpose": "Adicionar aparência de neve a árvores, guirlandas e outras composições verdes.",
+
+    "materials": {
+      "paint": "Talento Branco Perolizado",
+      "brush": "Pincel de cerdas ásperas ou pincel velho e duro"
+    },
+
+    "brushPreparation": "Um pincel velho pode ter a ponta cortada de forma reta para criar a textura.",
+
+    "application": [
+      "Pegar o Branco Perolizado.",
+      "Bater primeiro no prato para retirar excesso.",
+      "Aplicar sobre a pintura com batidinhas muito leves.",
+      "Distribuir as batidinhas sobre o desenho.",
+      "Evitar excesso de tinta.",
+      "Se uma região acumular demais, trabalhar levemente sobre ela para integrar o efeito."
+    ],
+
+    "compatibleDesigns": [
+      "Árvore de Natal",
+      "Guirlanda",
+      "Folhagens"
+    ],
+
+    "effect": "Criar uma textura leve sobre o desenho verde para sugerir neve."
+  },
+
+  "christmasCompositionPrinciples": {
+    "asymmetry": [
+      "Evitar repetição excessivamente simétrica.",
+      "Variar pétalas, folhas, direção, tamanho e tonalidade.",
+      "Manter proporcionalidade suficiente para preservar o equilíbrio visual."
+    ],
+
+    "colorVariation": [
+      "Misturar visualmente verdes foscos e cintilantes.",
+      "Permitir diferentes tonalidades entre folhas próximas.",
+      "Usar Black Grape de maneira variável em flores vermelhas.",
+      "Usar cores metálicas como detalhe em vez de necessariamente dominar toda a composição."
+    ],
+
+    "layering": [
+      "Esperar secagem quando uma nova camada puder retirar a tinta existente.",
+      "Depois de seco, permitir que folhas e ramos passem parcialmente sobre flores.",
+      "Usar sobreposição para integrar elementos e corrigir visualmente áreas."
+    ],
+
+    "review": [
+      "Girar a peça durante a composição.",
+      "Observar áreas vazias.",
+      "Olhar a peça de longe.",
+      "Adicionar informação apenas onde o conjunto parece precisar.",
+      "Evitar continuar adicionando elementos quando a composição já estiver equilibrada."
+    ],
+
+    "imperfections": [
+      "Não lavar ou reiniciar automaticamente por causa de pequenos erros.",
+      "Avaliar primeiro se o problema pode ser integrado.",
+      "Esperar secar quando mexer na tinta fresca puder piorar a área.",
+      "Usar folhas, ramos, flores ou pontos decorativos na correção visual quando apropriado."
+    ],
+
+    "creativeReuse": "As técnicas natalinas podem ser combinadas e adaptadas para criar projetos diferentes dos exemplos originais."
+  },
+
+  "assistantRules": {
+    "courseSpecificity": "Quando o usuário perguntar como Maria Franco ensina um projeto natalino específico, utilizar primeiro a técnica correspondente nesta base.",
+
+    "existingKnowledge": "Quando uma técnica natalina reutilizar uma técnica básica já documentada em painting-techniques.json, complementar a técnica existente em vez de contradizê-la.",
+
+    "materialPriority": "Para marcas, tintas e pincéis específicos do curso de Natal, preservar as preferências documentadas por Maria Franco.",
+
+    "variationRule": "Não tratar assimetria, diferenças de tonalidade ou pequenas irregularidades como erros quando forem características intencionais da técnica.",
+
+    "correctionRule": "Antes de sugerir apagar ou lavar uma pintura, verificar se Maria ensina uma solução por secagem, sobreposição ou integração visual.",
+
+    "dryingRule": "Não recomendar pintar repetidamente sobre uma camada parcialmente seca quando houver risco de remover a tinta inferior.",
+
+    "creativityRule": "Permitir adaptações de tamanho, direção, quantidade e combinação dos elementos quando isso estiver de acordo com os princípios documentados do curso.",
+
+    "technicalCrossReference": "Para preparação da superfície, cura, queima e cuidados gerais da peça, utilizar technical-knowledge.json.",
+
+    "methodCrossReference": "Para filosofia artística, criatividade, assimetria e abordagem pedagógica geral, utilizar maria-method.json.",
+
+    "sourceBoundary": "Não atribuir a Maria Franco uma técnica natalina que não esteja documentada nesta base ou nos demais materiais oficiais."
+  },
+
+  "sourceLessons": [
+    "MF_Materiais_NATAL - Copy.txt",
+    "MF_JarraFlores_NATAL - Copy.txt",
+    "MF_JarraRamos_NATAL - Copy.txt",
+    "MF_Guirlanda1_NATAL - Copy.txt",
+    "MF_Guirlanda2_NATAL - Copy.txt",
+    "MF_Arvore1_NATAL - Copy.txt",
+    "MF_Arvore2_NATAL - Copy.txt",
+    "MF_Rena_NATAL - Copy.txt",
+    "MF_Mini Boneco_NATAL - Copy.txt",
+    "MF_Neve_NATAL - Copy.txt"
+  ]
+}
