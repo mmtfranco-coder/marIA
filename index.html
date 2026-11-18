@@ -4,96 +4,1474 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MarIA | Assistente Artística Maria Franco</title>
+
   <style>
-    :root{--background:#f7f3ef;--panel:#fff;--primary:#7d5866;--primary-dark:#62434f;--secondary:#eee5e1;--text:#332b2e;--muted:#7b7275;--border:#e5dcda;--user:#7d5866;--user-text:#fff;--maria:#f1ebe8;--maria-text:#332b2e;--danger:#9f3a3a;--success:#496b55}
-    *{box-sizing:border-box} body{margin:0;min-height:100vh;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:linear-gradient(180deg,#f4eeea 0%,var(--background) 45%,#faf8f6 100%);color:var(--text)}
-    button,input,textarea{font:inherit}.hidden{display:none!important}.app{min-height:100vh;display:flex;flex-direction:column}
-    header{background:rgba(255,255,255,.92);border-bottom:1px solid var(--border);padding:18px 22px;backdrop-filter:blur(10px);position:sticky;top:0;z-index:10}.header-content{max-width:900px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:14px}.avatar{width:48px;height:48px;border-radius:50%;background:linear-gradient(135deg,#997482,#634650);color:#fff;display:flex;align-items:center;justify-content:center;font-family:Georgia,serif;font-size:22px;font-weight:bold;box-shadow:0 4px 12px rgba(80,55,64,.15)}.brand-text h1{margin:0;font-family:Georgia,"Times New Roman",serif;font-size:25px;font-weight:500;color:var(--primary-dark)}.brand-text p{margin:3px 0 0;font-size:13px;color:var(--muted)}.header-actions{display:flex;align-items:center;gap:8px}.new-chat,.logout-button{border:1px solid var(--border);background:#fff;color:var(--primary-dark);border-radius:9px;padding:9px 13px;cursor:pointer;font-size:13px;transition:.2s}.new-chat:hover,.logout-button:hover{background:var(--secondary)}
-    main{flex:1;width:100%;max-width:900px;margin:0 auto;padding:28px 18px 150px}.welcome{max-width:610px;margin:15px auto 32px;text-align:center}.welcome h2{font-family:Georgia,"Times New Roman",serif;font-size:29px;font-weight:500;color:var(--primary-dark);margin:0 0 12px}.welcome p{color:var(--muted);font-size:15px;line-height:1.6;margin:0}#messages{display:flex;flex-direction:column;gap:18px}.message-row{display:flex;width:100%}.message-row.user{justify-content:flex-end}.message-row.maria{justify-content:flex-start}.message{max-width:76%;padding:14px 17px;border-radius:16px;line-height:1.55;font-size:15px;white-space:pre-wrap;overflow-wrap:break-word}.message.user{background:var(--user);color:var(--user-text);border-bottom-right-radius:5px}.message.maria{background:var(--maria);color:var(--maria-text);border-bottom-left-radius:5px;border:1px solid #e8ded9}.message.error{background:#fff2f2;color:var(--danger);border:1px solid #efd1d1}.sender{font-weight:600;font-size:12px;margin-bottom:6px;opacity:.72}.thinking{display:flex;gap:5px;align-items:center;height:20px}.thinking span{width:6px;height:6px;background:#8d7a80;border-radius:50%;animation:pulse 1.2s infinite ease-in-out}.thinking span:nth-child(2){animation-delay:.15s}.thinking span:nth-child(3){animation-delay:.3s}@keyframes pulse{0%,80%,100%{opacity:.25;transform:scale(.85)}40%{opacity:1;transform:scale(1)}}
-    .composer-wrapper{position:fixed;left:0;bottom:0;width:100%;padding:16px 18px calc(16px + env(safe-area-inset-bottom));background:linear-gradient(180deg,rgba(247,243,239,0),rgba(247,243,239,.95) 30%,#f7f3ef 70%)}.composer{max-width:900px;margin:0 auto;background:#fff;border:1px solid var(--border);border-radius:17px;box-shadow:0 8px 28px rgba(68,47,55,.10);display:flex;align-items:flex-end;gap:10px;padding:10px}.composer textarea{flex:1;border:none;resize:none;outline:none;font-size:15px;line-height:1.5;min-height:46px;max-height:160px;padding:11px;color:var(--text);background:transparent}.composer textarea::placeholder{color:#a39a9d}#sendButton{width:46px;height:46px;border:none;border-radius:12px;background:var(--primary);color:#fff;cursor:pointer;font-size:21px;transition:.2s;flex-shrink:0}#sendButton:hover{background:var(--primary-dark)}#sendButton:disabled{opacity:.45;cursor:not-allowed}.footer-note{max-width:900px;margin:7px auto 0;text-align:center;color:#968d90;font-size:11px}
-    .auth-screen{min-height:100vh;padding:35px 18px;display:flex;align-items:center;justify-content:center}.auth-card{width:100%;max-width:430px;background:rgba(255,255,255,.96);border:1px solid var(--border);border-radius:22px;padding:29px;box-shadow:0 18px 55px rgba(68,47,55,.12)}.auth-brand{text-align:center;margin-bottom:25px}.auth-brand .avatar{margin:0 auto 12px}.auth-brand h1{font-family:Georgia,"Times New Roman",serif;color:var(--primary-dark);margin:0;font-size:31px;font-weight:500}.auth-brand p{margin:7px 0 0;color:var(--muted);line-height:1.5;font-size:14px}.auth-tabs{display:grid;grid-template-columns:1fr 1fr;background:var(--secondary);border-radius:11px;padding:4px;margin-bottom:21px}.auth-tab{border:0;background:transparent;border-radius:8px;padding:9px 10px;cursor:pointer;color:var(--muted)}.auth-tab.active{background:#fff;color:var(--primary-dark);box-shadow:0 2px 8px rgba(68,47,55,.08)}.field{margin-bottom:14px}.field label{display:block;font-size:13px;margin-bottom:6px;color:var(--text);font-weight:600}.field input{width:100%;border:1px solid var(--border);border-radius:10px;padding:12px;outline:none;color:var(--text);background:#fff}.field input:focus{border-color:#b99ca7;box-shadow:0 0 0 3px rgba(125,88,102,.08)}.auth-button{width:100%;border:0;background:var(--primary);color:#fff;border-radius:11px;padding:12px 14px;cursor:pointer;font-weight:600;margin-top:3px}.auth-button:hover{background:var(--primary-dark)}.auth-button:disabled{opacity:.55;cursor:not-allowed}.auth-link{border:0;background:none;color:var(--primary);cursor:pointer;padding:3px 0;font-size:13px}.auth-secondary{text-align:center;margin-top:15px}.auth-message{margin:0 0 16px;padding:11px 12px;border-radius:10px;font-size:13px;line-height:1.45}.auth-message.error{background:#fff2f2;color:var(--danger);border:1px solid #efd1d1}.auth-message.success{background:#eff7f1;color:var(--success);border:1px solid #d5e8da}.auth-message.info{background:#f5f1ef;color:var(--primary-dark);border:1px solid var(--border)}.user-email{font-size:12px;color:var(--muted);max-width:180px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.reset-title{font-family:Georgia,"Times New Roman",serif;color:var(--primary-dark);font-size:23px;margin:0 0 7px}.reset-copy{color:var(--muted);font-size:14px;line-height:1.5;margin:0 0 20px}
-    @media(max-width:650px){header{padding:13px 14px}.avatar{width:42px;height:42px}.brand-text h1{font-size:22px}.brand-text p,.user-email{display:none}main{padding:21px 13px 145px}.welcome{margin-top:5px}.welcome h2{font-size:25px}.message{max-width:88%}.new-chat,.logout-button{font-size:12px;padding:8px 9px}.composer-wrapper{padding-left:10px;padding-right:10px}.auth-screen{padding:20px 12px}.auth-card{padding:23px 18px}.header-actions{gap:5px}}
+    :root{
+      --background:#f7f3ef;
+      --panel:#fff;
+      --primary:#7d5866;
+      --primary-dark:#62434f;
+      --secondary:#eee5e1;
+      --text:#332b2e;
+      --muted:#7b7275;
+      --border:#e5dcda;
+      --user:#7d5866;
+      --user-text:#fff;
+      --maria:#f1ebe8;
+      --maria-text:#332b2e;
+      --danger:#9f3a3a;
+      --success:#496b55;
+    }
+
+    *{
+      box-sizing:border-box;
+    }
+
+    body{
+      margin:0;
+      min-height:100vh;
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+      background:linear-gradient(180deg,#f4eeea 0%,var(--background) 45%,#faf8f6 100%);
+      color:var(--text);
+    }
+
+    button,input,textarea{
+      font:inherit;
+    }
+
+    .hidden{
+      display:none!important;
+    }
+
+    .app{
+      min-height:100vh;
+      display:flex;
+      flex-direction:column;
+    }
+
+    header{
+      background:rgba(255,255,255,.92);
+      border-bottom:1px solid var(--border);
+      padding:18px 22px;
+      backdrop-filter:blur(10px);
+      position:sticky;
+      top:0;
+      z-index:10;
+    }
+
+    .header-content{
+      max-width:900px;
+      margin:0 auto;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:20px;
+    }
+
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:14px;
+    }
+
+    /* NOVO LOGO */
+    .avatar{
+      width:56px;
+      height:56px;
+      border-radius:12px;
+      overflow:hidden;
+      flex-shrink:0;
+      background:#f7eeee;
+      box-shadow:0 4px 12px rgba(80,55,64,.12);
+    }
+
+    .avatar img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      display:block;
+    }
+
+    .brand-text h1{
+      margin:0;
+      font-family:Georgia,"Times New Roman",serif;
+      font-size:25px;
+      font-weight:500;
+      color:var(--primary-dark);
+    }
+
+    .brand-text p{
+      margin:3px 0 0;
+      font-size:13px;
+      color:var(--muted);
+    }
+
+    .header-actions{
+      display:flex;
+      align-items:center;
+      gap:8px;
+    }
+
+    .new-chat,
+    .logout-button{
+      border:1px solid var(--border);
+      background:#fff;
+      color:var(--primary-dark);
+      border-radius:9px;
+      padding:9px 13px;
+      cursor:pointer;
+      font-size:13px;
+      transition:.2s;
+    }
+
+    .new-chat:hover,
+    .logout-button:hover{
+      background:var(--secondary);
+    }
+
+    main{
+      flex:1;
+      width:100%;
+      max-width:900px;
+      margin:0 auto;
+      padding:28px 18px 150px;
+    }
+
+    .welcome{
+      max-width:610px;
+      margin:15px auto 32px;
+      text-align:center;
+    }
+
+    .welcome h2{
+      font-family:Georgia,"Times New Roman",serif;
+      font-size:29px;
+      font-weight:500;
+      color:var(--primary-dark);
+      margin:0 0 12px;
+    }
+
+    .welcome p{
+      color:var(--muted);
+      font-size:15px;
+      line-height:1.6;
+      margin:0;
+    }
+
+    #messages{
+      display:flex;
+      flex-direction:column;
+      gap:18px;
+    }
+
+    .message-row{
+      display:flex;
+      width:100%;
+    }
+
+    .message-row.user{
+      justify-content:flex-end;
+    }
+
+    .message-row.maria{
+      justify-content:flex-start;
+    }
+
+    .message{
+      max-width:76%;
+      padding:14px 17px;
+      border-radius:16px;
+      line-height:1.55;
+      font-size:15px;
+      white-space:pre-wrap;
+      overflow-wrap:break-word;
+    }
+
+    .message.user{
+      background:var(--user);
+      color:var(--user-text);
+      border-bottom-right-radius:5px;
+    }
+
+    .message.maria{
+      background:var(--maria);
+      color:var(--maria-text);
+      border-bottom-left-radius:5px;
+      border:1px solid #e8ded9;
+    }
+
+    .message.error{
+      background:#fff2f2;
+      color:var(--danger);
+      border:1px solid #efd1d1;
+    }
+
+    .sender{
+      font-weight:600;
+      font-size:12px;
+      margin-bottom:6px;
+      opacity:.72;
+    }
+
+    .thinking{
+      display:flex;
+      gap:5px;
+      align-items:center;
+      height:20px;
+    }
+
+    .thinking span{
+      width:6px;
+      height:6px;
+      background:#8d7a80;
+      border-radius:50%;
+      animation:pulse 1.2s infinite ease-in-out;
+    }
+
+    .thinking span:nth-child(2){
+      animation-delay:.15s;
+    }
+
+    .thinking span:nth-child(3){
+      animation-delay:.3s;
+    }
+
+    @keyframes pulse{
+      0%,80%,100%{
+        opacity:.25;
+        transform:scale(.85);
+      }
+      40%{
+        opacity:1;
+        transform:scale(1);
+      }
+    }
+
+    .composer-wrapper{
+      position:fixed;
+      left:0;
+      bottom:0;
+      width:100%;
+      padding:16px 18px calc(16px + env(safe-area-inset-bottom));
+      background:linear-gradient(
+        180deg,
+        rgba(247,243,239,0),
+        rgba(247,243,239,.95) 30%,
+        #f7f3ef 70%
+      );
+    }
+
+    .composer{
+      max-width:900px;
+      margin:0 auto;
+      background:#fff;
+      border:1px solid var(--border);
+      border-radius:17px;
+      box-shadow:0 8px 28px rgba(68,47,55,.10);
+      display:flex;
+      align-items:flex-end;
+      gap:10px;
+      padding:10px;
+    }
+
+    .composer textarea{
+      flex:1;
+      border:none;
+      resize:none;
+      outline:none;
+      font-size:15px;
+      line-height:1.5;
+      min-height:46px;
+      max-height:160px;
+      padding:11px;
+      color:var(--text);
+      background:transparent;
+    }
+
+    .composer textarea::placeholder{
+      color:#a39a9d;
+    }
+
+    #sendButton{
+      width:46px;
+      height:46px;
+      border:none;
+      border-radius:12px;
+      background:var(--primary);
+      color:#fff;
+      cursor:pointer;
+      font-size:21px;
+      transition:.2s;
+      flex-shrink:0;
+    }
+
+    #sendButton:hover{
+      background:var(--primary-dark);
+    }
+
+    #sendButton:disabled{
+      opacity:.45;
+      cursor:not-allowed;
+    }
+
+    .footer-note{
+      max-width:900px;
+      margin:7px auto 0;
+      text-align:center;
+      color:#968d90;
+      font-size:11px;
+    }
+
+    .auth-screen{
+      min-height:100vh;
+      padding:35px 18px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+    }
+
+    .auth-card{
+      width:100%;
+      max-width:430px;
+      background:rgba(255,255,255,.96);
+      border:1px solid var(--border);
+      border-radius:22px;
+      padding:29px;
+      box-shadow:0 18px 55px rgba(68,47,55,.12);
+    }
+
+    .auth-brand{
+      text-align:center;
+      margin-bottom:25px;
+    }
+
+    /* LOGO MAIOR NA TELA DE LOGIN */
+    .auth-brand .avatar{
+      width:180px;
+      height:180px;
+      border-radius:18px;
+      margin:0 auto 14px;
+      box-shadow:none;
+      background:transparent;
+    }
+
+    .auth-brand .avatar img{
+      object-fit:contain;
+    }
+
+    .auth-brand h1{
+      font-family:Georgia,"Times New Roman",serif;
+      color:var(--primary-dark);
+      margin:0;
+      font-size:31px;
+      font-weight:500;
+    }
+
+    .auth-brand p{
+      margin:7px 0 0;
+      color:var(--muted);
+      line-height:1.5;
+      font-size:14px;
+    }
+
+    .auth-tabs{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      background:var(--secondary);
+      border-radius:11px;
+      padding:4px;
+      margin-bottom:21px;
+    }
+
+    .auth-tab{
+      border:0;
+      background:transparent;
+      border-radius:8px;
+      padding:9px 10px;
+      cursor:pointer;
+      color:var(--muted);
+    }
+
+    .auth-tab.active{
+      background:#fff;
+      color:var(--primary-dark);
+      box-shadow:0 2px 8px rgba(68,47,55,.08);
+    }
+
+    .field{
+      margin-bottom:14px;
+    }
+
+    .field label{
+      display:block;
+      font-size:13px;
+      margin-bottom:6px;
+      color:var(--text);
+      font-weight:600;
+    }
+
+    .field input{
+      width:100%;
+      border:1px solid var(--border);
+      border-radius:10px;
+      padding:12px;
+      outline:none;
+      color:var(--text);
+      background:#fff;
+    }
+
+    .field input:focus{
+      border-color:#b99ca7;
+      box-shadow:0 0 0 3px rgba(125,88,102,.08);
+    }
+
+    .auth-button{
+      width:100%;
+      border:0;
+      background:var(--primary);
+      color:#fff;
+      border-radius:11px;
+      padding:12px 14px;
+      cursor:pointer;
+      font-weight:600;
+      margin-top:3px;
+    }
+
+    .auth-button:hover{
+      background:var(--primary-dark);
+    }
+
+    .auth-button:disabled{
+      opacity:.55;
+      cursor:not-allowed;
+    }
+
+    .auth-link{
+      border:0;
+      background:none;
+      color:var(--primary);
+      cursor:pointer;
+      padding:3px 0;
+      font-size:13px;
+    }
+
+    .auth-secondary{
+      text-align:center;
+      margin-top:15px;
+    }
+
+    .auth-message{
+      margin:0 0 16px;
+      padding:11px 12px;
+      border-radius:10px;
+      font-size:13px;
+      line-height:1.45;
+    }
+
+    .auth-message.error{
+      background:#fff2f2;
+      color:var(--danger);
+      border:1px solid #efd1d1;
+    }
+
+    .auth-message.success{
+      background:#eff7f1;
+      color:var(--success);
+      border:1px solid #d5e8da;
+    }
+
+    .auth-message.info{
+      background:#f5f1ef;
+      color:var(--primary-dark);
+      border:1px solid var(--border);
+    }
+
+    .user-email{
+      font-size:12px;
+      color:var(--muted);
+      max-width:180px;
+      overflow:hidden;
+      text-overflow:ellipsis;
+      white-space:nowrap;
+    }
+
+    .reset-title{
+      font-family:Georgia,"Times New Roman",serif;
+      color:var(--primary-dark);
+      font-size:23px;
+      margin:0 0 7px;
+    }
+
+    .reset-copy{
+      color:var(--muted);
+      font-size:14px;
+      line-height:1.5;
+      margin:0 0 20px;
+    }
+
+    @media(max-width:650px){
+      header{
+        padding:13px 14px;
+      }
+
+      .avatar{
+        width:48px;
+        height:48px;
+      }
+
+      .auth-brand .avatar{
+        width:160px;
+        height:160px;
+      }
+
+      .brand-text h1{
+        font-size:22px;
+      }
+
+      .brand-text p,
+      .user-email{
+        display:none;
+      }
+
+      main{
+        padding:21px 13px 145px;
+      }
+
+      .welcome{
+        margin-top:5px;
+      }
+
+      .welcome h2{
+        font-size:25px;
+      }
+
+      .message{
+        max-width:88%;
+      }
+
+      .new-chat,
+      .logout-button{
+        font-size:12px;
+        padding:8px 9px;
+      }
+
+      .composer-wrapper{
+        padding-left:10px;
+        padding-right:10px;
+      }
+
+      .auth-screen{
+        padding:20px 12px;
+      }
+
+      .auth-card{
+        padding:23px 18px;
+      }
+
+      .header-actions{
+        gap:5px;
+      }
+    }
   </style>
 </head>
+
 <body>
+
   <section class="auth-screen" id="authScreen">
     <div class="auth-card">
+
       <div class="auth-brand">
-        <div class="avatar">M</div>
+        <div class="avatar">
+          <img src="MarIA.jpeg" alt="MarIA Franco">
+        </div>
+
         <h1>MarIA</h1>
         <p>Assistente artística de inteligência artificial da Maria Franco.</p>
       </div>
+
       <div id="normalAuthView">
+
         <div class="auth-tabs">
           <button type="button" class="auth-tab active" id="loginTab">Entrar</button>
           <button type="button" class="auth-tab" id="signupTab">Criar conta</button>
         </div>
+
         <div id="authMessage" class="auth-message info hidden"></div>
+
         <form id="authForm">
-          <div class="field"><label for="emailInput">E-mail</label><input id="emailInput" type="email" autocomplete="email" required></div>
-          <div class="field"><label for="passwordInput">Senha</label><input id="passwordInput" type="password" autocomplete="current-password" minlength="6" required></div>
+          <div class="field">
+            <label for="emailInput">E-mail</label>
+            <input id="emailInput" type="email" autocomplete="email" required>
+          </div>
+
+          <div class="field">
+            <label for="passwordInput">Senha</label>
+            <input id="passwordInput" type="password" autocomplete="current-password" minlength="6" required>
+          </div>
+
           <button class="auth-button" id="authSubmitButton" type="submit">Entrar</button>
         </form>
-        <div class="auth-secondary"><button class="auth-link" id="forgotPasswordButton" type="button">Esqueci minha senha</button></div>
+
+        <div class="auth-secondary">
+          <button class="auth-link" id="forgotPasswordButton" type="button">
+            Esqueci minha senha
+          </button>
+        </div>
+
       </div>
+
       <div id="recoveryView" class="hidden">
+
         <h2 class="reset-title">Crie uma nova senha</h2>
-        <p class="reset-copy">Digite uma nova senha para sua conta MarIA.</p>
+
+        <p class="reset-copy">
+          Digite uma nova senha para sua conta MarIA.
+        </p>
+
         <div id="recoveryMessage" class="auth-message info hidden"></div>
+
         <form id="recoveryForm">
-          <div class="field"><label for="newPasswordInput">Nova senha</label><input id="newPasswordInput" type="password" autocomplete="new-password" minlength="6" required></div>
-          <div class="field"><label for="confirmPasswordInput">Confirmar nova senha</label><input id="confirmPasswordInput" type="password" autocomplete="new-password" minlength="6" required></div>
-          <button class="auth-button" id="recoverySubmitButton" type="submit">Atualizar senha</button>
+
+          <div class="field">
+            <label for="newPasswordInput">Nova senha</label>
+            <input id="newPasswordInput" type="password" autocomplete="new-password" minlength="6" required>
+          </div>
+
+          <div class="field">
+            <label for="confirmPasswordInput">Confirmar nova senha</label>
+            <input id="confirmPasswordInput" type="password" autocomplete="new-password" minlength="6" required>
+          </div>
+
+          <button class="auth-button" id="recoverySubmitButton" type="submit">
+            Atualizar senha
+          </button>
+
         </form>
+
       </div>
+
     </div>
   </section>
 
+
   <div class="app hidden" id="appScreen">
-    <header><div class="header-content"><div class="brand"><div class="avatar">M</div><div class="brand-text"><h1>MarIA</h1><p>Assistente artística Maria Franco</p></div></div><div class="header-actions"><span class="user-email" id="userEmail"></span><button class="new-chat" id="newChatButton" type="button">Nova conversa</button><button class="logout-button" id="logoutButton" type="button">Sair</button></div></div></header>
-    <main><div class="welcome" id="welcome"><h2>Olá, eu sou a MarIA.</h2><p>Sua assistente artística de inteligência artificial da Maria Franco. Podemos conversar sobre pintura, criatividade, materiais, projetos e o desenvolvimento do seu trabalho artístico.</p></div><div id="messages"></div></main>
-    <div class="composer-wrapper"><div class="composer"><textarea id="messageInput" rows="1" placeholder="Converse com a MarIA..." aria-label="Mensagem para MarIA"></textarea><button id="sendButton" type="button" aria-label="Enviar mensagem">↑</button></div><div class="footer-note">MarIA é uma assistente de inteligência artificial da marca Maria Franco.</div></div>
+
+    <header>
+      <div class="header-content">
+
+        <div class="brand">
+
+          <div class="avatar">
+            <img src="MarIA.jpeg" alt="MarIA Franco">
+          </div>
+
+          <div class="brand-text">
+            <h1>MarIA</h1>
+            <p>Assistente artística Maria Franco</p>
+          </div>
+
+        </div>
+
+        <div class="header-actions">
+          <span class="user-email" id="userEmail"></span>
+
+          <button class="new-chat" id="newChatButton" type="button">
+            Nova conversa
+          </button>
+
+          <button class="logout-button" id="logoutButton" type="button">
+            Sair
+          </button>
+        </div>
+
+      </div>
+    </header>
+
+
+    <main>
+
+      <div class="welcome" id="welcome">
+
+        <h2>Olá, eu sou a MarIA.</h2>
+
+        <p>
+          Sua assistente artística de inteligência artificial da Maria Franco.
+          Podemos conversar sobre pintura, criatividade, materiais, projetos e
+          o desenvolvimento do seu trabalho artístico.
+        </p>
+
+      </div>
+
+      <div id="messages"></div>
+
+    </main>
+
+
+    <div class="composer-wrapper">
+
+      <div class="composer">
+
+        <textarea
+          id="messageInput"
+          rows="1"
+          placeholder="Converse com a MarIA..."
+          aria-label="Mensagem para MarIA"></textarea>
+
+        <button id="sendButton" type="button" aria-label="Enviar mensagem">
+          ↑
+        </button>
+
+      </div>
+
+      <div class="footer-note">
+        MarIA é uma assistente de inteligência artificial da marca Maria Franco.
+      </div>
+
+    </div>
+
   </div>
 
+
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
   <script>
+
     const API_URL = "https://maria-api.mmt-franco.workers.dev/chat";
     const SUPABASE_URL = "https://sfysorygsurwjdplfsja.supabase.co";
     const SUPABASE_PUBLISHABLE_KEY = "sb_publishable_Q0ZWCEH55ZVk7IZ0D1FXQg_faqy2mP_";
     const APP_URL = "https://mmtfranco-coder.github.io/marIA/";
 
-    const supabaseClient = window.supabase.createClient(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY, { auth: { persistSession: true, autoRefreshToken: true, detectSessionInUrl: true } });
+    const supabaseClient = window.supabase.createClient(
+      SUPABASE_URL,
+      SUPABASE_PUBLISHABLE_KEY,
+      {
+        auth:{
+          persistSession:true,
+          autoRefreshToken:true,
+          detectSessionInUrl:true
+        }
+      }
+    );
+
     let currentSession = null;
     let previousInteractionId = null;
     let waitingForMaria = false;
     let authMode = "login";
     let recoveryMode = false;
 
-    const authScreen=document.getElementById("authScreen"),appScreen=document.getElementById("appScreen"),normalAuthView=document.getElementById("normalAuthView"),recoveryView=document.getElementById("recoveryView"),loginTab=document.getElementById("loginTab"),signupTab=document.getElementById("signupTab"),authForm=document.getElementById("authForm"),emailInput=document.getElementById("emailInput"),passwordInput=document.getElementById("passwordInput"),authSubmitButton=document.getElementById("authSubmitButton"),authMessage=document.getElementById("authMessage"),forgotPasswordButton=document.getElementById("forgotPasswordButton"),recoveryForm=document.getElementById("recoveryForm"),newPasswordInput=document.getElementById("newPasswordInput"),confirmPasswordInput=document.getElementById("confirmPasswordInput"),recoverySubmitButton=document.getElementById("recoverySubmitButton"),recoveryMessage=document.getElementById("recoveryMessage"),userEmail=document.getElementById("userEmail"),messagesElement=document.getElementById("messages"),messageInput=document.getElementById("messageInput"),sendButton=document.getElementById("sendButton"),newChatButton=document.getElementById("newChatButton"),logoutButton=document.getElementById("logoutButton"),welcomeElement=document.getElementById("welcome");
+    const authScreen=document.getElementById("authScreen"),
+    appScreen=document.getElementById("appScreen"),
+    normalAuthView=document.getElementById("normalAuthView"),
+    recoveryView=document.getElementById("recoveryView"),
+    loginTab=document.getElementById("loginTab"),
+    signupTab=document.getElementById("signupTab"),
+    authForm=document.getElementById("authForm"),
+    emailInput=document.getElementById("emailInput"),
+    passwordInput=document.getElementById("passwordInput"),
+    authSubmitButton=document.getElementById("authSubmitButton"),
+    authMessage=document.getElementById("authMessage"),
+    forgotPasswordButton=document.getElementById("forgotPasswordButton"),
+    recoveryForm=document.getElementById("recoveryForm"),
+    newPasswordInput=document.getElementById("newPasswordInput"),
+    confirmPasswordInput=document.getElementById("confirmPasswordInput"),
+    recoverySubmitButton=document.getElementById("recoverySubmitButton"),
+    recoveryMessage=document.getElementById("recoveryMessage"),
+    userEmail=document.getElementById("userEmail"),
+    messagesElement=document.getElementById("messages"),
+    messageInput=document.getElementById("messageInput"),
+    sendButton=document.getElementById("sendButton"),
+    newChatButton=document.getElementById("newChatButton"),
+    logoutButton=document.getElementById("logoutButton"),
+    welcomeElement=document.getElementById("welcome");
 
-    function showStatus(el,text,type="info"){el.textContent=text;el.className=`auth-message ${type}`;el.classList.remove("hidden")}function hideStatus(el){el.classList.add("hidden")}function setAuthBusy(v){authSubmitButton.disabled=v;loginTab.disabled=v;signupTab.disabled=v;forgotPasswordButton.disabled=v}function setRecoveryBusy(v){recoverySubmitButton.disabled=v}
-    function setAuthMode(mode){authMode=mode;hideStatus(authMessage);loginTab.classList.toggle("active",mode==="login");signupTab.classList.toggle("active",mode==="signup");authSubmitButton.textContent=mode==="login"?"Entrar":"Criar conta";passwordInput.autocomplete=mode==="login"?"current-password":"new-password"}
-    function showAuth(){appScreen.classList.add("hidden");authScreen.classList.remove("hidden");if(!recoveryMode){normalAuthView.classList.remove("hidden");recoveryView.classList.add("hidden")}}
-    function showApp(session){recoveryMode=false;currentSession=session;authScreen.classList.add("hidden");appScreen.classList.remove("hidden");userEmail.textContent=session?.user?.email||"";messageInput.focus()}
-    function showRecovery(){recoveryMode=true;normalAuthView.classList.add("hidden");recoveryView.classList.remove("hidden");authScreen.classList.remove("hidden");appScreen.classList.add("hidden");newPasswordInput.focus()}
 
-    loginTab.addEventListener("click",()=>setAuthMode("login"));signupTab.addEventListener("click",()=>setAuthMode("signup"));
-    authForm.addEventListener("submit",async e=>{e.preventDefault();hideStatus(authMessage);const email=emailInput.value.trim(),password=passwordInput.value;if(!email||!password)return;setAuthBusy(true);try{if(authMode==="signup"){const {data,error}=await supabaseClient.auth.signUp({email,password,options:{emailRedirectTo:APP_URL}});if(error)throw error;if(data.session){showApp(data.session)}else{showStatus(authMessage,"Conta criada. Verifique seu e-mail e clique no link de confirmação antes de entrar.","success");setAuthMode("login");passwordInput.value=""}}else{const {data,error}=await supabaseClient.auth.signInWithPassword({email,password});if(error)throw error;if(!data.session)throw new Error("Não foi possível iniciar a sessão.");showApp(data.session)}}catch(error){showStatus(authMessage,error?.message||"Não foi possível concluir a autenticação.","error")}finally{setAuthBusy(false)}});
-    forgotPasswordButton.addEventListener("click",async()=>{const email=emailInput.value.trim();if(!email){showStatus(authMessage,"Digite seu e-mail acima e clique novamente em 'Esqueci minha senha'.","info");emailInput.focus();return}setAuthBusy(true);try{const {error}=await supabaseClient.auth.resetPasswordForEmail(email,{redirectTo:APP_URL});if(error)throw error;showStatus(authMessage,"Enviamos um link de recuperação para o seu e-mail. Abra o link para criar uma nova senha.","success")}catch(error){showStatus(authMessage,error?.message||"Não foi possível enviar o e-mail de recuperação.","error")}finally{setAuthBusy(false)}});
-    recoveryForm.addEventListener("submit",async e=>{e.preventDefault();hideStatus(recoveryMessage);const a=newPasswordInput.value,b=confirmPasswordInput.value;if(a.length<6){showStatus(recoveryMessage,"A nova senha precisa ter pelo menos 6 caracteres.","error");return}if(a!==b){showStatus(recoveryMessage,"As duas senhas não coincidem.","error");return}setRecoveryBusy(true);try{const {error}=await supabaseClient.auth.updateUser({password:a});if(error)throw error;showStatus(recoveryMessage,"Senha atualizada. Entrando na MarIA...","success");const {data}=await supabaseClient.auth.getSession();setTimeout(()=>{if(data.session)showApp(data.session);else{recoveryMode=false;showAuth()}},700)}catch(error){showStatus(recoveryMessage,error?.message||"Não foi possível atualizar a senha.","error")}finally{setRecoveryBusy(false)}});
-    logoutButton.addEventListener("click",async()=>{setWaiting(false);await supabaseClient.auth.signOut();currentSession=null;previousInteractionId=null;messagesElement.innerHTML="";welcomeElement.style.display="block";showAuth()});
+    function showStatus(el,text,type="info"){
+      el.textContent=text;
+      el.className=`auth-message ${type}`;
+      el.classList.remove("hidden");
+    }
 
-    supabaseClient.auth.onAuthStateChange((event,session)=>{currentSession=session;if(event==="PASSWORD_RECOVERY"){showRecovery();return}if(event==="SIGNED_OUT"){if(!recoveryMode)showAuth();return}if(session&&!recoveryMode)showApp(session)});
-    (async()=>{const {data}=await supabaseClient.auth.getSession();currentSession=data.session;if(currentSession)showApp(currentSession);else showAuth()})();
+    function hideStatus(el){
+      el.classList.add("hidden");
+    }
 
-    function scrollToBottom(){window.scrollTo({top:document.body.scrollHeight,behavior:"smooth"})}function resizeTextarea(){messageInput.style.height="auto";messageInput.style.height=Math.min(messageInput.scrollHeight,160)+"px"}
-    function addMessage(sender,text,type=""){welcomeElement.style.display="none";const row=document.createElement("div");row.className=`message-row ${sender==="Você"?"user":"maria"}`;const message=document.createElement("div");message.className=sender==="Você"?"message user":type==="error"?"message maria error":"message maria";const s=document.createElement("div");s.className="sender";s.textContent=sender;const content=document.createElement("div");content.textContent=text;message.appendChild(s);message.appendChild(content);row.appendChild(message);messagesElement.appendChild(row);scrollToBottom();return row}
-    function addThinking(){const row=document.createElement("div");row.className="message-row maria";row.id="thinkingMessage";const message=document.createElement("div");message.className="message maria";const sender=document.createElement("div");sender.className="sender";sender.textContent="MarIA";const dots=document.createElement("div");dots.className="thinking";dots.innerHTML="<span></span><span></span><span></span>";message.appendChild(sender);message.appendChild(dots);row.appendChild(message);messagesElement.appendChild(row);scrollToBottom()}
-    function removeThinking(){document.getElementById("thinkingMessage")?.remove()}function setWaiting(v){waitingForMaria=v;sendButton.disabled=v;messageInput.disabled=v}
-    async function getValidSession(){let {data}=await supabaseClient.auth.getSession();let session=data.session;if(!session)return null;const expiresAt=(session.expires_at||0)*1000;if(expiresAt-Date.now()<60000){const refreshed=await supabaseClient.auth.refreshSession();if(refreshed.error)return null;session=refreshed.data.session}currentSession=session;return session}
-    async function sendMessage(){if(waitingForMaria)return;const message=messageInput.value.trim();if(!message)return;const session=await getValidSession();if(!session){currentSession=null;showAuth();showStatus(authMessage,"Sua sessão expirou. Entre novamente para continuar.","info");return}addMessage("Você",message);messageInput.value="";resizeTextarea();setWaiting(true);addThinking();try{const payload={message};if(previousInteractionId)payload.previous_interaction_id=previousInteractionId;const response=await fetch(API_URL,{method:"POST",headers:{"Content-Type":"application/json","Authorization":`Bearer ${session.access_token}`},body:JSON.stringify(payload)});let data;try{data=await response.json()}catch{throw new Error("A API retornou uma resposta inválida.")}removeThinking();if(response.status===401||response.status===403){await supabaseClient.auth.signOut();currentSession=null;showAuth();showStatus(authMessage,data.details||data.error||"Sua sessão expirou. Entre novamente.","info");return}if(!response.ok){addMessage("MarIA",data.details||data.error||"Não foi possível conversar com a MarIA.","error");return}if(data.interaction_id)previousInteractionId=data.interaction_id;if(!data.reply){addMessage("MarIA","Recebi sua mensagem, mas não consegui gerar uma resposta em texto.","error");return}addMessage("MarIA",data.reply)}catch(error){removeThinking();console.error("Erro:",error);addMessage("MarIA","Não consegui me conectar neste momento. Aguarde um pouco e tente novamente.","error")}finally{setWaiting(false);if(!appScreen.classList.contains("hidden"))messageInput.focus()}}
-    function newConversation(){previousInteractionId=null;messagesElement.innerHTML="";welcomeElement.style.display="block";messageInput.value="";resizeTextarea();messageInput.focus()}
-    sendButton.addEventListener("click",sendMessage);messageInput.addEventListener("input",resizeTextarea);messageInput.addEventListener("keydown",event=>{if(event.key==="Enter"&&!event.shiftKey){event.preventDefault();sendMessage()}});newChatButton.addEventListener("click",newConversation);
+    function setAuthBusy(v){
+      authSubmitButton.disabled=v;
+      loginTab.disabled=v;
+      signupTab.disabled=v;
+      forgotPasswordButton.disabled=v;
+    }
+
+    function setRecoveryBusy(v){
+      recoverySubmitButton.disabled=v;
+    }
+
+    function setAuthMode(mode){
+      authMode=mode;
+      hideStatus(authMessage);
+      loginTab.classList.toggle("active",mode==="login");
+      signupTab.classList.toggle("active",mode==="signup");
+      authSubmitButton.textContent=mode==="login"?"Entrar":"Criar conta";
+      passwordInput.autocomplete=mode==="login"?"current-password":"new-password";
+    }
+
+    function showAuth(){
+      appScreen.classList.add("hidden");
+      authScreen.classList.remove("hidden");
+
+      if(!recoveryMode){
+        normalAuthView.classList.remove("hidden");
+        recoveryView.classList.add("hidden");
+      }
+    }
+
+    function showApp(session){
+      recoveryMode=false;
+      currentSession=session;
+
+      authScreen.classList.add("hidden");
+      appScreen.classList.remove("hidden");
+
+      userEmail.textContent=session?.user?.email||"";
+      messageInput.focus();
+    }
+
+    function showRecovery(){
+      recoveryMode=true;
+
+      normalAuthView.classList.add("hidden");
+      recoveryView.classList.remove("hidden");
+
+      authScreen.classList.remove("hidden");
+      appScreen.classList.add("hidden");
+
+      newPasswordInput.focus();
+    }
+
+
+    loginTab.addEventListener("click",()=>setAuthMode("login"));
+    signupTab.addEventListener("click",()=>setAuthMode("signup"));
+
+
+    authForm.addEventListener("submit",async e=>{
+
+      e.preventDefault();
+
+      hideStatus(authMessage);
+
+      const email=emailInput.value.trim();
+      const password=passwordInput.value;
+
+      if(!email||!password)return;
+
+      setAuthBusy(true);
+
+      try{
+
+        if(authMode==="signup"){
+
+          const {data,error}=await supabaseClient.auth.signUp({
+            email,
+            password,
+            options:{
+              emailRedirectTo:APP_URL
+            }
+          });
+
+          if(error)throw error;
+
+          if(data.session){
+
+            showApp(data.session);
+
+          }else{
+
+            showStatus(
+              authMessage,
+              "Conta criada. Verifique seu e-mail e clique no link de confirmação antes de entrar.",
+              "success"
+            );
+
+            setAuthMode("login");
+            passwordInput.value="";
+
+          }
+
+        }else{
+
+          const {data,error}=await supabaseClient.auth.signInWithPassword({
+            email,
+            password
+          });
+
+          if(error)throw error;
+
+          if(!data.session)
+            throw new Error("Não foi possível iniciar a sessão.");
+
+          showApp(data.session);
+
+        }
+
+      }catch(error){
+
+        showStatus(
+          authMessage,
+          error?.message||"Não foi possível concluir a autenticação.",
+          "error"
+        );
+
+      }finally{
+
+        setAuthBusy(false);
+
+      }
+
+    });
+
+
+    forgotPasswordButton.addEventListener("click",async()=>{
+
+      const email=emailInput.value.trim();
+
+      if(!email){
+
+        showStatus(
+          authMessage,
+          "Digite seu e-mail acima e clique novamente em 'Esqueci minha senha'.",
+          "info"
+        );
+
+        emailInput.focus();
+
+        return;
+      }
+
+      setAuthBusy(true);
+
+      try{
+
+        const {error}=await supabaseClient.auth.resetPasswordForEmail(
+          email,
+          {
+            redirectTo:APP_URL
+          }
+        );
+
+        if(error)throw error;
+
+        showStatus(
+          authMessage,
+          "Enviamos um link de recuperação para o seu e-mail. Abra o link para criar uma nova senha.",
+          "success"
+        );
+
+      }catch(error){
+
+        showStatus(
+          authMessage,
+          error?.message||"Não foi possível enviar o e-mail de recuperação.",
+          "error"
+        );
+
+      }finally{
+
+        setAuthBusy(false);
+
+      }
+
+    });
+
+
+    recoveryForm.addEventListener("submit",async e=>{
+
+      e.preventDefault();
+
+      hideStatus(recoveryMessage);
+
+      const a=newPasswordInput.value;
+      const b=confirmPasswordInput.value;
+
+      if(a.length<6){
+
+        showStatus(
+          recoveryMessage,
+          "A nova senha precisa ter pelo menos 6 caracteres.",
+          "error"
+        );
+
+        return;
+      }
+
+      if(a!==b){
+
+        showStatus(
+          recoveryMessage,
+          "As duas senhas não coincidem.",
+          "error"
+        );
+
+        return;
+      }
+
+      setRecoveryBusy(true);
+
+      try{
+
+        const {error}=await supabaseClient.auth.updateUser({
+          password:a
+        });
+
+        if(error)throw error;
+
+        showStatus(
+          recoveryMessage,
+          "Senha atualizada. Entrando na MarIA...",
+          "success"
+        );
+
+        const {data}=await supabaseClient.auth.getSession();
+
+        setTimeout(()=>{
+
+          if(data.session)
+            showApp(data.session);
+          else{
+            recoveryMode=false;
+            showAuth();
+          }
+
+        },700);
+
+      }catch(error){
+
+        showStatus(
+          recoveryMessage,
+          error?.message||"Não foi possível atualizar a senha.",
+          "error"
+        );
+
+      }finally{
+
+        setRecoveryBusy(false);
+
+      }
+
+    });
+
+
+    logoutButton.addEventListener("click",async()=>{
+
+      setWaiting(false);
+
+      await supabaseClient.auth.signOut();
+
+      currentSession=null;
+      previousInteractionId=null;
+
+      messagesElement.innerHTML="";
+      welcomeElement.style.display="block";
+
+      showAuth();
+
+    });
+
+
+    supabaseClient.auth.onAuthStateChange((event,session)=>{
+
+      currentSession=session;
+
+      if(event==="PASSWORD_RECOVERY"){
+        showRecovery();
+        return;
+      }
+
+      if(event==="SIGNED_OUT"){
+
+        if(!recoveryMode)
+          showAuth();
+
+        return;
+      }
+
+      if(session&&!recoveryMode)
+        showApp(session);
+
+    });
+
+
+    (async()=>{
+
+      const {data}=await supabaseClient.auth.getSession();
+
+      currentSession=data.session;
+
+      if(currentSession)
+        showApp(currentSession);
+      else
+        showAuth();
+
+    })();
+
+
+    function scrollToBottom(){
+
+      window.scrollTo({
+        top:document.body.scrollHeight,
+        behavior:"smooth"
+      });
+
+    }
+
+
+    function resizeTextarea(){
+
+      messageInput.style.height="auto";
+
+      messageInput.style.height=
+        Math.min(messageInput.scrollHeight,160)+"px";
+
+    }
+
+
+    function addMessage(sender,text,type=""){
+
+      welcomeElement.style.display="none";
+
+      const row=document.createElement("div");
+
+      row.className=
+        `message-row ${sender==="Você"?"user":"maria"}`;
+
+      const message=document.createElement("div");
+
+      message.className=
+        sender==="Você"
+        ?"message user"
+        :type==="error"
+        ?"message maria error"
+        :"message maria";
+
+      const s=document.createElement("div");
+
+      s.className="sender";
+      s.textContent=sender;
+
+      const content=document.createElement("div");
+
+      content.textContent=text;
+
+      message.appendChild(s);
+      message.appendChild(content);
+
+      row.appendChild(message);
+
+      messagesElement.appendChild(row);
+
+      scrollToBottom();
+
+      return row;
+
+    }
+
+
+    function addThinking(){
+
+      const row=document.createElement("div");
+
+      row.className="message-row maria";
+      row.id="thinkingMessage";
+
+      const message=document.createElement("div");
+
+      message.className="message maria";
+
+      const sender=document.createElement("div");
+
+      sender.className="sender";
+      sender.textContent="MarIA";
+
+      const dots=document.createElement("div");
+
+      dots.className="thinking";
+
+      dots.innerHTML=
+        "<span></span><span></span><span></span>";
+
+      message.appendChild(sender);
+      message.appendChild(dots);
+
+      row.appendChild(message);
+
+      messagesElement.appendChild(row);
+
+      scrollToBottom();
+
+    }
+
+
+    function removeThinking(){
+
+      document.getElementById("thinkingMessage")?.remove();
+
+    }
+
+
+    function setWaiting(v){
+
+      waitingForMaria=v;
+      sendButton.disabled=v;
+      messageInput.disabled=v;
+
+    }
+
+
+    async function getValidSession(){
+
+      let {data}=await supabaseClient.auth.getSession();
+
+      let session=data.session;
+
+      if(!session)
+        return null;
+
+      const expiresAt=(session.expires_at||0)*1000;
+
+      if(expiresAt-Date.now()<60000){
+
+        const refreshed=
+          await supabaseClient.auth.refreshSession();
+
+        if(refreshed.error)
+          return null;
+
+        session=refreshed.data.session;
+
+      }
+
+      currentSession=session;
+
+      return session;
+
+    }
+
+
+    async function sendMessage(){
+
+      if(waitingForMaria)
+        return;
+
+      const message=
+        messageInput.value.trim();
+
+      if(!message)
+        return;
+
+      const session=
+        await getValidSession();
+
+      if(!session){
+
+        currentSession=null;
+
+        showAuth();
+
+        showStatus(
+          authMessage,
+          "Sua sessão expirou. Entre novamente para continuar.",
+          "info"
+        );
+
+        return;
+
+      }
+
+      addMessage("Você",message);
+
+      messageInput.value="";
+
+      resizeTextarea();
+
+      setWaiting(true);
+
+      addThinking();
+
+      try{
+
+        const payload={
+          message
+        };
+
+        if(previousInteractionId)
+          payload.previous_interaction_id=
+            previousInteractionId;
+
+        const response=
+          await fetch(
+            API_URL,
+            {
+              method:"POST",
+              headers:{
+                "Content-Type":"application/json",
+                "Authorization":
+                  `Bearer ${session.access_token}`
+              },
+              body:JSON.stringify(payload)
+            }
+          );
+
+        let data;
+
+        try{
+
+          data=await response.json();
+
+        }catch{
+
+          throw new Error(
+            "A API retornou uma resposta inválida."
+          );
+
+        }
+
+        removeThinking();
+
+        if(
+          response.status===401||
+          response.status===403
+        ){
+
+          await supabaseClient.auth.signOut();
+
+          currentSession=null;
+
+          showAuth();
+
+          showStatus(
+            authMessage,
+            data.details||
+            data.error||
+            "Sua sessão expirou. Entre novamente.",
+            "info"
+          );
+
+          return;
+
+        }
+
+        if(!response.ok){
+
+          addMessage(
+            "MarIA",
+            data.details||
+            data.error||
+            "Não foi possível conversar com a MarIA.",
+            "error"
+          );
+
+          return;
+
+        }
+
+        if(data.interaction_id)
+          previousInteractionId=
+            data.interaction_id;
+
+        if(!data.reply){
+
+          addMessage(
+            "MarIA",
+            "Recebi sua mensagem, mas não consegui gerar uma resposta em texto.",
+            "error"
+          );
+
+          return;
+
+        }
+
+        addMessage(
+          "MarIA",
+          data.reply
+        );
+
+      }catch(error){
+
+        removeThinking();
+
+        console.error(
+          "Erro:",
+          error
+        );
+
+        addMessage(
+          "MarIA",
+          "Não consegui me conectar neste momento. Aguarde um pouco e tente novamente.",
+          "error"
+        );
+
+      }finally{
+
+        setWaiting(false);
+
+        if(!appScreen.classList.contains("hidden"))
+          messageInput.focus();
+
+      }
+
+    }
+
+
+    function newConversation(){
+
+      previousInteractionId=null;
+
+      messagesElement.innerHTML="";
+
+      welcomeElement.style.display="block";
+
+      messageInput.value="";
+
+      resizeTextarea();
+
+      messageInput.focus();
+
+    }
+
+
+    sendButton.addEventListener(
+      "click",
+      sendMessage
+    );
+
+    messageInput.addEventListener(
+      "input",
+      resizeTextarea
+    );
+
+    messageInput.addEventListener(
+      "keydown",
+      event=>{
+
+        if(
+          event.key==="Enter" &&
+          !event.shiftKey
+        ){
+
+          event.preventDefault();
+
+          sendMessage();
+
+        }
+
+      }
+    );
+
+    newChatButton.addEventListener(
+      "click",
+      newConversation
+    );
+
   </script>
+
 </body>
 </html>
