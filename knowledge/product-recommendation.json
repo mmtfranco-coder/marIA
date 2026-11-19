@@ -1,0 +1,546 @@
+{
+  "knowledge_type": "maria_franco_product_catalog",
+  "version": "1.0",
+
+  "catalog_purpose": "Permitir que MarIA compreenda os produtos de Maria Franco, identifique quando cada produto é relevante para a necessidade do usuário e faça recomendações naturais e contextualizadas.",
+
+  "global_recommendation_policy": {
+    "primary_role": "MarIA é primeiro uma assistente artística. Ela deve responder completamente à pergunta do usuário antes de introduzir qualquer possibilidade de produto.",
+
+    "soft_recommendation_behavior": "Quando existir uma conexão clara entre o assunto discutido e um produto de Maria Franco, MarIA pode finalizar sua resposta perguntando brevemente se o usuário gostaria de conhecer produtos ou treinamentos de Maria Franco que possam ajudá-lo a se aprofundar naquele assunto.",
+
+    "example_soft_question_pt": "Se quiser, posso também indicar algum curso, treinamento ou produto da Maria Franco que possa ajudar você a se aprofundar nesse assunto.",
+
+    "example_soft_question_en": "If you'd like, I can also suggest a Maria Franco course, training program, or product that could help you go deeper into this topic.",
+
+    "example_soft_question_es": "Si quieres, también puedo recomendarte algún curso, entrenamiento o producto de Maria Franco que pueda ayudarte a profundizar en este tema.",
+
+    "after_user_interest": [
+      "Recomendar apenas produtos realmente relevantes à necessidade manifestada.",
+      "Explicar brevemente por que o produto é adequado ao objetivo do usuário.",
+      "Priorizar o produto mais específico para a necessidade apresentada.",
+      "Quando mais de um produto for relevante, explicar a diferença entre eles para ajudar o usuário a escolher.",
+      "Utilizar somente informações sobre os produtos presentes nesta base de conhecimento.",
+      "Fornecer o link para o site oficial de Maria Franco para informações atualizadas."
+    ],
+
+    "website_rule": {
+      "official_website": "https://www.mariafrancoarte.com/category/all-products",
+      "purpose": "Página oficial com todos os produtos de Maria Franco. Utilizar este link para direcionar o usuário a informações atualizadas sobre produtos, disponibilidade, preços, promoções, condições de pagamento e compra."
+    },
+
+    "website_reference_rule": [
+      "Quando MarIA recomendar um produto, ela deve fornecer o link oficial para que o usuário possa consultar os detalhes atualizados.",
+      "O link oficial dos produtos é https://www.mariafrancoarte.com/category/all-products",
+      "MarIA não deve inventar preços, promoções, disponibilidade ou condições comerciais.",
+      "Quando essas informações forem solicitadas, MarIA deve orientar o usuário a consultar a página oficial."
+    ],
+
+    "commercial_information_rules": [
+      "Não inventar preços.",
+      "Não inventar descontos ou promoções.",
+      "Não afirmar que uma promoção histórica ainda está vigente.",
+      "Não inventar condições de pagamento.",
+      "Não garantir disponibilidade atual de um produto sem informação atualizada.",
+      "Para informações comerciais atuais, direcionar o usuário ao site oficial de Maria Franco."
+    ],
+
+    "avoid": [
+      "Transformar todas as respostas em oportunidades de venda.",
+      "Recomendar produtos sem relação clara com a necessidade do usuário.",
+      "Repetir continuamente a oferta de produtos dentro da mesma conversa.",
+      "Inventar características, conteúdos ou benefícios dos produtos.",
+      "Prometer resultados.",
+      "Utilizar linguagem de venda agressiva."
+    ],
+
+    "repetition_rule": "Após MarIA oferecer uma recomendação de produto dentro de determinado tópico, ela não deve repetir continuamente a oferta, a menos que o assunto mude significativamente ou o usuário apresente uma nova necessidade."
+  },
+
+  "products": [
+    {
+      "name": "Pintura em Vidro Sem Segredos",
+      "creator": "Maria Franco",
+      "type": "Curso completo",
+      "category": "Pintura artística em vidro e cristal",
+
+      "positioning": "Curso premium e mais completo de Maria Franco sobre seu estilo e método de pintura em vidros e cristais.",
+
+      "purpose": "Ensinar de forma detalhada o estilo e o processo de pintura em vidros e cristais de Maria Franco, desde os fundamentos de materiais e preparação até a execução de diferentes folhas, flores, composição das pinturas e queima.",
+
+      "audience": [
+        "Pessoas iniciantes em pintura artística em vidro e cristal",
+        "Alunos que desejam aprender o método de Maria Franco de maneira estruturada",
+        "Pintores que já possuem experiência, mas desejam evoluir sua técnica e desenvolver seu próprio estilo",
+        "Alunos interessados em compreender não apenas técnicas isoladas, mas também o processo e a linha de raciocínio utilizados por Maria Franco"
+      ],
+
+      "learning_outcomes": [
+        "Conhecer e organizar os materiais usados na pintura",
+        "Preparar corretamente o trabalho antes da pintura",
+        "Aprender diferentes formas de pintar folhas",
+        "Aprender diferentes estilos de flores",
+        "Compreender como combinar elementos em uma composição",
+        "Acompanhar o processo criativo e a linha de raciocínio de Maria Franco",
+        "Entender a etapa de queima",
+        "Aplicar as diretrizes ensinadas para evoluir e desenvolver o próprio estilo"
+      ],
+
+      "modules": [
+        "Introdução",
+        "Materiais",
+        "Preparação",
+        "Folhas 1",
+        "Folhas 2",
+        "Folhas 3",
+        "Girassol",
+        "Orquídea",
+        "Lírio",
+        "Lavanda",
+        "Flores Abstratas",
+        "Montagem 1",
+        "Montagem 2",
+        "Montagem 3",
+        "Queima",
+        "Aula Bonus!",
+        "Conclusão"
+      ],
+
+      "release_information": "A partir do módulo Girassol, as aulas são liberadas após 8 dias.",
+
+      "language_information": {
+        "audio": "Português (PT)",
+        "subtitles": [
+          "Inglês (EN)",
+          "Espanhol (ES)"
+        ],
+        "international_accessibility": "O áudio original do curso é em português. Legendas estão disponíveis em inglês e espanhol."
+      },
+
+      "recommend_when": [
+        "O usuário perguntar qual curso de Maria Franco é mais completo.",
+        "O usuário quiser aprender o estilo de pintura em vidro e cristal de Maria Franco.",
+        "O usuário estiver procurando um curso completo de pintura em vidro ou cristal.",
+        "O usuário quiser começar a aprender pintura em vidro de maneira estruturada.",
+        "O usuário já tiver experiência e quiser aprofundar ou aperfeiçoar sua técnica.",
+        "O usuário demonstrar interesse em aprender folhas, flores e composição.",
+        "O usuário quiser compreender materiais, preparação, pintura, montagem e queima.",
+        "O usuário quiser compreender o método ou a linha de raciocínio artística de Maria Franco."
+      ],
+
+      "recommendation_priority": "Principal recomendação quando o usuário busca uma formação abrangente no método de pintura em vidro e cristal de Maria Franco.",
+
+      "important_rules": [
+        "Para usuários que não falam português, informar claramente que o áudio é em português e existem legendas em inglês e espanhol.",
+        "Nunca sugerir que o curso é dublado em inglês ou espanhol.",
+        "Não inventar conteúdos que não estejam registrados nesta base de conhecimento."
+      ]
+    },
+
+    {
+      "name": "Pintura em Vidro Sem Segredos - NATAL",
+      "creator": "Maria Franco",
+      "type": "Curso temático",
+      "category": "Pintura artística natalina em vidro e cristal",
+
+      "positioning": "Curso dedicado à aplicação do estilo e das técnicas de Maria Franco em projetos e composições natalinas.",
+
+      "purpose": "Ensinar pinturas e composições natalinas em vidro e cristal, desde a preparação da peça até acabamentos e queima em forno.",
+
+      "techniques_and_concepts": [
+        "Preparação da peça",
+        "Pinceladas",
+        "Combinações de cores",
+        "Misturas de cores",
+        "Luz",
+        "Sombra",
+        "Volume",
+        "Composição",
+        "Acabamentos",
+        "Efeitos natalinos",
+        "Queima em forno"
+      ],
+
+      "modules": [
+        "Introdução & Materiais",
+        "Preparação",
+        "Árvore 1",
+        "Árvore 2",
+        "Guirlanda 1",
+        "Guirlanda 2",
+        "Jarra com Flores",
+        "Jarra com Ramos",
+        "Queima em Forno"
+      ],
+
+      "bonus_modules": [
+        "Rena",
+        "Mini Boneco de Neve",
+        "Neve"
+      ],
+
+      "audience": [
+        "Iniciantes em pintura em vidro e cristal",
+        "Alunos experientes interessados em projetos natalinos",
+        "Pessoas interessadas em decoração natalina em vidro ou cristal",
+        "Alunos que desejam desenvolver técnicas e composições enquanto criam projetos de Natal"
+      ],
+
+      "language_information": {
+        "audio": "Português (PT)",
+        "subtitles": [
+          "Inglês (EN)",
+          "Espanhol (ES)"
+        ],
+        "international_accessibility": "O áudio original do curso é em português. Legendas estão disponíveis em inglês e espanhol."
+      },
+
+      "recommend_when": [
+        "O usuário procurar pintura natalina em vidro ou cristal.",
+        "O usuário quiser aprender projetos de Natal no estilo de Maria Franco.",
+        "O usuário demonstrar interesse em árvores de Natal, guirlandas, renas, bonecos de neve ou efeitos de neve.",
+        "O usuário desejar criar peças decorativas para o Natal.",
+        "O usuário quiser desenvolver composições natalinas em vidro."
+      ],
+
+      "recommendation_priority": "Priorizar quando o objetivo principal do usuário estiver relacionado ao Natal, decoração natalina ou aos projetos especificamente abordados neste curso.",
+
+      "important_rules": [
+        "Não apresentar como substituto do curso principal Pintura em Vidro Sem Segredos.",
+        "Para usuários internacionais, informar claramente que o áudio é em português e há legendas em inglês e espanhol.",
+        "Não assumir que promoções históricas de lançamento ainda estão disponíveis."
+      ]
+    },
+
+    {
+      "name": "Pintura em Vidro Sem Segredos - NATAL KIDS",
+      "creator": "Maria Franco",
+      "type": "Curso temático",
+      "category": "Pintura natalina em vidro com projetos infantis e nível de dificuldade reduzido",
+
+      "positioning": "Curso desenvolvido especialmente para crianças, mas também adequado para adultos interessados em temas infantis, projetos natalinos lúdicos ou uma experiência com menor nível de dificuldade e progressão gradual.",
+
+      "purpose": "Introduzir e desenvolver habilidades de pintura em vidro através de projetos natalinos acessíveis, conduzidos passo a passo e com progressão gradual.",
+
+      "key_characteristics": [
+        "Projetos passo a passo",
+        "Nível de dificuldade reduzido",
+        "Progressão gradual entre os projetos",
+        "Exploração de cores e pinceladas",
+        "Estímulo à criatividade",
+        "Desenvolvimento gradual de confiança e habilidades",
+        "Liberdade para que cada aluno desenvolva sua própria maneira de criar"
+      ],
+
+      "projects": [
+        "Árvore KIDS",
+        "Boneco de Neve",
+        "Bolinhas e Folhas",
+        "Soldado de Chumbo",
+        "Papai Noel"
+      ],
+
+      "bonus_projects": [
+        "Mini Boneco de Neve",
+        "Rena",
+        "Neve"
+      ],
+
+      "bonus_information": "Os projetos bônus Mini Boneco de Neve, Rena e Neve são os mesmos projetos bônus presentes no curso Pintura em Vidro Sem Segredos - NATAL.",
+
+      "audience": [
+        "Crianças interessadas em pintura e atividades artísticas",
+        "Crianças em primeiro contato com pintura em vidro",
+        "Crianças que se beneficiem de projetos com dificuldade reduzida e evolução gradual",
+        "Adultos interessados em temas infantis ou natalinos lúdicos",
+        "Adultos iniciantes que prefiram projetos com menor dificuldade",
+        "Pessoas que busquem uma experiência de aprendizado mais leve e gradual"
+      ],
+
+      "language_information": {
+        "audio": "Português (PT)",
+        "subtitles": [
+          "Inglês (EN)",
+          "Espanhol (ES)"
+        ],
+        "international_accessibility": "O áudio original do curso é em português. Legendas estão disponíveis em inglês e espanhol."
+      },
+
+      "recommend_when": [
+        "O usuário procurar um curso de pintura em vidro para crianças.",
+        "O usuário procurar projetos natalinos de menor dificuldade.",
+        "O usuário procurar atividades artísticas natalinas para crianças.",
+        "Um adulto demonstrar interesse em temas infantis ou natalinos lúdicos.",
+        "Um adulto desejar projetos mais acessíveis e progressivos.",
+        "O usuário demonstrar interesse nos projetos específicos incluídos no curso."
+      ],
+
+      "recommendation_priority": "Priorizar quando houver interesse em crianças, projetos infantis ou lúdicos, ou menor nível de dificuldade, independentemente da idade do aluno.",
+
+      "important_rules": [
+        "Não tratar este produto como exclusivamente infantil.",
+        "Adultos interessados em temas infantis ou em menor nível de dificuldade também podem se beneficiar.",
+        "Não presumir que todo adulto iniciante deve escolher NATAL KIDS.",
+        "Não associar menor dificuldade a menor qualidade.",
+        "Não inventar idade mínima ou máxima.",
+        "Para usuários internacionais, informar claramente que o áudio é em português e há legendas em inglês e espanhol."
+      ]
+    },
+
+    {
+      "name": "Protocolo da Folha Perfeita: Treino em Acetato",
+      "creator": "Maria Franco",
+      "type": "Treinamento técnico",
+      "category": "Treinamento de pinceladas e folhas para pintura em vidro",
+
+      "positioning": "Treinamento técnico, específico e repetitivo para desenvolver a pincelada utilizada na criação de folhas naturais, leves e elegantes por meio de prática prévia em acetato.",
+
+      "purpose": "Desenvolver controle, precisão, ritmo, fluidez e confiança nas pinceladas para folhas através de prática estruturada e repetitiva.",
+
+      "training_method": {
+        "approach": "Prática deliberada e repetitiva das pinceladas em acetato antes da aplicação no vidro.",
+        "reason": "Permite que o aluno repita o movimento do pincel diversas vezes, buscando desenvolver segurança, precisão e fluidez antes de executar a técnica diretamente sobre o vidro.",
+        "focus": "Desenvolvimento do controle do pincel e da qualidade das pinceladas usadas na criação de folhas."
+      },
+
+      "included_content": [
+        "Videoaula detalhada com demonstrações práticas",
+        "Apostila com exercícios de pinceladas e treinamento de folhas",
+        "Modelos para treinamento",
+        "Método de prática em acetato antes da aplicação no vidro",
+        "Técnicas para desenvolver controle, ritmo e precisão",
+        "Aula bônus de montagem de peça com folhas e flor"
+      ],
+
+      "bonus_information": "A aula bônus de montagem com folhas e flor também faz parte do curso Pintura em Vidro Sem Segredos.",
+
+      "audience": [
+        "Iniciantes que desejam construir uma base sólida",
+        "Alunos com dificuldades na execução de folhas",
+        "Artistas que desejam aperfeiçoar suas pinceladas",
+        "Pintores que desejam maior controle, precisão, fluidez e confiança"
+      ],
+
+      "language_information": {
+        "audio": "Português (PT)",
+        "subtitles": [],
+        "current_status": "Atualmente sem legendas em inglês ou espanhol."
+      },
+
+      "recommend_when": [
+        "O usuário tiver dificuldade para executar folhas.",
+        "O usuário quiser melhorar suas pinceladas de folhas.",
+        "O usuário tiver dificuldade com controle, precisão ou fluidez do pincel.",
+        "O usuário quiser praticar movimentos antes de pintar diretamente no vidro.",
+        "O usuário perguntar sobre treinamento em acetato.",
+        "O usuário procurar um treinamento repetitivo e focado em uma habilidade específica."
+      ],
+
+      "recommendation_priority": "Alta quando o problema estiver especificamente relacionado a folhas, pinceladas de folhas, precisão ou controle do pincel.",
+
+      "important_rules": [
+        "Não posicionar como curso completo de pintura em vidro.",
+        "Não afirmar que possui legendas em inglês ou espanhol.",
+        "Priorizar este produto sobre um curso geral quando a necessidade for especificamente aperfeiçoar folhas.",
+        "A necessidade técnica é mais importante para esta recomendação do que o nível de experiência do aluno."
+      ]
+    },
+
+    {
+      "name": "Protocolo da Flor Perfeita: Treino em Acetato",
+      "creator": "Maria Franco",
+      "type": "Treinamento técnico",
+      "category": "Treinamento de pinceladas, pétalas e flores para pintura em vidro",
+
+      "positioning": "Treinamento técnico, específico e repetitivo para aperfeiçoar pinceladas utilizadas na criação de flores naturais, delicadas e harmoniosas por meio da prática prévia em acetato.",
+
+      "purpose": "Desenvolver controle, precisão, ritmo, fluidez e confiança nas pinceladas utilizadas para formar pétalas e construir flores.",
+
+      "training_method": {
+        "approach": "Prática deliberada e repetitiva das pinceladas em acetato antes da aplicação no vidro.",
+        "reason": "Permite que o aluno pratique repetidamente os movimentos utilizados na formação das pétalas e flores antes de executar a técnica diretamente sobre o vidro.",
+        "focus": "Desenvolvimento do controle do pincel, formação das pétalas, naturalidade, delicadeza e construção das flores."
+      },
+
+      "included_content": [
+        "Videoaula detalhada com demonstrações práticas",
+        "Apostila com exercícios de pinceladas e treinamento de flores",
+        "Modelos de pinceladas para treinamento",
+        "Método de prática em acetato antes da aplicação no vidro",
+        "Técnicas para desenvolver controle, ritmo e precisão",
+        "Aula bônus de montagem de uma peça completa com flores e folhas"
+      ],
+
+      "bonus_information": "A aula bônus de montagem com flores e folhas é totalmente nova e exclusiva deste produto.",
+
+      "audience": [
+        "Iniciantes que desejam construir uma base sólida",
+        "Alunos com dificuldades em flores ou pétalas",
+        "Artistas que desejam aperfeiçoar suas pinceladas",
+        "Pintores que desejam maior naturalidade, delicadeza e leveza nas flores",
+        "Pessoas que desejam ganhar confiança antes de executar flores diretamente no vidro"
+      ],
+
+      "language_information": {
+        "audio": "Português (PT)",
+        "subtitles": [],
+        "current_status": "Atualmente sem legendas em inglês ou espanhol."
+      },
+
+      "recommend_when": [
+        "O usuário tiver dificuldade para pintar pétalas ou flores.",
+        "O usuário quiser melhorar suas pinceladas para flores.",
+        "As flores estiverem ficando rígidas, pesadas ou pouco naturais.",
+        "O usuário quiser desenvolver maior naturalidade ou delicadeza nas flores.",
+        "O usuário quiser praticar a formação de pétalas repetidamente.",
+        "O usuário procurar treinamento em acetato focado em flores."
+      ],
+
+      "recommendation_priority": "Alta quando o problema estiver especificamente relacionado a flores, pétalas, naturalidade, delicadeza ou controle das pinceladas.",
+
+      "important_rules": [
+        "Não posicionar como curso completo de pintura em vidro.",
+        "Não afirmar que possui legendas em inglês ou espanhol.",
+        "Priorizar este produto quando a dificuldade específica estiver em flores ou pétalas.",
+        "A aula bônus de montagem de uma peça com flores e folhas é conteúdo novo e exclusivo deste produto."
+      ]
+    },
+
+    {
+      "name": "Calculadora da Pintura Lucrativa para Precificar Suas Peças em Poucos Minutos",
+      "creator": "Maria Franco",
+      "type": "Ferramenta de precificação",
+      "category": "Precificação e rentabilidade para pintura em vidro e cristal",
+
+      "positioning": "Ferramenta prática criada especialmente para artistas e artesãs que trabalham com pintura em vidro e cristal e precisam estruturar a precificação de suas peças.",
+
+      "purpose": "Ajudar a calcular o preço de venda das peças considerando custos de materiais, insumos, custos fixos, custos variáveis e outros elementos envolvidos na produção.",
+
+      "included_content": [
+        "Calculadora para celular ou computador",
+        "Sistema prático para definição do preço de venda",
+        "Sugestões de custos para materiais utilizados em pintura em vidro e cristal",
+        "PDF explicativo com passo a passo de utilização",
+        "Lista de custos fixos e variáveis"
+      ],
+
+      "key_features": [
+        "Permite considerar custos relacionados à produção da peça",
+        "Fornece valores de referência para determinados materiais e insumos quando o usuário não souber exatamente quanto gastou",
+        "Ajuda a organizar custos fixos e variáveis",
+        "Foi desenvolvida considerando a realidade de quem trabalha com pintura em vidro e cristal",
+        "Pode ser utilizada tanto por quem está começando quanto por quem já comercializa suas peças"
+      ],
+
+      "audience": [
+        "Artistas e artesãs que produzem peças para venda",
+        "Pessoas que têm dificuldade para definir preços",
+        "Pessoas que não sabem exatamente quanto gastam em materiais",
+        "Artistas que têm receio de cobrar muito ou pouco",
+        "Pessoas que desejam avaliar melhor a rentabilidade de seu trabalho",
+        "Pessoas começando a vender pinturas em vidro ou cristal",
+        "Artistas experientes que desejam uma metodologia mais estruturada de precificação"
+      ],
+
+      "problems_it_addresses": [
+        "Dificuldade para determinar preço de venda",
+        "Precificação baseada apenas em estimativa ou intuição",
+        "Desconhecimento dos custos envolvidos na produção",
+        "Dificuldade para considerar materiais e insumos",
+        "Risco de vender peças sem obter lucro adequado",
+        "Insegurança ao informar preços aos clientes"
+      ],
+
+      "recommend_when": [
+        "O usuário perguntar quanto deveria cobrar por uma peça.",
+        "O usuário perguntar como precificar seu trabalho.",
+        "O usuário tiver dúvidas sobre custos, preço de venda ou rentabilidade.",
+        "O usuário vender peças mas não souber se está obtendo lucro.",
+        "O usuário não souber quanto gasta em materiais.",
+        "O usuário estiver começando a comercializar pinturas em vidro ou cristal.",
+        "O usuário procurar uma forma mais prática e estruturada de formar seus preços."
+      ],
+
+      "recommendation_priority": "Alta quando a necessidade estiver relacionada especificamente à precificação, custos, venda ou rentabilidade das peças.",
+
+      "important_rules": [
+        "Não posicionar como curso de técnica de pintura.",
+        "Não posicionar como sistema contábil ou curso completo de gestão financeira.",
+        "Não garantir lucro.",
+        "Não inventar fórmulas, valores de referência ou cálculos que não estejam presentes na base de conhecimento.",
+        "Quando faltar informação para calcular o preço de uma peça específica, explicar os fatores relevantes sem inventar números."
+      ]
+    }
+  ],
+
+  "product_selection_logic": {
+    "complete_method": {
+      "intent": "Aprender de forma abrangente o estilo e método de Maria Franco.",
+      "priority_product": "Pintura em Vidro Sem Segredos"
+    },
+
+    "christmas": {
+      "intent": "Aprender projetos e composições natalinas.",
+      "priority_product": "Pintura em Vidro Sem Segredos - NATAL"
+    },
+
+    "kids_or_lower_difficulty": {
+      "intent": "Projetos infantis, lúdicos, natalinos ou com nível de dificuldade reduzido.",
+      "priority_product": "Pintura em Vidro Sem Segredos - NATAL KIDS",
+      "rule": "A idade não deve ser o único critério. O produto também pode ser adequado para adultos."
+    },
+
+    "leaf_technique": {
+      "intent": "Melhorar especificamente folhas, pinceladas de folhas, precisão, ritmo, fluidez ou controle do pincel.",
+      "priority_product": "Protocolo da Folha Perfeita: Treino em Acetato"
+    },
+
+    "flower_technique": {
+      "intent": "Melhorar especificamente flores, pétalas, naturalidade, delicadeza, fluidez ou controle das pinceladas.",
+      "priority_product": "Protocolo da Flor Perfeita: Treino em Acetato"
+    },
+
+    "pricing": {
+      "intent": "Precificar peças, compreender custos ou melhorar a estrutura de formação do preço de venda.",
+      "priority_product": "Calculadora da Pintura Lucrativa para Precificar Suas Peças em Poucos Minutos"
+    },
+
+    "leaves_and_flowers": {
+      "intent": "O usuário quer aperfeiçoar tanto folhas quanto flores.",
+      "rule": "MarIA pode apresentar Protocolo da Folha Perfeita e Protocolo da Flor Perfeita como treinamentos complementares, explicando claramente a finalidade de cada um."
+    },
+
+    "ambiguous_brush_problem": {
+      "intent": "O usuário diz apenas que precisa melhorar sua pincelada ou controle do pincel.",
+      "rule": "Antes de recomendar um protocolo específico, MarIA deve identificar se a principal dificuldade está relacionada a folhas, flores ou ambas."
+    },
+
+    "general_vs_specific_training": {
+      "intent": "O usuário demonstra uma dificuldade técnica específica, mas também existe um curso mais abrangente relacionado ao assunto.",
+      "rule": "Priorizar o produto mais específico para resolver a necessidade manifestada. Se o objetivo do usuário for uma formação ampla, priorizar o curso completo."
+    },
+
+    "multiple_products_match": {
+      "rule": "Quando mais de um produto for realmente relevante, MarIA deve comparar brevemente as opções e ajudar o usuário a escolher com base no objetivo, nível de dificuldade desejado e tipo de conteúdo procurado. Não recomendar vários produtos apenas para aumentar uma venda."
+    }
+  },
+
+  "final_recommendation_behavior": {
+    "recommendation_structure": [
+      "Identificar a necessidade principal do usuário.",
+      "Selecionar o produto mais adequado usando product_selection_logic.",
+      "Explicar de forma breve por que aquele produto corresponde à necessidade.",
+      "Informar limitações relevantes, especialmente idioma e disponibilidade de legendas.",
+      "Quando apropriado, mencionar uma alternativa apenas se ela também for realmente relevante.",
+      "Direcionar o usuário para a página oficial de produtos para detalhes comerciais e compra."
+    ],
+
+    "official_products_url": "https://www.mariafrancoarte.com/category/all-products",
+
+    "example_closing_pt": "Você pode consultar os detalhes atuais, valores e disponibilidade na página oficial de produtos da Maria Franco: https://www.mariafrancoarte.com/category/all-products",
+
+    "example_closing_en": "You can find current details, pricing, and availability on Maria Franco's official products page: https://www.mariafrancoarte.com/category/all-products",
+
+    "example_closing_es": "Puedes consultar los detalles actuales, precios y disponibilidad en la página oficial de productos de Maria Franco: https://www.mariafrancoarte.com/category/all-products"
+  }
+}
