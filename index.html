@@ -23,9 +23,7 @@
       --success:#496b55;
     }
 
-    *{
-      box-sizing:border-box;
-    }
+    *{box-sizing:border-box}
 
     body{
       margin:0;
@@ -35,15 +33,8 @@
       color:var(--text);
     }
 
-    button,
-    input,
-    textarea{
-      font:inherit;
-    }
-
-    .hidden{
-      display:none!important;
-    }
+    button,input,textarea{font:inherit}
+    .hidden{display:none!important}
 
     .app{
       min-height:100vh;
@@ -132,9 +123,7 @@
       background:var(--secondary);
     }
 
-    .mobile-history{
-      display:none;
-    }
+    .mobile-history{display:none}
 
     .workspace{
       width:100%;
@@ -188,9 +177,7 @@
       font-size:13px;
     }
 
-    .conversation-item:hover{
-      background:#f3ece9;
-    }
+    .conversation-item:hover{background:#f3ece9}
 
     .conversation-item.active{
       background:#fff;
@@ -247,13 +234,8 @@
       width:100%;
     }
 
-    .message-row.user{
-      justify-content:flex-end;
-    }
-
-    .message-row.maria{
-      justify-content:flex-start;
-    }
+    .message-row.user{justify-content:flex-end}
+    .message-row.maria{justify-content:flex-start}
 
     .message{
       max-width:76%;
@@ -293,9 +275,7 @@
       overflow-wrap:anywhere;
     }
 
-    .message.maria a:hover{
-      color:var(--primary);
-    }
+    .message.maria a:hover{color:var(--primary)}
 
     .message.maria a:focus{
       outline:2px solid rgba(125,88,102,.25);
@@ -308,6 +288,38 @@
       font-size:12px;
       margin-bottom:6px;
       opacity:.72;
+    }
+
+    .speak-button{
+      display:inline-flex;
+      align-items:center;
+      gap:5px;
+      margin-top:10px;
+      padding:5px 8px;
+      border:1px solid rgba(125,88,102,.16);
+      border-radius:8px;
+      background:rgba(255,255,255,.48);
+      color:var(--primary-dark);
+      cursor:pointer;
+      font-size:12px;
+      font-weight:600;
+      transition:.2s;
+    }
+
+    .speak-button:hover{
+      background:#fff;
+      border-color:rgba(125,88,102,.30);
+      color:var(--primary);
+    }
+
+    .speak-button.speaking{
+      background:#fff2f2;
+      border-color:#e9c5c8;
+      color:var(--danger);
+    }
+
+    .speak-button.unsupported{
+      display:none;
     }
 
     .thinking{
@@ -325,20 +337,14 @@
       animation:pulse 1.2s infinite ease-in-out;
     }
 
-    .thinking span:nth-child(2){
-      animation-delay:.15s;
-    }
-
-    .thinking span:nth-child(3){
-      animation-delay:.3s;
-    }
+    .thinking span:nth-child(2){animation-delay:.15s}
+    .thinking span:nth-child(3){animation-delay:.3s}
 
     @keyframes pulse{
       0%,80%,100%{
         opacity:.25;
         transform:scale(.85);
       }
-
       40%{
         opacity:1;
         transform:scale(1);
@@ -387,9 +393,7 @@
       background:transparent;
     }
 
-    .composer textarea::placeholder{
-      color:#a39a9d;
-    }
+    .composer textarea::placeholder{color:#a39a9d}
 
     #microphoneButton,
     #sendButton{
@@ -416,9 +420,7 @@
       justify-content:center;
     }
 
-    #microphoneButton:hover{
-      background:#e5d8d4;
-    }
+    #microphoneButton:hover{background:#e5d8d4}
 
     #microphoneButton.listening{
       background:#b94d58;
@@ -444,16 +446,13 @@
       font-size:21px;
     }
 
-    #sendButton:hover{
-      background:var(--primary-dark);
-    }
+    #sendButton:hover{background:var(--primary-dark)}
 
     @keyframes microphonePulse{
       0%,100%{
         transform:scale(1);
         box-shadow:0 0 0 4px rgba(185,77,88,.12);
       }
-
       50%{
         transform:scale(1.04);
         box-shadow:0 0 0 8px rgba(185,77,88,.06);
@@ -475,9 +474,7 @@
       font-weight:600;
     }
 
-    .voice-status.error{
-      color:var(--danger);
-    }
+    .voice-status.error{color:var(--danger)}
 
     .footer-note{
       max-width:900px;
@@ -519,9 +516,7 @@
       background:transparent;
     }
 
-    .auth-brand .avatar img{
-      object-fit:contain;
-    }
+    .auth-brand .avatar img{object-fit:contain}
 
     .auth-brand h1{
       font-family:Georgia,"Times New Roman",serif;
@@ -562,9 +557,7 @@
       box-shadow:0 2px 8px rgba(68,47,55,.08);
     }
 
-    .field{
-      margin-bottom:14px;
-    }
+    .field{margin-bottom:14px}
 
     .field label{
       display:block;
@@ -601,9 +594,7 @@
       margin-top:3px;
     }
 
-    .auth-button:hover{
-      background:var(--primary-dark);
-    }
+    .auth-button:hover{background:var(--primary-dark)}
 
     .auth-button:disabled{
       opacity:.55;
@@ -673,36 +664,25 @@
       margin:0 0 20px;
     }
 
-    .sidebar-overlay{
-      display:none;
-    }
+    .sidebar-overlay{display:none}
 
     @media(max-width:800px){
-      header{
-        padding:13px 14px;
-      }
+      header{padding:13px 14px}
 
       .avatar{
         width:48px;
         height:48px;
       }
 
-      .brand-text h1{
-        font-size:22px;
-      }
+      .brand-text h1{font-size:22px}
 
       .brand-text p,
       .user-email{
         display:none;
       }
 
-      .mobile-history{
-        display:inline-block;
-      }
-
-      .workspace{
-        display:block;
-      }
+      .mobile-history{display:inline-block}
+      .workspace{display:block}
 
       .sidebar{
         position:fixed;
@@ -719,9 +699,7 @@
         box-shadow:10px 0 30px rgba(50,35,40,.12);
       }
 
-      .sidebar.open{
-        transform:translateX(0);
-      }
+      .sidebar.open{transform:translateX(0)}
 
       .sidebar-overlay{
         position:fixed;
@@ -730,25 +708,13 @@
         z-index:19;
       }
 
-      .sidebar-overlay.open{
-        display:block;
-      }
+      .sidebar-overlay.open{display:block}
 
-      main{
-        padding:21px 13px 155px;
-      }
+      main{padding:21px 13px 155px}
 
-      .welcome{
-        margin-top:5px;
-      }
-
-      .welcome h2{
-        font-size:25px;
-      }
-
-      .message{
-        max-width:88%;
-      }
+      .welcome{margin-top:5px}
+      .welcome h2{font-size:25px}
+      .message{max-width:88%}
 
       .new-chat,
       .logout-button,
@@ -768,22 +734,15 @@
         height:44px;
       }
 
-      .auth-screen{
-        padding:20px 12px;
-      }
-
-      .auth-card{
-        padding:23px 18px;
-      }
+      .auth-screen{padding:20px 12px}
+      .auth-card{padding:23px 18px}
 
       .auth-brand .avatar{
         width:160px;
         height:160px;
       }
 
-      .header-actions{
-        gap:5px;
-      }
+      .header-actions{gap:5px}
     }
   </style>
 </head>
@@ -823,7 +782,6 @@
 
           <div class="field">
             <label for="emailInput">E-mail</label>
-
             <input
               id="emailInput"
               type="email"
@@ -834,7 +792,6 @@
 
           <div class="field">
             <label for="passwordInput">Senha</label>
-
             <input
               id="passwordInput"
               type="password"
@@ -868,9 +825,7 @@
 
       <div id="recoveryView" class="hidden">
 
-        <h2 class="reset-title">
-          Crie uma nova senha
-        </h2>
+        <h2 class="reset-title">Crie uma nova senha</h2>
 
         <p class="reset-copy">
           Digite uma nova senha para sua conta MarIA.
@@ -884,10 +839,7 @@
         <form id="recoveryForm">
 
           <div class="field">
-            <label for="newPasswordInput">
-              Nova senha
-            </label>
-
+            <label for="newPasswordInput">Nova senha</label>
             <input
               id="newPasswordInput"
               type="password"
@@ -901,7 +853,6 @@
             <label for="confirmPasswordInput">
               Confirmar nova senha
             </label>
-
             <input
               id="confirmPasswordInput"
               type="password"
@@ -920,9 +871,7 @@
           </button>
 
         </form>
-
       </div>
-
     </div>
   </section>
 
@@ -932,7 +881,6 @@
       <div class="header-content">
 
         <div class="brand">
-
           <div class="avatar">
             <img src="MarIA.jpeg" alt="MarIA Franco">
           </div>
@@ -941,11 +889,9 @@
             <h1>MarIA</h1>
             <p>Assistente artística Maria Franco</p>
           </div>
-
         </div>
 
         <div class="header-actions">
-
           <span class="user-email" id="userEmail"></span>
 
           <button
@@ -971,7 +917,6 @@
           >
             Sair
           </button>
-
         </div>
 
       </div>
@@ -980,7 +925,6 @@
     <div class="workspace">
 
       <aside class="sidebar" id="sidebar">
-
         <div class="sidebar-title">
           <h2>Conversas</h2>
         </div>
@@ -993,7 +937,6 @@
             Carregando...
           </div>
         </div>
-
       </aside>
 
       <div
@@ -1002,7 +945,6 @@
       ></div>
 
       <main>
-
         <div
           class="welcome"
           id="welcome"
@@ -1018,7 +960,6 @@
         </div>
 
         <div id="messages"></div>
-
       </main>
 
     </div>
@@ -1026,7 +967,6 @@
     <div class="composer-wrapper">
 
       <div class="composer">
-
         <textarea
           id="messageInput"
           rows="1"
@@ -1050,7 +990,6 @@
         >
           ↑
         </button>
-
       </div>
 
       <div
@@ -1064,7 +1003,6 @@
       </div>
 
     </div>
-
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
@@ -1109,95 +1047,39 @@
     let speechFinalText="";
     let voiceStatusTimer=null;
 
-    const authScreen =
-      document.getElementById("authScreen");
+    let activeSpeechButton=null;
+    let activeUtterance=null;
 
-    const appScreen =
-      document.getElementById("appScreen");
-
-    const normalAuthView =
-      document.getElementById("normalAuthView");
-
-    const recoveryView =
-      document.getElementById("recoveryView");
-
-    const loginTab =
-      document.getElementById("loginTab");
-
-    const signupTab =
-      document.getElementById("signupTab");
-
-    const authForm =
-      document.getElementById("authForm");
-
-    const emailInput =
-      document.getElementById("emailInput");
-
-    const passwordInput =
-      document.getElementById("passwordInput");
-
-    const authSubmitButton =
-      document.getElementById("authSubmitButton");
-
-    const authMessage =
-      document.getElementById("authMessage");
-
-    const forgotPasswordButton =
-      document.getElementById("forgotPasswordButton");
-
-    const recoveryForm =
-      document.getElementById("recoveryForm");
-
-    const newPasswordInput =
-      document.getElementById("newPasswordInput");
-
-    const confirmPasswordInput =
-      document.getElementById("confirmPasswordInput");
-
-    const recoverySubmitButton =
-      document.getElementById("recoverySubmitButton");
-
-    const recoveryMessage =
-      document.getElementById("recoveryMessage");
-
-    const userEmail =
-      document.getElementById("userEmail");
-
-    const messagesElement =
-      document.getElementById("messages");
-
-    const messageInput =
-      document.getElementById("messageInput");
-
-    const microphoneButton =
-      document.getElementById("microphoneButton");
-
-    const voiceStatus =
-      document.getElementById("voiceStatus");
-
-    const sendButton =
-      document.getElementById("sendButton");
-
-    const newChatButton =
-      document.getElementById("newChatButton");
-
-    const logoutButton =
-      document.getElementById("logoutButton");
-
-    const welcomeElement =
-      document.getElementById("welcome");
-
-    const conversationList =
-      document.getElementById("conversationList");
-
-    const sidebar =
-      document.getElementById("sidebar");
-
-    const sidebarOverlay =
-      document.getElementById("sidebarOverlay");
-
-    const mobileHistoryButton =
-      document.getElementById("mobileHistoryButton");
+    const authScreen=document.getElementById("authScreen");
+    const appScreen=document.getElementById("appScreen");
+    const normalAuthView=document.getElementById("normalAuthView");
+    const recoveryView=document.getElementById("recoveryView");
+    const loginTab=document.getElementById("loginTab");
+    const signupTab=document.getElementById("signupTab");
+    const authForm=document.getElementById("authForm");
+    const emailInput=document.getElementById("emailInput");
+    const passwordInput=document.getElementById("passwordInput");
+    const authSubmitButton=document.getElementById("authSubmitButton");
+    const authMessage=document.getElementById("authMessage");
+    const forgotPasswordButton=document.getElementById("forgotPasswordButton");
+    const recoveryForm=document.getElementById("recoveryForm");
+    const newPasswordInput=document.getElementById("newPasswordInput");
+    const confirmPasswordInput=document.getElementById("confirmPasswordInput");
+    const recoverySubmitButton=document.getElementById("recoverySubmitButton");
+    const recoveryMessage=document.getElementById("recoveryMessage");
+    const userEmail=document.getElementById("userEmail");
+    const messagesElement=document.getElementById("messages");
+    const messageInput=document.getElementById("messageInput");
+    const microphoneButton=document.getElementById("microphoneButton");
+    const voiceStatus=document.getElementById("voiceStatus");
+    const sendButton=document.getElementById("sendButton");
+    const newChatButton=document.getElementById("newChatButton");
+    const logoutButton=document.getElementById("logoutButton");
+    const welcomeElement=document.getElementById("welcome");
+    const conversationList=document.getElementById("conversationList");
+    const sidebar=document.getElementById("sidebar");
+    const sidebarOverlay=document.getElementById("sidebarOverlay");
+    const mobileHistoryButton=document.getElementById("mobileHistoryButton");
 
 
     function showStatus(el,text,type="info"){
@@ -1254,6 +1136,7 @@
 
     function showAuth(){
       stopSpeechRecognition();
+      stopSpeaking();
 
       appScreen.classList.add("hidden");
       authScreen.classList.remove("hidden");
@@ -1283,6 +1166,7 @@
 
     function showRecovery(){
       stopSpeechRecognition();
+      stopSpeaking();
 
       recoveryMode=true;
 
@@ -1311,16 +1195,12 @@
     authForm.addEventListener(
       "submit",
       async e=>{
-
         e.preventDefault();
 
         hideStatus(authMessage);
 
-        const email=
-          emailInput.value.trim();
-
-        const password=
-          passwordInput.value;
+        const email=emailInput.value.trim();
+        const password=passwordInput.value;
 
         if(!email||!password){
           return;
@@ -1329,10 +1209,8 @@
         setAuthBusy(true);
 
         try{
-
           if(authMode==="signup"){
-
-            const {data,error} =
+            const {data,error}=
               await supabaseClient.auth.signUp({
                 email,
                 password,
@@ -1346,11 +1224,8 @@
             }
 
             if(data.session){
-
               await showApp(data.session);
-
             }else{
-
               showStatus(
                 authMessage,
                 "Conta criada. Verifique seu e-mail e clique no link de confirmação antes de entrar.",
@@ -1362,8 +1237,7 @@
             }
 
           }else{
-
-            const {data,error} =
+            const {data,error}=
               await supabaseClient.auth.signInWithPassword({
                 email,
                 password
@@ -1383,7 +1257,6 @@
           }
 
         }catch(error){
-
           showStatus(
             authMessage,
             error?.message||
@@ -1392,7 +1265,6 @@
           );
 
         }finally{
-
           setAuthBusy(false);
         }
       }
@@ -1402,12 +1274,9 @@
     forgotPasswordButton.addEventListener(
       "click",
       async()=>{
-
-        const email=
-          emailInput.value.trim();
+        const email=emailInput.value.trim();
 
         if(!email){
-
           showStatus(
             authMessage,
             "Digite seu e-mail acima e clique novamente em 'Esqueci minha senha'.",
@@ -1421,8 +1290,7 @@
         setAuthBusy(true);
 
         try{
-
-          const {error} =
+          const {error}=
             await supabaseClient.auth.resetPasswordForEmail(
               email,
               {
@@ -1441,7 +1309,6 @@
           );
 
         }catch(error){
-
           showStatus(
             authMessage,
             error?.message||
@@ -1450,7 +1317,6 @@
           );
 
         }finally{
-
           setAuthBusy(false);
         }
       }
@@ -1460,44 +1326,35 @@
     recoveryForm.addEventListener(
       "submit",
       async e=>{
-
         e.preventDefault();
 
         hideStatus(recoveryMessage);
 
-        const a=
-          newPasswordInput.value;
-
-        const b=
-          confirmPasswordInput.value;
+        const a=newPasswordInput.value;
+        const b=confirmPasswordInput.value;
 
         if(a.length<6){
-
           showStatus(
             recoveryMessage,
             "A nova senha precisa ter pelo menos 6 caracteres.",
             "error"
           );
-
           return;
         }
 
         if(a!==b){
-
           showStatus(
             recoveryMessage,
             "As duas senhas não coincidem.",
             "error"
           );
-
           return;
         }
 
         setRecoveryBusy(true);
 
         try{
-
-          const {error} =
+          const {error}=
             await supabaseClient.auth.updateUser({
               password:a
             });
@@ -1512,28 +1369,22 @@
             "success"
           );
 
-          const {data} =
+          const {data}=
             await supabaseClient.auth.getSession();
 
           setTimeout(
             ()=>{
-
               if(data.session){
-
                 showApp(data.session);
-
               }else{
-
                 recoveryMode=false;
                 showAuth();
               }
-
             },
             700
           );
 
         }catch(error){
-
           showStatus(
             recoveryMessage,
             error?.message||
@@ -1542,7 +1393,6 @@
           );
 
         }finally{
-
           setRecoveryBusy(false);
         }
       }
@@ -1552,8 +1402,8 @@
     logoutButton.addEventListener(
       "click",
       async()=>{
-
         stopSpeechRecognition();
+        stopSpeaking();
         setWaiting(false);
 
         await supabaseClient.auth.signOut();
@@ -1574,21 +1424,17 @@
 
     supabaseClient.auth.onAuthStateChange(
       (event,session)=>{
-
         currentSession=session;
 
         if(event==="PASSWORD_RECOVERY"){
-
           showRecovery();
           return;
         }
 
         if(event==="SIGNED_OUT"){
-
           if(!recoveryMode){
             showAuth();
           }
-
           return;
         }
 
@@ -1600,29 +1446,22 @@
 
 
     (async()=>{
-
       initializeSpeechRecognition();
 
-      const {data} =
+      const {data}=
         await supabaseClient.auth.getSession();
 
-      currentSession=
-        data.session;
+      currentSession=data.session;
 
       if(currentSession){
-
         await showApp(currentSession);
-
       }else{
-
         showAuth();
       }
-
     })();
 
 
     function createTitle(text){
-
       const clean=
         text.replace(/\s+/g," ").trim();
 
@@ -1633,8 +1472,7 @@
 
 
     async function createConversation(firstMessage){
-
-      const {data,error} =
+      const {data,error}=
         await supabaseClient
           .from("conversations")
           .insert({
@@ -1648,8 +1486,7 @@
         throw error;
       }
 
-      currentConversationId=
-        data.id;
+      currentConversationId=data.id;
 
       await loadConversations();
 
@@ -1658,14 +1495,13 @@
 
 
     async function saveMessage(role,content){
-
       if(!currentConversationId){
         throw new Error(
           "Conversa não iniciada."
         );
       }
 
-      const {error} =
+      const {error}=
         await supabaseClient
           .from("messages")
           .insert({
@@ -1679,7 +1515,7 @@
         throw error;
       }
 
-      const {error:updateError} =
+      const {error:updateError}=
         await supabaseClient
           .from("conversations")
           .update({
@@ -1691,7 +1527,6 @@
           );
 
       if(updateError){
-
         console.warn(
           "Não foi possível atualizar a data da conversa:",
           updateError.message
@@ -1701,7 +1536,6 @@
 
 
     async function loadConversations(){
-
       if(!currentSession){
         return;
       }
@@ -1709,7 +1543,7 @@
       conversationList.innerHTML=
         '<div class="history-loading">Carregando...</div>';
 
-      const {data,error} =
+      const {data,error}=
         await supabaseClient
           .from("conversations")
           .select(
@@ -1721,7 +1555,6 @@
           );
 
       if(error){
-
         console.error(error);
 
         conversationList.innerHTML=
@@ -1730,18 +1563,14 @@
         return;
       }
 
-      renderConversationList(
-        data||[]
-      );
+      renderConversationList(data||[]);
     }
 
 
     function renderConversationList(items){
-
       conversationList.innerHTML="";
 
       if(!items.length){
-
         conversationList.innerHTML=
           '<div class="history-empty">Suas conversas aparecerão aqui.</div>';
 
@@ -1749,9 +1578,7 @@
       }
 
       items.forEach(item=>{
-
-        const button=
-          document.createElement("button");
+        const button=document.createElement("button");
 
         button.type="button";
 
@@ -1776,20 +1603,18 @@
           ()=>openConversation(item.id)
         );
 
-        conversationList.appendChild(
-          button
-        );
+        conversationList.appendChild(button);
       });
     }
 
 
     async function openConversation(id){
-
       if(waitingForMaria){
         return;
       }
 
       stopSpeechRecognition();
+      stopSpeaking();
 
       currentConversationId=id;
       previousInteractionId=null;
@@ -1799,7 +1624,7 @@
 
       currentMessages=[];
 
-      const {data,error} =
+      const {data,error}=
         await supabaseClient
           .from("messages")
           .select(
@@ -1815,7 +1640,6 @@
           );
 
       if(error){
-
         console.error(error);
 
         addMessage(
@@ -1829,7 +1653,6 @@
       }
 
       (data||[]).forEach(item=>{
-
         currentMessages.push({
           role:item.role,
           content:item.content
@@ -1843,7 +1666,6 @@
           "",
           false
         );
-
       });
 
       if(!(data||[]).length){
@@ -1859,7 +1681,6 @@
 
 
     function buildContextMessage(newMessage){
-
       if(
         previousInteractionId||
         currentMessages.length<=1
@@ -1899,7 +1720,6 @@ ${newMessage}`;
 
 
     function scrollToBottom(){
-
       window.scrollTo({
         top:document.body.scrollHeight,
         behavior:"smooth"
@@ -1908,7 +1728,6 @@ ${newMessage}`;
 
 
     function resizeTextarea(){
-
       messageInput.style.height="auto";
 
       messageInput.style.height=
@@ -1924,11 +1743,9 @@ ${newMessage}`;
       text,
       allowLinks=false
     ){
-
       element.textContent="";
 
       if(!allowLinks){
-
         element.textContent=text;
         return;
       }
@@ -1942,9 +1759,7 @@ ${newMessage}`;
       while(
         (match=urlRegex.exec(text))!==null
       ){
-
         if(match.index>lastIndex){
-
           element.appendChild(
             document.createTextNode(
               text.slice(
@@ -1958,10 +1773,7 @@ ${newMessage}`;
         let url=match[0];
         let trailing="";
 
-        while(
-          /[.,;:!?)]$/.test(url)
-        ){
-
+        while(/[.,;:!?)]$/.test(url)){
           trailing=
             url.slice(-1)+trailing;
 
@@ -1969,8 +1781,7 @@ ${newMessage}`;
             url.slice(0,-1);
         }
 
-        const link=
-          document.createElement("a");
+        const link=document.createElement("a");
 
         link.href=url;
         link.target="_blank";
@@ -1981,7 +1792,6 @@ ${newMessage}`;
         element.appendChild(link);
 
         if(trailing){
-
           element.appendChild(
             document.createTextNode(
               trailing
@@ -1995,7 +1805,6 @@ ${newMessage}`;
       }
 
       if(lastIndex<text.length){
-
         element.appendChild(
           document.createTextNode(
             text.slice(lastIndex)
@@ -2005,13 +1814,320 @@ ${newMessage}`;
     }
 
 
+    /*
+     * ===========================
+     * SAÍDA DE VOZ DA MarIA
+     * ===========================
+     */
+
+
+    function resetSpeechButton(button){
+      if(!button){
+        return;
+      }
+
+      button.textContent="🔊 Ouvir";
+      button.classList.remove("speaking");
+      button.setAttribute(
+        "aria-label",
+        "Ouvir resposta da MarIA"
+      );
+      button.title=
+        "Ouvir resposta";
+    }
+
+
+    function stopSpeaking(){
+      if(
+        "speechSynthesis" in window
+      ){
+        window.speechSynthesis.cancel();
+      }
+
+      if(activeSpeechButton){
+        resetSpeechButton(
+          activeSpeechButton
+        );
+      }
+
+      activeSpeechButton=null;
+      activeUtterance=null;
+    }
+
+
+    function detectSpeechLanguage(text){
+      const normalized=
+        String(text||"")
+          .toLowerCase();
+
+      const spanishHints=[
+        " que ",
+        " para ",
+        " una ",
+        " los ",
+        " las ",
+        " puedes ",
+        " pintura ",
+        " vidrio ",
+        " curso "
+      ];
+
+      const englishHints=[
+        " the ",
+        " and ",
+        " you ",
+        " your ",
+        " with ",
+        " painting ",
+        " glass ",
+        " course ",
+        " can "
+      ];
+
+      let spanishScore=0;
+      let englishScore=0;
+
+      spanishHints.forEach(term=>{
+        if(normalized.includes(term)){
+          spanishScore++;
+        }
+      });
+
+      englishHints.forEach(term=>{
+        if(normalized.includes(term)){
+          englishScore++;
+        }
+      });
+
+      if(
+        englishScore>=2 &&
+        englishScore>spanishScore
+      ){
+        return "en-US";
+      }
+
+      if(
+        spanishScore>=2 &&
+        spanishScore>englishScore
+      ){
+        return "es-ES";
+      }
+
+      return "pt-BR";
+    }
+
+
+    function chooseSpeechVoice(language){
+      if(
+        !("speechSynthesis" in window)
+      ){
+        return null;
+      }
+
+      const voices=
+        window.speechSynthesis.getVoices();
+
+      if(!voices.length){
+        return null;
+      }
+
+      const exactLanguage=
+        language.toLowerCase();
+
+      const languagePrefix=
+        exactLanguage.split("-")[0];
+
+      const exactMatch=
+        voices.find(
+          voice=>
+            voice.lang
+              ?.toLowerCase()===
+            exactLanguage
+        );
+
+      if(exactMatch){
+        return exactMatch;
+      }
+
+      const languageMatch=
+        voices.find(
+          voice=>
+            voice.lang
+              ?.toLowerCase()
+              .startsWith(
+                languagePrefix
+              )
+        );
+
+      return languageMatch||null;
+    }
+
+
+    function speakMessage(text,button){
+      if(
+        !("speechSynthesis" in window)||
+        typeof SpeechSynthesisUtterance==="undefined"
+      ){
+        return;
+      }
+
+      if(
+        activeSpeechButton===button &&
+        window.speechSynthesis.speaking
+      ){
+        stopSpeaking();
+        return;
+      }
+
+      stopSpeaking();
+
+      const cleanText=
+        String(text||"")
+          .replace(
+            /https?:\/\/[^\s<>"']+/gi,
+            ""
+          )
+          .replace(/\s+/g," ")
+          .trim();
+
+      if(!cleanText){
+        return;
+      }
+
+      const language=
+        detectSpeechLanguage(cleanText);
+
+      const utterance=
+        new SpeechSynthesisUtterance(
+          cleanText
+        );
+
+      utterance.lang=language;
+      utterance.rate=1;
+      utterance.pitch=1;
+      utterance.volume=1;
+
+      const selectedVoice=
+        chooseSpeechVoice(language);
+
+      if(selectedVoice){
+        utterance.voice=
+          selectedVoice;
+      }
+
+      utterance.onstart=()=>{
+        activeSpeechButton=button;
+        activeUtterance=utterance;
+
+        button.textContent="⏹ Parar";
+        button.classList.add("speaking");
+
+        button.setAttribute(
+          "aria-label",
+          "Parar leitura da resposta"
+        );
+
+        button.title=
+          "Parar leitura";
+      };
+
+      utterance.onend=()=>{
+        if(
+          activeSpeechButton===button
+        ){
+          resetSpeechButton(button);
+
+          activeSpeechButton=null;
+          activeUtterance=null;
+        }
+      };
+
+      utterance.onerror=event=>{
+        if(
+          event.error!=="canceled" &&
+          event.error!=="interrupted"
+        ){
+          console.warn(
+            "Erro na leitura por voz:",
+            event.error
+          );
+        }
+
+        if(
+          activeSpeechButton===button
+        ){
+          resetSpeechButton(button);
+
+          activeSpeechButton=null;
+          activeUtterance=null;
+        }
+      };
+
+      activeSpeechButton=button;
+      activeUtterance=utterance;
+
+      window.speechSynthesis.speak(
+        utterance
+      );
+    }
+
+
+    function createSpeakButton(
+      text
+    ){
+      const button=
+        document.createElement("button");
+
+      button.type="button";
+      button.className="speak-button";
+      button.textContent="🔊 Ouvir";
+
+      button.setAttribute(
+        "aria-label",
+        "Ouvir resposta da MarIA"
+      );
+
+      button.title=
+        "Ouvir resposta";
+
+      if(
+        !("speechSynthesis" in window)||
+        typeof SpeechSynthesisUtterance==="undefined"
+      ){
+        button.classList.add(
+          "unsupported"
+        );
+
+        return button;
+      }
+
+      button.addEventListener(
+        "click",
+        ()=>{
+          speakMessage(
+            text,
+            button
+          );
+        }
+      );
+
+      return button;
+    }
+
+
+    /*
+     * ===========================
+     * MENSAGENS
+     * ===========================
+     */
+
+
     function addMessage(
       sender,
       text,
       type="",
       track=true
     ){
-
       welcomeElement.style.display="none";
 
       const row=
@@ -2053,12 +2169,27 @@ ${newMessage}`;
       message.appendChild(s);
       message.appendChild(content);
 
+      /*
+       * Botão de leitura aparece apenas
+       * nas respostas normais da MarIA.
+       */
+      if(
+        sender==="MarIA" &&
+        !type
+      ){
+        const speakButton=
+          createSpeakButton(text);
+
+        message.appendChild(
+          speakButton
+        );
+      }
+
       row.appendChild(message);
 
       messagesElement.appendChild(row);
 
       if(track&&!type){
-
         currentMessages.push({
           role:
             sender==="Você"
@@ -2075,7 +2206,6 @@ ${newMessage}`;
 
 
     function addThinking(){
-
       const row=
         document.createElement("div");
 
@@ -2121,27 +2251,34 @@ ${newMessage}`;
 
 
     function removeThinking(){
-
       document
         .getElementById("thinkingMessage")
         ?.remove();
     }
 
 
-    function clearVoiceStatus(delay=0){
+    /*
+     * ===========================
+     * MICROFONE / DITADO
+     * ===========================
+     */
 
+
+    function clearVoiceStatus(delay=0){
       if(voiceStatusTimer){
-        clearTimeout(voiceStatusTimer);
+        clearTimeout(
+          voiceStatusTimer
+        );
         voiceStatusTimer=null;
       }
 
       if(delay>0){
-
         voiceStatusTimer=
           setTimeout(
             ()=>{
               voiceStatus.textContent="";
-              voiceStatus.className="voice-status";
+              voiceStatus.className=
+                "voice-status";
             },
             delay
           );
@@ -2150,7 +2287,8 @@ ${newMessage}`;
       }
 
       voiceStatus.textContent="";
-      voiceStatus.className="voice-status";
+      voiceStatus.className=
+        "voice-status";
     }
 
 
@@ -2158,20 +2296,25 @@ ${newMessage}`;
       text,
       type=""
     ){
-
       if(voiceStatusTimer){
-        clearTimeout(voiceStatusTimer);
+        clearTimeout(
+          voiceStatusTimer
+        );
         voiceStatusTimer=null;
       }
 
       voiceStatus.textContent=text;
+
       voiceStatus.className=
-        `voice-status${type?" "+type:""}`;
+        `voice-status${
+          type
+            ?" "+type
+            :""
+        }`;
     }
 
 
     function updateMicrophoneAppearance(){
-
       microphoneButton.classList.toggle(
         "listening",
         isListening
@@ -2203,7 +2346,6 @@ ${newMessage}`;
       finalPart,
       interimPart=""
     ){
-
       return [
         base.trim(),
         finalPart.trim(),
@@ -2217,15 +2359,15 @@ ${newMessage}`;
 
 
     function initializeSpeechRecognition(){
-
-      const SpeechRecognition =
+      const SpeechRecognition=
         window.SpeechRecognition||
         window.webkitSpeechRecognition;
 
       if(!SpeechRecognition){
-
         microphoneButton.disabled=true;
-        microphoneButton.classList.add("unsupported");
+        microphoneButton.classList.add(
+          "unsupported"
+        );
 
         microphoneButton.title=
           "O reconhecimento de voz não está disponível neste navegador.";
@@ -2255,9 +2397,10 @@ ${newMessage}`;
 
 
       speechRecognition.onstart=()=>{
-
         isListening=true;
         speechFinalText="";
+
+        stopSpeaking();
 
         updateMicrophoneAppearance();
 
@@ -2268,114 +2411,117 @@ ${newMessage}`;
       };
 
 
-      speechRecognition.onresult=event=>{
+      speechRecognition.onresult=
+        event=>{
+          let interimText="";
 
-        let interimText="";
+          for(
+            let index=
+              event.resultIndex;
+            index<
+              event.results.length;
+            index++
+          ){
+            const transcript=
+              event.results[index][0]
+                ?.transcript||"";
 
-        for(
-          let index=event.resultIndex;
-          index<event.results.length;
-          index++
-        ){
+            if(
+              event.results[index]
+                .isFinal
+            ){
+              speechFinalText=
+                `${speechFinalText} ${transcript}`
+                  .replace(/\s+/g," ")
+                  .trim();
 
-          const transcript=
-            event.results[index][0]
-              ?.transcript||"";
-
-          if(event.results[index].isFinal){
-
-            speechFinalText=
-              `${speechFinalText} ${transcript}`
-                .replace(/\s+/g," ")
-                .trim();
-
-          }else{
-
-            interimText=
-              `${interimText} ${transcript}`
-                .replace(/\s+/g," ")
-                .trim();
+            }else{
+              interimText=
+                `${interimText} ${transcript}`
+                  .replace(/\s+/g," ")
+                  .trim();
+            }
           }
-        }
 
-        messageInput.value=
-          composeSpeechText(
-            speechBaseText,
-            speechFinalText,
-            interimText
+          messageInput.value=
+            composeSpeechText(
+              speechBaseText,
+              speechFinalText,
+              interimText
+            );
+
+          resizeTextarea();
+
+          messageInput.focus();
+
+          messageInput.setSelectionRange(
+            messageInput.value.length,
+            messageInput.value.length
           );
-
-        resizeTextarea();
-
-        messageInput.focus();
-        messageInput.setSelectionRange(
-          messageInput.value.length,
-          messageInput.value.length
-        );
-      };
-
-
-      speechRecognition.onerror=event=>{
-
-        isListening=false;
-        updateMicrophoneAppearance();
-
-        const errorMessages={
-          "not-allowed":
-            "O acesso ao microfone foi negado. Autorize o microfone nas configurações do navegador.",
-
-          "service-not-allowed":
-            "O serviço de reconhecimento de voz não foi autorizado neste navegador.",
-
-          "audio-capture":
-            "Nenhum microfone foi encontrado ou o microfone não pôde ser usado.",
-
-          "no-speech":
-            "Nenhuma fala foi identificada. Toque no microfone e tente novamente.",
-
-          "network":
-            "O reconhecimento de voz encontrou um problema de conexão.",
-
-          "aborted":
-            ""
         };
 
-        const message=
-          errorMessages[event.error]||
-          "Não foi possível reconhecer a fala. Tente novamente.";
 
-        if(message){
+      speechRecognition.onerror=
+        event=>{
+          isListening=false;
+          updateMicrophoneAppearance();
 
-          setVoiceStatus(
-            message,
-            "error"
-          );
+          const errorMessages={
+            "not-allowed":
+              "O acesso ao microfone foi negado. Autorize o microfone nas configurações do navegador.",
 
-          clearVoiceStatus(6000);
+            "service-not-allowed":
+              "O serviço de reconhecimento de voz não foi autorizado neste navegador.",
 
-        }else{
+            "audio-capture":
+              "Nenhum microfone foi encontrado ou o microfone não pôde ser usado.",
 
-          clearVoiceStatus();
-        }
-      };
+            "no-speech":
+              "Nenhuma fala foi identificada. Toque no microfone e tente novamente.",
+
+            "network":
+              "O reconhecimento de voz encontrou um problema de conexão.",
+
+            "aborted":
+              ""
+          };
+
+          const message=
+            errorMessages[event.error]||
+            "Não foi possível reconhecer a fala. Tente novamente.";
+
+          if(message){
+            setVoiceStatus(
+              message,
+              "error"
+            );
+
+            clearVoiceStatus(
+              6000
+            );
+
+          }else{
+            clearVoiceStatus();
+          }
+        };
 
 
       speechRecognition.onend=()=>{
-
         isListening=false;
+
         updateMicrophoneAppearance();
 
         if(messageInput.value.trim()){
-
           setVoiceStatus(
             "Ditado concluído. Confira o texto e toque em enviar.",
             ""
           );
 
-          clearVoiceStatus(4500);
+          clearVoiceStatus(
+            4500
+          );
 
         }else{
-
           clearVoiceStatus();
         }
 
@@ -2386,7 +2532,6 @@ ${newMessage}`;
 
 
     function startSpeechRecognition(){
-
       if(
         !speechRecognition||
         waitingForMaria
@@ -2394,17 +2539,17 @@ ${newMessage}`;
         return;
       }
 
+      stopSpeaking();
+
       speechBaseText=
         messageInput.value.trim();
 
       speechFinalText="";
 
       try{
-
         speechRecognition.start();
 
       }catch(error){
-
         console.warn(
           "Não foi possível iniciar o reconhecimento de voz:",
           error
@@ -2421,7 +2566,6 @@ ${newMessage}`;
 
 
     function stopSpeechRecognition(){
-
       if(
         !speechRecognition||
         !isListening
@@ -2430,11 +2574,9 @@ ${newMessage}`;
       }
 
       try{
-
         speechRecognition.stop();
 
       }catch(error){
-
         console.warn(
           "Não foi possível interromper o reconhecimento de voz:",
           error
@@ -2444,9 +2586,7 @@ ${newMessage}`;
 
 
     function toggleSpeechRecognition(){
-
       if(!speechRecognition){
-
         setVoiceStatus(
           "O reconhecimento de voz não está disponível neste navegador.",
           "error"
@@ -2457,18 +2597,14 @@ ${newMessage}`;
       }
 
       if(isListening){
-
         stopSpeechRecognition();
-
       }else{
-
         startSpeechRecognition();
       }
     }
 
 
     function setWaiting(v){
-
       waitingForMaria=v;
 
       sendButton.disabled=v;
@@ -2490,12 +2626,10 @@ ${newMessage}`;
 
 
     async function getValidSession(){
-
-      let {data} =
+      let {data}=
         await supabaseClient.auth.getSession();
 
-      let session=
-        data.session;
+      let session=data.session;
 
       if(!session){
         return null;
@@ -2507,7 +2641,6 @@ ${newMessage}`;
       if(
         expiresAt-Date.now()<60000
       ){
-
         const refreshed=
           await supabaseClient.auth.refreshSession();
 
@@ -2526,12 +2659,12 @@ ${newMessage}`;
 
 
     async function sendMessage(){
-
       if(waitingForMaria){
         return;
       }
 
       stopSpeechRecognition();
+      stopSpeaking();
 
       const message=
         messageInput.value.trim();
@@ -2546,7 +2679,6 @@ ${newMessage}`;
         await getValidSession();
 
       if(!session){
-
         currentSession=null;
 
         showAuth();
@@ -2565,9 +2697,10 @@ ${newMessage}`;
       setWaiting(true);
 
       try{
-
         if(!currentConversationId){
-          await createConversation(message);
+          await createConversation(
+            message
+          );
         }
 
         addMessage(
@@ -2584,11 +2717,12 @@ ${newMessage}`;
 
         const payload={
           message:
-            buildContextMessage(message)
+            buildContextMessage(
+              message
+            )
         };
 
         if(previousInteractionId){
-
           payload.previous_interaction_id=
             previousInteractionId;
         }
@@ -2608,19 +2742,19 @@ ${newMessage}`;
               },
 
               body:
-                JSON.stringify(payload)
+                JSON.stringify(
+                  payload
+                )
             }
           );
 
         let data;
 
         try{
-
           data=
             await response.json();
 
         }catch{
-
           throw new Error(
             "A API retornou uma resposta inválida."
           );
@@ -2632,7 +2766,6 @@ ${newMessage}`;
           response.status===401||
           response.status===403
         ){
-
           await supabaseClient.auth.signOut();
 
           currentSession=null;
@@ -2651,7 +2784,6 @@ ${newMessage}`;
         }
 
         if(!response.ok){
-
           addMessage(
             "MarIA",
             data.details||
@@ -2665,13 +2797,11 @@ ${newMessage}`;
         }
 
         if(data.interaction_id){
-
           previousInteractionId=
             data.interaction_id;
         }
 
         if(!data.reply){
-
           addMessage(
             "MarIA",
             "Recebi sua mensagem, mas não consegui gerar uma resposta em texto.",
@@ -2695,7 +2825,6 @@ ${newMessage}`;
         await loadConversations();
 
       }catch(error){
-
         removeThinking();
 
         console.error(
@@ -2711,11 +2840,12 @@ ${newMessage}`;
         );
 
       }finally{
-
         setWaiting(false);
 
         if(
-          !appScreen.classList.contains("hidden")
+          !appScreen.classList.contains(
+            "hidden"
+          )
         ){
           messageInput.focus();
         }
@@ -2724,8 +2854,8 @@ ${newMessage}`;
 
 
     function newConversation(){
-
       stopSpeechRecognition();
+      stopSpeaking();
       clearVoiceStatus();
 
       previousInteractionId=null;
@@ -2750,7 +2880,6 @@ ${newMessage}`;
 
 
     function openSidebar(){
-
       sidebar.classList.add("open");
 
       sidebarOverlay.classList.add(
@@ -2760,8 +2889,9 @@ ${newMessage}`;
 
 
     function closeSidebar(){
-
-      sidebar.classList.remove("open");
+      sidebar.classList.remove(
+        "open"
+      );
 
       sidebarOverlay.classList.remove(
         "open"
@@ -2790,14 +2920,11 @@ ${newMessage}`;
     messageInput.addEventListener(
       "keydown",
       event=>{
-
         if(
           event.key==="Enter" &&
           !event.shiftKey
         ){
-
           event.preventDefault();
-
           sendMessage();
         }
       }
@@ -2824,8 +2951,25 @@ ${newMessage}`;
 
     window.addEventListener(
       "beforeunload",
-      stopSpeechRecognition
+      ()=>{
+        stopSpeechRecognition();
+        stopSpeaking();
+      }
     );
+
+
+    if(
+      "speechSynthesis" in window
+    ){
+      window.speechSynthesis.getVoices();
+
+      window.speechSynthesis.addEventListener(
+        "voiceschanged",
+        ()=>{
+          window.speechSynthesis.getVoices();
+        }
+      );
+    }
   </script>
 
 </body>
