@@ -20,11 +20,11 @@
       --maria:#f1ebe8;
       --maria-text:#332b2e;
       --danger:#9f3a3a;
-      --success:#496b55
+      --success:#496b55;
     }
 
     *{
-      box-sizing:border-box
+      box-sizing:border-box;
     }
 
     body{
@@ -32,21 +32,23 @@
       min-height:100vh;
       font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
       background:linear-gradient(180deg,#f4eeea 0%,var(--background) 45%,#faf8f6 100%);
-      color:var(--text)
+      color:var(--text);
     }
 
-    button,input,textarea{
-      font:inherit
+    button,
+    input,
+    textarea{
+      font:inherit;
     }
 
     .hidden{
-      display:none!important
+      display:none!important;
     }
 
     .app{
       min-height:100vh;
       display:flex;
-      flex-direction:column
+      flex-direction:column;
     }
 
     header{
@@ -56,7 +58,7 @@
       backdrop-filter:blur(10px);
       position:sticky;
       top:0;
-      z-index:10
+      z-index:10;
     }
 
     .header-content{
@@ -65,13 +67,13 @@
       display:flex;
       align-items:center;
       justify-content:space-between;
-      gap:20px
+      gap:20px;
     }
 
     .brand{
       display:flex;
       align-items:center;
-      gap:14px
+      gap:14px;
     }
 
     .avatar{
@@ -81,14 +83,14 @@
       overflow:hidden;
       flex-shrink:0;
       background:#f7eeee;
-      box-shadow:0 4px 12px rgba(80,55,64,.12)
+      box-shadow:0 4px 12px rgba(80,55,64,.12);
     }
 
     .avatar img{
       width:100%;
       height:100%;
       object-fit:cover;
-      display:block
+      display:block;
     }
 
     .brand-text h1{
@@ -96,19 +98,19 @@
       font-family:Georgia,"Times New Roman",serif;
       font-size:25px;
       font-weight:500;
-      color:var(--primary-dark)
+      color:var(--primary-dark);
     }
 
     .brand-text p{
       margin:3px 0 0;
       font-size:13px;
-      color:var(--muted)
+      color:var(--muted);
     }
 
     .header-actions{
       display:flex;
       align-items:center;
-      gap:8px
+      gap:8px;
     }
 
     .new-chat,
@@ -121,17 +123,17 @@
       padding:9px 13px;
       cursor:pointer;
       font-size:13px;
-      transition:.2s
+      transition:.2s;
     }
 
     .new-chat:hover,
     .logout-button:hover,
     .mobile-history:hover{
-      background:var(--secondary)
+      background:var(--secondary);
     }
 
     .mobile-history{
-      display:none
+      display:none;
     }
 
     .workspace{
@@ -140,21 +142,21 @@
       margin:0 auto;
       display:grid;
       grid-template-columns:260px minmax(0,1fr);
-      flex:1
+      flex:1;
     }
 
     .sidebar{
       border-right:1px solid var(--border);
       background:rgba(255,255,255,.5);
       padding:22px 14px 150px;
-      min-height:calc(100vh - 93px)
+      min-height:calc(100vh - 93px);
     }
 
     .sidebar-title{
       display:flex;
       justify-content:space-between;
       align-items:center;
-      padding:0 7px 12px
+      padding:0 7px 12px;
     }
 
     .sidebar-title h2{
@@ -162,13 +164,13 @@
       font-size:13px;
       text-transform:uppercase;
       letter-spacing:.08em;
-      color:var(--muted)
+      color:var(--muted);
     }
 
     .conversation-list{
       display:flex;
       flex-direction:column;
-      gap:6px
+      gap:6px;
     }
 
     .conversation-item{
@@ -183,11 +185,11 @@
       white-space:nowrap;
       overflow:hidden;
       text-overflow:ellipsis;
-      font-size:13px
+      font-size:13px;
     }
 
     .conversation-item:hover{
-      background:#f3ece9
+      background:#f3ece9;
     }
 
     .conversation-item.active{
@@ -195,7 +197,7 @@
       border-color:var(--border);
       color:var(--primary-dark);
       font-weight:600;
-      box-shadow:0 2px 8px rgba(68,47,55,.05)
+      box-shadow:0 2px 8px rgba(68,47,55,.05);
     }
 
     .history-empty,
@@ -203,20 +205,20 @@
       font-size:12px;
       color:var(--muted);
       padding:10px 8px;
-      line-height:1.45
+      line-height:1.45;
     }
 
     main{
       width:100%;
       max-width:900px;
       margin:0 auto;
-      padding:28px 18px 150px
+      padding:28px 18px 150px;
     }
 
     .welcome{
       max-width:610px;
       margin:15px auto 32px;
-      text-align:center
+      text-align:center;
     }
 
     .welcome h2{
@@ -224,33 +226,33 @@
       font-size:29px;
       font-weight:500;
       color:var(--primary-dark);
-      margin:0 0 12px
+      margin:0 0 12px;
     }
 
     .welcome p{
       color:var(--muted);
       font-size:15px;
       line-height:1.6;
-      margin:0
+      margin:0;
     }
 
     #messages{
       display:flex;
       flex-direction:column;
-      gap:18px
+      gap:18px;
     }
 
     .message-row{
       display:flex;
-      width:100%
+      width:100%;
     }
 
     .message-row.user{
-      justify-content:flex-end
+      justify-content:flex-end;
     }
 
     .message-row.maria{
-      justify-content:flex-start
+      justify-content:flex-start;
     }
 
     .message{
@@ -260,29 +262,28 @@
       line-height:1.55;
       font-size:15px;
       white-space:pre-wrap;
-      overflow-wrap:break-word
+      overflow-wrap:break-word;
     }
 
     .message.user{
       background:var(--user);
       color:var(--user-text);
-      border-bottom-right-radius:5px
+      border-bottom-right-radius:5px;
     }
 
     .message.maria{
       background:var(--maria);
       color:var(--maria-text);
       border-bottom-left-radius:5px;
-      border:1px solid #e8ded9
+      border:1px solid #e8ded9;
     }
 
     .message.error{
       background:#fff2f2;
       color:var(--danger);
-      border:1px solid #efd1d1
+      border:1px solid #efd1d1;
     }
 
-    /* Links clicáveis nas respostas da MarIA */
     .message.maria a{
       color:var(--primary-dark);
       font-weight:600;
@@ -306,14 +307,14 @@
       font-weight:600;
       font-size:12px;
       margin-bottom:6px;
-      opacity:.72
+      opacity:.72;
     }
 
     .thinking{
       display:flex;
       gap:5px;
       align-items:center;
-      height:20px
+      height:20px;
     }
 
     .thinking span{
@@ -321,25 +322,26 @@
       height:6px;
       background:#8d7a80;
       border-radius:50%;
-      animation:pulse 1.2s infinite ease-in-out
+      animation:pulse 1.2s infinite ease-in-out;
     }
 
     .thinking span:nth-child(2){
-      animation-delay:.15s
+      animation-delay:.15s;
     }
 
     .thinking span:nth-child(3){
-      animation-delay:.3s
+      animation-delay:.3s;
     }
 
     @keyframes pulse{
       0%,80%,100%{
         opacity:.25;
-        transform:scale(.85)
+        transform:scale(.85);
       }
+
       40%{
         opacity:1;
-        transform:scale(1)
+        transform:scale(1);
       }
     }
 
@@ -355,7 +357,7 @@
         rgba(247,243,239,.95) 30%,
         #f7f3ef 70%
       );
-      z-index:8
+      z-index:8;
     }
 
     .composer{
@@ -368,7 +370,7 @@
       display:flex;
       align-items:flex-end;
       gap:10px;
-      padding:10px
+      padding:10px;
     }
 
     .composer textarea{
@@ -382,41 +384,107 @@
       max-height:160px;
       padding:11px;
       color:var(--text);
-      background:transparent
+      background:transparent;
     }
 
     .composer textarea::placeholder{
-      color:#a39a9d
+      color:#a39a9d;
     }
 
+    #microphoneButton,
     #sendButton{
       width:46px;
       height:46px;
       border:none;
       border-radius:12px;
+      cursor:pointer;
+      transition:
+        background .2s,
+        color .2s,
+        transform .2s,
+        box-shadow .2s,
+        opacity .2s;
+      flex-shrink:0;
+    }
+
+    #microphoneButton{
+      background:var(--secondary);
+      color:var(--primary-dark);
+      font-size:20px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+    }
+
+    #microphoneButton:hover{
+      background:#e5d8d4;
+    }
+
+    #microphoneButton.listening{
+      background:#b94d58;
+      color:#fff;
+      box-shadow:0 0 0 5px rgba(185,77,88,.14);
+      animation:microphonePulse 1.35s infinite ease-in-out;
+    }
+
+    #microphoneButton.unsupported{
+      opacity:.4;
+      cursor:not-allowed;
+    }
+
+    #microphoneButton:disabled,
+    #sendButton:disabled{
+      opacity:.45;
+      cursor:not-allowed;
+    }
+
+    #sendButton{
       background:var(--primary);
       color:#fff;
-      cursor:pointer;
       font-size:21px;
-      transition:.2s;
-      flex-shrink:0
     }
 
     #sendButton:hover{
-      background:var(--primary-dark)
+      background:var(--primary-dark);
     }
 
-    #sendButton:disabled{
-      opacity:.45;
-      cursor:not-allowed
+    @keyframes microphonePulse{
+      0%,100%{
+        transform:scale(1);
+        box-shadow:0 0 0 4px rgba(185,77,88,.12);
+      }
+
+      50%{
+        transform:scale(1.04);
+        box-shadow:0 0 0 8px rgba(185,77,88,.06);
+      }
+    }
+
+    .voice-status{
+      max-width:900px;
+      min-height:19px;
+      margin:6px auto 0;
+      text-align:center;
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.4;
+    }
+
+    .voice-status.listening{
+      color:#93404a;
+      font-weight:600;
+    }
+
+    .voice-status.error{
+      color:var(--danger);
     }
 
     .footer-note{
       max-width:900px;
-      margin:7px auto 0;
+      margin:3px auto 0;
       text-align:center;
       color:#968d90;
-      font-size:11px
+      font-size:11px;
     }
 
     .auth-screen{
@@ -424,7 +492,7 @@
       padding:35px 18px;
       display:flex;
       align-items:center;
-      justify-content:center
+      justify-content:center;
     }
 
     .auth-card{
@@ -434,12 +502,12 @@
       border:1px solid var(--border);
       border-radius:22px;
       padding:29px;
-      box-shadow:0 18px 55px rgba(68,47,55,.12)
+      box-shadow:0 18px 55px rgba(68,47,55,.12);
     }
 
     .auth-brand{
       text-align:center;
-      margin-bottom:25px
+      margin-bottom:25px;
     }
 
     .auth-brand .avatar{
@@ -448,11 +516,11 @@
       border-radius:18px;
       margin:0 auto 14px;
       box-shadow:none;
-      background:transparent
+      background:transparent;
     }
 
     .auth-brand .avatar img{
-      object-fit:contain
+      object-fit:contain;
     }
 
     .auth-brand h1{
@@ -460,14 +528,14 @@
       color:var(--primary-dark);
       margin:0;
       font-size:31px;
-      font-weight:500
+      font-weight:500;
     }
 
     .auth-brand p{
       margin:7px 0 0;
       color:var(--muted);
       line-height:1.5;
-      font-size:14px
+      font-size:14px;
     }
 
     .auth-tabs{
@@ -476,7 +544,7 @@
       background:var(--secondary);
       border-radius:11px;
       padding:4px;
-      margin-bottom:21px
+      margin-bottom:21px;
     }
 
     .auth-tab{
@@ -485,17 +553,17 @@
       border-radius:8px;
       padding:9px 10px;
       cursor:pointer;
-      color:var(--muted)
+      color:var(--muted);
     }
 
     .auth-tab.active{
       background:#fff;
       color:var(--primary-dark);
-      box-shadow:0 2px 8px rgba(68,47,55,.08)
+      box-shadow:0 2px 8px rgba(68,47,55,.08);
     }
 
     .field{
-      margin-bottom:14px
+      margin-bottom:14px;
     }
 
     .field label{
@@ -503,7 +571,7 @@
       font-size:13px;
       margin-bottom:6px;
       color:var(--text);
-      font-weight:600
+      font-weight:600;
     }
 
     .field input{
@@ -513,12 +581,12 @@
       padding:12px;
       outline:none;
       color:var(--text);
-      background:#fff
+      background:#fff;
     }
 
     .field input:focus{
       border-color:#b99ca7;
-      box-shadow:0 0 0 3px rgba(125,88,102,.08)
+      box-shadow:0 0 0 3px rgba(125,88,102,.08);
     }
 
     .auth-button{
@@ -530,16 +598,16 @@
       padding:12px 14px;
       cursor:pointer;
       font-weight:600;
-      margin-top:3px
+      margin-top:3px;
     }
 
     .auth-button:hover{
-      background:var(--primary-dark)
+      background:var(--primary-dark);
     }
 
     .auth-button:disabled{
       opacity:.55;
-      cursor:not-allowed
+      cursor:not-allowed;
     }
 
     .auth-link{
@@ -548,12 +616,12 @@
       color:var(--primary);
       cursor:pointer;
       padding:3px 0;
-      font-size:13px
+      font-size:13px;
     }
 
     .auth-secondary{
       text-align:center;
-      margin-top:15px
+      margin-top:15px;
     }
 
     .auth-message{
@@ -561,25 +629,25 @@
       padding:11px 12px;
       border-radius:10px;
       font-size:13px;
-      line-height:1.45
+      line-height:1.45;
     }
 
     .auth-message.error{
       background:#fff2f2;
       color:var(--danger);
-      border:1px solid #efd1d1
+      border:1px solid #efd1d1;
     }
 
     .auth-message.success{
       background:#eff7f1;
       color:var(--success);
-      border:1px solid #d5e8da
+      border:1px solid #d5e8da;
     }
 
     .auth-message.info{
       background:#f5f1ef;
       color:var(--primary-dark);
-      border:1px solid var(--border)
+      border:1px solid var(--border);
     }
 
     .user-email{
@@ -588,52 +656,52 @@
       max-width:180px;
       overflow:hidden;
       text-overflow:ellipsis;
-      white-space:nowrap
+      white-space:nowrap;
     }
 
     .reset-title{
       font-family:Georgia,"Times New Roman",serif;
       color:var(--primary-dark);
       font-size:23px;
-      margin:0 0 7px
+      margin:0 0 7px;
     }
 
     .reset-copy{
       color:var(--muted);
       font-size:14px;
       line-height:1.5;
-      margin:0 0 20px
+      margin:0 0 20px;
     }
 
     .sidebar-overlay{
-      display:none
+      display:none;
     }
 
     @media(max-width:800px){
       header{
-        padding:13px 14px
+        padding:13px 14px;
       }
 
       .avatar{
         width:48px;
-        height:48px
+        height:48px;
       }
 
       .brand-text h1{
-        font-size:22px
+        font-size:22px;
       }
 
       .brand-text p,
       .user-email{
-        display:none
+        display:none;
       }
 
       .mobile-history{
-        display:inline-block
+        display:inline-block;
       }
 
       .workspace{
-        display:block
+        display:block;
       }
 
       .sidebar{
@@ -648,67 +716,73 @@
         background:#fbf8f6;
         transform:translateX(-105%);
         transition:transform .22s ease;
-        box-shadow:10px 0 30px rgba(50,35,40,.12)
+        box-shadow:10px 0 30px rgba(50,35,40,.12);
       }
 
       .sidebar.open{
-        transform:translateX(0)
+        transform:translateX(0);
       }
 
       .sidebar-overlay{
         position:fixed;
         inset:75px 0 0 0;
         background:rgba(30,20,24,.28);
-        z-index:19
+        z-index:19;
       }
 
       .sidebar-overlay.open{
-        display:block
+        display:block;
       }
 
       main{
-        padding:21px 13px 145px
+        padding:21px 13px 155px;
       }
 
       .welcome{
-        margin-top:5px
+        margin-top:5px;
       }
 
       .welcome h2{
-        font-size:25px
+        font-size:25px;
       }
 
       .message{
-        max-width:88%
+        max-width:88%;
       }
 
       .new-chat,
       .logout-button,
       .mobile-history{
         font-size:12px;
-        padding:8px 9px
+        padding:8px 9px;
       }
 
       .composer-wrapper{
         padding-left:10px;
-        padding-right:10px
+        padding-right:10px;
+      }
+
+      #microphoneButton,
+      #sendButton{
+        width:44px;
+        height:44px;
       }
 
       .auth-screen{
-        padding:20px 12px
+        padding:20px 12px;
       }
 
       .auth-card{
-        padding:23px 18px
+        padding:23px 18px;
       }
 
       .auth-brand .avatar{
         width:160px;
-        height:160px
+        height:160px;
       }
 
       .header-actions{
-        gap:5px
+        gap:5px;
       }
     }
   </style>
@@ -749,6 +823,7 @@
 
           <div class="field">
             <label for="emailInput">E-mail</label>
+
             <input
               id="emailInput"
               type="email"
@@ -759,6 +834,7 @@
 
           <div class="field">
             <label for="passwordInput">Senha</label>
+
             <input
               id="passwordInput"
               type="password"
@@ -959,6 +1035,15 @@
         ></textarea>
 
         <button
+          id="microphoneButton"
+          type="button"
+          aria-label="Iniciar ditado por voz"
+          title="Falar com a MarIA"
+        >
+          🎤
+        </button>
+
+        <button
           id="sendButton"
           type="button"
           aria-label="Enviar mensagem"
@@ -967,6 +1052,12 @@
         </button>
 
       </div>
+
+      <div
+        class="voice-status"
+        id="voiceStatus"
+        aria-live="polite"
+      ></div>
 
       <div class="footer-note">
         MarIA é uma assistente de inteligência artificial da marca Maria Franco.
@@ -979,7 +1070,6 @@
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 
   <script>
-
     const API_URL =
       "https://maria-api.mmt-franco.workers.dev/chat";
 
@@ -1012,6 +1102,12 @@
     let authMode="login";
     let recoveryMode=false;
     let currentMessages=[];
+
+    let speechRecognition=null;
+    let isListening=false;
+    let speechBaseText="";
+    let speechFinalText="";
+    let voiceStatusTimer=null;
 
     const authScreen =
       document.getElementById("authScreen");
@@ -1072,6 +1168,12 @@
 
     const messageInput =
       document.getElementById("messageInput");
+
+    const microphoneButton =
+      document.getElementById("microphoneButton");
+
+    const voiceStatus =
+      document.getElementById("voiceStatus");
 
     const sendButton =
       document.getElementById("sendButton");
@@ -1151,6 +1253,8 @@
 
 
     function showAuth(){
+      stopSpeechRecognition();
+
       appScreen.classList.add("hidden");
       authScreen.classList.remove("hidden");
 
@@ -1178,6 +1282,8 @@
 
 
     function showRecovery(){
+      stopSpeechRecognition();
+
       recoveryMode=true;
 
       normalAuthView.classList.add("hidden");
@@ -1447,6 +1553,7 @@
       "click",
       async()=>{
 
+        stopSpeechRecognition();
         setWaiting(false);
 
         await supabaseClient.auth.signOut();
@@ -1493,6 +1600,8 @@
 
 
     (async()=>{
+
+      initializeSpeechRecognition();
 
       const {data} =
         await supabaseClient.auth.getSession();
@@ -1680,6 +1789,8 @@
         return;
       }
 
+      stopSpeechRecognition();
+
       currentConversationId=id;
       previousInteractionId=null;
 
@@ -1808,14 +1919,6 @@ ${newMessage}`;
     }
 
 
-    /*
-     * Renderização segura das mensagens.
-     *
-     * URLs http:// e https:// nas respostas da MarIA
-     * são convertidas em links clicáveis.
-     *
-     * Não usamos innerHTML com conteúdo gerado pela IA.
-     */
     function renderMessageContent(
       element,
       text,
@@ -1855,10 +1958,6 @@ ${newMessage}`;
         let url=match[0];
         let trailing="";
 
-        /*
-         * Remove pontuação que pode ter sido colocada
-         * imediatamente depois da URL na frase.
-         */
         while(
           /[.,;:!?)]$/.test(url)
         ){
@@ -1875,14 +1974,9 @@ ${newMessage}`;
 
         link.href=url;
         link.target="_blank";
-
-        link.rel=
-          "noopener noreferrer";
-
+        link.rel="noopener noreferrer";
         link.textContent=url;
-
-        link.title=
-          "Abrir link em uma nova aba";
+        link.title="Abrir link em uma nova aba";
 
         element.appendChild(link);
 
@@ -1949,13 +2043,6 @@ ${newMessage}`;
       const content=
         document.createElement("div");
 
-      /*
-       * Transformamos URLs em links somente
-       * nas respostas normais da MarIA.
-       *
-       * Mensagens do usuário continuam sendo
-       * exibidas como texto puro.
-       */
       renderMessageContent(
         content,
         text,
@@ -2041,12 +2128,364 @@ ${newMessage}`;
     }
 
 
+    function clearVoiceStatus(delay=0){
+
+      if(voiceStatusTimer){
+        clearTimeout(voiceStatusTimer);
+        voiceStatusTimer=null;
+      }
+
+      if(delay>0){
+
+        voiceStatusTimer=
+          setTimeout(
+            ()=>{
+              voiceStatus.textContent="";
+              voiceStatus.className="voice-status";
+            },
+            delay
+          );
+
+        return;
+      }
+
+      voiceStatus.textContent="";
+      voiceStatus.className="voice-status";
+    }
+
+
+    function setVoiceStatus(
+      text,
+      type=""
+    ){
+
+      if(voiceStatusTimer){
+        clearTimeout(voiceStatusTimer);
+        voiceStatusTimer=null;
+      }
+
+      voiceStatus.textContent=text;
+      voiceStatus.className=
+        `voice-status${type?" "+type:""}`;
+    }
+
+
+    function updateMicrophoneAppearance(){
+
+      microphoneButton.classList.toggle(
+        "listening",
+        isListening
+      );
+
+      microphoneButton.setAttribute(
+        "aria-pressed",
+        isListening
+          ?"true"
+          :"false"
+      );
+
+      microphoneButton.setAttribute(
+        "aria-label",
+        isListening
+          ?"Parar ditado por voz"
+          :"Iniciar ditado por voz"
+      );
+
+      microphoneButton.title=
+        isListening
+          ?"Parar ditado"
+          :"Falar com a MarIA";
+    }
+
+
+    function composeSpeechText(
+      base,
+      finalPart,
+      interimPart=""
+    ){
+
+      return [
+        base.trim(),
+        finalPart.trim(),
+        interimPart.trim()
+      ]
+        .filter(Boolean)
+        .join(" ")
+        .replace(/\s+/g," ")
+        .trim();
+    }
+
+
+    function initializeSpeechRecognition(){
+
+      const SpeechRecognition =
+        window.SpeechRecognition||
+        window.webkitSpeechRecognition;
+
+      if(!SpeechRecognition){
+
+        microphoneButton.disabled=true;
+        microphoneButton.classList.add("unsupported");
+
+        microphoneButton.title=
+          "O reconhecimento de voz não está disponível neste navegador.";
+
+        microphoneButton.setAttribute(
+          "aria-label",
+          "Reconhecimento de voz não disponível"
+        );
+
+        return;
+      }
+
+      speechRecognition=
+        new SpeechRecognition();
+
+      speechRecognition.lang=
+        "pt-BR";
+
+      speechRecognition.continuous=
+        true;
+
+      speechRecognition.interimResults=
+        true;
+
+      speechRecognition.maxAlternatives=
+        1;
+
+
+      speechRecognition.onstart=()=>{
+
+        isListening=true;
+        speechFinalText="";
+
+        updateMicrophoneAppearance();
+
+        setVoiceStatus(
+          "Ouvindo... fale normalmente. Toque novamente no microfone para parar.",
+          "listening"
+        );
+      };
+
+
+      speechRecognition.onresult=event=>{
+
+        let interimText="";
+
+        for(
+          let index=event.resultIndex;
+          index<event.results.length;
+          index++
+        ){
+
+          const transcript=
+            event.results[index][0]
+              ?.transcript||"";
+
+          if(event.results[index].isFinal){
+
+            speechFinalText=
+              `${speechFinalText} ${transcript}`
+                .replace(/\s+/g," ")
+                .trim();
+
+          }else{
+
+            interimText=
+              `${interimText} ${transcript}`
+                .replace(/\s+/g," ")
+                .trim();
+          }
+        }
+
+        messageInput.value=
+          composeSpeechText(
+            speechBaseText,
+            speechFinalText,
+            interimText
+          );
+
+        resizeTextarea();
+
+        messageInput.focus();
+        messageInput.setSelectionRange(
+          messageInput.value.length,
+          messageInput.value.length
+        );
+      };
+
+
+      speechRecognition.onerror=event=>{
+
+        isListening=false;
+        updateMicrophoneAppearance();
+
+        const errorMessages={
+          "not-allowed":
+            "O acesso ao microfone foi negado. Autorize o microfone nas configurações do navegador.",
+
+          "service-not-allowed":
+            "O serviço de reconhecimento de voz não foi autorizado neste navegador.",
+
+          "audio-capture":
+            "Nenhum microfone foi encontrado ou o microfone não pôde ser usado.",
+
+          "no-speech":
+            "Nenhuma fala foi identificada. Toque no microfone e tente novamente.",
+
+          "network":
+            "O reconhecimento de voz encontrou um problema de conexão.",
+
+          "aborted":
+            ""
+        };
+
+        const message=
+          errorMessages[event.error]||
+          "Não foi possível reconhecer a fala. Tente novamente.";
+
+        if(message){
+
+          setVoiceStatus(
+            message,
+            "error"
+          );
+
+          clearVoiceStatus(6000);
+
+        }else{
+
+          clearVoiceStatus();
+        }
+      };
+
+
+      speechRecognition.onend=()=>{
+
+        isListening=false;
+        updateMicrophoneAppearance();
+
+        if(messageInput.value.trim()){
+
+          setVoiceStatus(
+            "Ditado concluído. Confira o texto e toque em enviar.",
+            ""
+          );
+
+          clearVoiceStatus(4500);
+
+        }else{
+
+          clearVoiceStatus();
+        }
+
+        speechBaseText="";
+        speechFinalText="";
+      };
+    }
+
+
+    function startSpeechRecognition(){
+
+      if(
+        !speechRecognition||
+        waitingForMaria
+      ){
+        return;
+      }
+
+      speechBaseText=
+        messageInput.value.trim();
+
+      speechFinalText="";
+
+      try{
+
+        speechRecognition.start();
+
+      }catch(error){
+
+        console.warn(
+          "Não foi possível iniciar o reconhecimento de voz:",
+          error
+        );
+
+        setVoiceStatus(
+          "Não foi possível iniciar o microfone. Aguarde um momento e tente novamente.",
+          "error"
+        );
+
+        clearVoiceStatus(5000);
+      }
+    }
+
+
+    function stopSpeechRecognition(){
+
+      if(
+        !speechRecognition||
+        !isListening
+      ){
+        return;
+      }
+
+      try{
+
+        speechRecognition.stop();
+
+      }catch(error){
+
+        console.warn(
+          "Não foi possível interromper o reconhecimento de voz:",
+          error
+        );
+      }
+    }
+
+
+    function toggleSpeechRecognition(){
+
+      if(!speechRecognition){
+
+        setVoiceStatus(
+          "O reconhecimento de voz não está disponível neste navegador.",
+          "error"
+        );
+
+        clearVoiceStatus(5000);
+        return;
+      }
+
+      if(isListening){
+
+        stopSpeechRecognition();
+
+      }else{
+
+        startSpeechRecognition();
+      }
+    }
+
+
     function setWaiting(v){
 
       waitingForMaria=v;
 
       sendButton.disabled=v;
       messageInput.disabled=v;
+
+      microphoneButton.disabled=
+        v||
+        !speechRecognition;
+
+      microphoneButton.classList.toggle(
+        "unsupported",
+        !speechRecognition
+      );
+
+      if(v){
+        stopSpeechRecognition();
+      }
     }
 
 
@@ -2092,12 +2531,16 @@ ${newMessage}`;
         return;
       }
 
+      stopSpeechRecognition();
+
       const message=
         messageInput.value.trim();
 
       if(!message){
         return;
       }
+
+      clearVoiceStatus();
 
       const session=
         await getValidSession();
@@ -2282,6 +2725,9 @@ ${newMessage}`;
 
     function newConversation(){
 
+      stopSpeechRecognition();
+      clearVoiceStatus();
+
       previousInteractionId=null;
       currentConversationId=null;
       currentMessages=[];
@@ -2321,6 +2767,12 @@ ${newMessage}`;
         "open"
       );
     }
+
+
+    microphoneButton.addEventListener(
+      "click",
+      toggleSpeechRecognition
+    );
 
 
     sendButton.addEventListener(
@@ -2369,6 +2821,11 @@ ${newMessage}`;
       closeSidebar
     );
 
+
+    window.addEventListener(
+      "beforeunload",
+      stopSpeechRecognition
+    );
   </script>
 
 </body>
