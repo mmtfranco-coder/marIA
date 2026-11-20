@@ -395,6 +395,61 @@
 
     .composer textarea::placeholder{color:#a39a9d}
 
+    .image-preview{
+      max-width:900px;
+      margin:0 auto 8px;
+      display:flex;
+      align-items:center;
+      gap:10px;
+      padding:9px 11px;
+      border:1px solid var(--border);
+      border-radius:13px;
+      background:rgba(255,255,255,.96);
+      box-shadow:0 4px 16px rgba(68,47,55,.08);
+    }
+
+    .image-preview img{
+      width:58px;
+      height:58px;
+      object-fit:cover;
+      border-radius:9px;
+      border:1px solid var(--border);
+    }
+
+    .image-preview-info{
+      min-width:0;
+      flex:1;
+    }
+
+    .image-preview-name{
+      display:block;
+      color:var(--text);
+      font-size:13px;
+      font-weight:600;
+      white-space:nowrap;
+      overflow:hidden;
+      text-overflow:ellipsis;
+    }
+
+    .image-preview-size{
+      display:block;
+      margin-top:3px;
+      color:var(--muted);
+      font-size:11px;
+    }
+
+    .remove-image-button{
+      border:1px solid var(--border);
+      background:#fff;
+      color:var(--danger);
+      width:34px;
+      height:34px;
+      border-radius:9px;
+      cursor:pointer;
+      flex-shrink:0;
+    }
+
+    #imageButton,
     #microphoneButton,
     #sendButton{
       width:46px;
@@ -410,6 +465,17 @@
         opacity .2s;
       flex-shrink:0;
     }
+
+    #imageButton{
+      background:var(--secondary);
+      color:var(--primary-dark);
+      font-size:20px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+    }
+
+    #imageButton:hover{background:#e5d8d4}
 
     #microphoneButton{
       background:var(--secondary);
@@ -434,6 +500,7 @@
       cursor:not-allowed;
     }
 
+    #imageButton:disabled,
     #microphoneButton:disabled,
     #sendButton:disabled{
       opacity:.45;
@@ -728,6 +795,7 @@
         padding-right:10px;
       }
 
+      #imageButton,
       #microphoneButton,
       #sendButton{
         width:44px;
@@ -966,7 +1034,19 @@
 
     <div class="composer-wrapper">
 
+      <div class="image-preview hidden" id="imagePreview">
+        <img id="imagePreviewThumbnail" alt="Prévia da imagem selecionada">
+        <div class="image-preview-info">
+          <span class="image-preview-name" id="imagePreviewName"></span>
+          <span class="image-preview-size" id="imagePreviewSize"></span>
+        </div>
+        <button class="remove-image-button" id="removeImageButton" type="button" aria-label="Remover imagem" title="Remover imagem">×</button>
+      </div>
+
       <div class="composer">
+        <input id="imageInput" type="file" accept="image/png,image/jpeg,image/webp" class="hidden">
+
+        <button id="imageButton" type="button" aria-label="Anexar imagem" title="Anexar imagem">📎</button>
         <textarea
           id="messageInput"
           rows="1"
@@ -1040,6 +1120,9 @@
     let authMode="login";
     let recoveryMode=false;
     let currentMessages=[];
+    let selectedImage=null;
+    let selectedImageData="";
+    let selectedImageMimeType="";
 
     let speechRecognition=null;
     let isListening=false;
@@ -1070,6 +1153,13 @@
     const userEmail=document.getElementById("userEmail");
     const messagesElement=document.getElementById("messages");
     const messageInput=document.getElementById("messageInput");
+    const imageInput=document.getElementById("imageInput");
+    const imageButton=document.getElementById("imageButton");
+    const imagePreview=document.getElementById("imagePreview");
+    const imagePreviewThumbnail=document.getElementById("imagePreviewThumbnail");
+    const imagePreviewName=document.getElementById("imagePreviewName");
+    const imagePreviewSize=document.getElementById("imagePreviewSize");
+    const removeImageButton=document.getElementById("removeImageButton");
     const microphoneButton=document.getElementById("microphoneButton");
     const voiceStatus=document.getElementById("voiceStatus");
     const sendButton=document.getElementById("sendButton");
@@ -1412,6 +1502,7 @@
         previousInteractionId=null;
         currentConversationId=null;
         currentMessages=[];
+        clearSelectedImage();
 
         messagesElement.innerHTML="";
         welcomeElement.style.display="block";
@@ -2605,10 +2696,97 @@ ${newMessage}`;
     }
 
 
+    function clearSelectedImage(){
+      selectedImage=null;
+      selectedImageData="";
+      selectedImageMimeType="";
+      imageInput.value="";
+      imagePreviewThumbnail.removeAttribute("src");
+      imagePreviewName.textContent="";
+      imagePreviewSize.textContent="";
+      imagePreview.classList.add("hidden");
+    }
+
+    function formatFileSize(bytes){
+      if(bytes<1024){
+        return `${bytes} B`;
+      }
+      if(bytes<1024*1024){
+        return `${(bytes/1024).toFixed(1)} KB`;
+      }
+      return `${(bytes/(1024*1024)).toFixed(1)} MB`;
+    }
+
+    function readImageAsBase64(file){
+      return new Promise((resolve,reject)=>{
+        const reader=new FileReader();
+        reader.onload=()=>{
+          const result=String(reader.result||"");
+          const commaIndex=result.indexOf(",");
+          if(commaIndex<0){
+            reject(new Error("Não foi possível ler a imagem."));
+            return;
+          }
+          resolve({
+            data:result.slice(commaIndex+1),
+            previewUrl:result
+          });
+        };
+        reader.onerror=()=>reject(new Error("Não foi possível ler a imagem."));
+        reader.readAsDataURL(file);
+      });
+    }
+
+    async function handleImageSelection(){
+      const file=imageInput.files?.[0];
+      if(!file){
+        return;
+      }
+
+      const allowedTypes=new Set([
+        "image/png",
+        "image/jpeg",
+        "image/webp"
+      ]);
+
+      if(!allowedTypes.has(file.type)){
+        clearSelectedImage();
+        setVoiceStatus("Formato não suportado. Use PNG, JPEG ou WEBP.","error");
+        clearVoiceStatus(6000);
+        return;
+      }
+
+      if(file.size>5*1024*1024){
+        clearSelectedImage();
+        setVoiceStatus("A imagem deve ter no máximo 5 MB.","error");
+        clearVoiceStatus(6000);
+        return;
+      }
+
+      try{
+        const converted=await readImageAsBase64(file);
+        selectedImage=file;
+        selectedImageData=converted.data;
+        selectedImageMimeType=file.type;
+        imagePreviewThumbnail.src=converted.previewUrl;
+        imagePreviewName.textContent=file.name;
+        imagePreviewSize.textContent=formatFileSize(file.size);
+        imagePreview.classList.remove("hidden");
+        clearVoiceStatus();
+        messageInput.focus();
+      }catch(error){
+        clearSelectedImage();
+        setVoiceStatus(error?.message||"Não foi possível preparar a imagem.","error");
+        clearVoiceStatus(6000);
+      }
+    }
+
     function setWaiting(v){
       waitingForMaria=v;
 
       sendButton.disabled=v;
+      imageButton.disabled=v;
+      removeImageButton.disabled=v;
       messageInput.disabled=v;
 
       microphoneButton.disabled=
@@ -2670,9 +2848,14 @@ ${newMessage}`;
       const message=
         messageInput.value.trim();
 
-      if(!message){
+      if(!message&&!selectedImageData){
         return;
       }
+
+      const messageToSend=message||"Analise esta imagem e relacione-a às referências Maria Franco disponíveis.";
+      const imageDataToSend=selectedImageData;
+      const imageMimeTypeToSend=selectedImageMimeType;
+      const imageNameToShow=selectedImage?.name||"imagem anexada";
 
       clearVoiceStatus();
 
@@ -2700,18 +2883,26 @@ ${newMessage}`;
       try{
         if(!currentConversationId){
           await createConversation(
-            message
+            messageToSend
           );
         }
 
         addMessage(
           "Você",
-          message
+          imageDataToSend
+            ? `${messageToSend}
+
+📎 ${imageNameToShow}`
+            : messageToSend
         );
 
         await saveMessage(
           "user",
-          message
+          imageDataToSend
+            ? `${messageToSend}
+
+📎 ${imageNameToShow}`
+            : messageToSend
         );
 
         addThinking();
@@ -2723,10 +2914,17 @@ ${newMessage}`;
             )
         };
 
+        if(imageDataToSend){
+          payload.image_data=imageDataToSend;
+          payload.image_mime_type=imageMimeTypeToSend;
+        }
+
         if(previousInteractionId){
           payload.previous_interaction_id=
             previousInteractionId;
         }
+
+        clearSelectedImage();
 
         const response=
           await fetch(
@@ -2862,6 +3060,7 @@ ${newMessage}`;
       previousInteractionId=null;
       currentConversationId=null;
       currentMessages=[];
+      clearSelectedImage();
 
       messagesElement.innerHTML="";
 
@@ -2899,6 +3098,21 @@ ${newMessage}`;
       );
     }
 
+
+    imageButton.addEventListener(
+      "click",
+      ()=>imageInput.click()
+    );
+
+    imageInput.addEventListener(
+      "change",
+      handleImageSelection
+    );
+
+    removeImageButton.addEventListener(
+      "click",
+      clearSelectedImage
+    );
 
     microphoneButton.addEventListener(
       "click",
